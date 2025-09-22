@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kg-mmml"
+version = "0.1.0"
+description = "KG + Multi-Modal ML: reproducible framework"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy","pandas","scikit-learn","torch","torchvision","tqdm",
+  "pyyaml","networkx","faiss-cpu","matplotlib"
+]
+
+[tool.black]
+line-length = 100
