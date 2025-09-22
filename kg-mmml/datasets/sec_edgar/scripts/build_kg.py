@@ -1,0 +1,3 @@
+# Script to build the knowledge graph from SEC Edgar data
+
+# ...implementation goes here...
