@@ -18,3 +18,13 @@ __pycache__/
 # Env & logs
 .env
 .DS_Store
+
+# Dataset-specific scratch (if any scripts create temp dirs)
+datasets/**/downloads/*
+datasets/**/parsed/*
+
+
+datasets/**/downloads/*
+datasets/**/parsed/*
+/data/*
+!/data/README.md
