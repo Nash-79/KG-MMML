@@ -1,0 +1,3 @@
+# Script to parse XBRL files
+
+# ...implementation goes here...
