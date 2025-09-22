@@ -1,0 +1,21 @@
+# Baseline experiment configuration
+experiment:
+  name: baseline_vl
+  seeds: [13, 17, 23, 29, 31]
+data:
+  dataset: your_dataset_v1
+  split: official
+model:
+  type: vl_baseline
+  text_encoder: frozen
+  img_encoder: frozen
+train:
+  batch_size: 256
+  lr: 3e-4
+  max_epochs: 20
+eval:
+  metrics: [retrieval_map, zero_shot_f1]
+  srs: {enabled: false}
+  latency_slo_ms: 150
+logging:
+  out_dir: reports

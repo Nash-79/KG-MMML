@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+*.egg-info/
+
+# Data & models
+/data/*
+!/data/README.md
+/reports/figures/*
+/reports/tables/*
+/reports/progress/*
+*.pt
+*.bin
+*.ckpt
+
+# Env & logs
+.env
+.DS_Store
