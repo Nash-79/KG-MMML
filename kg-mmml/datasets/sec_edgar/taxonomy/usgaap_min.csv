@@ -1,0 +1,16 @@
+parent,child
+us-gaap:Assets,us-gaap:AssetsCurrent
+us-gaap:Assets,us-gaap:AssetsNoncurrent
+us-gaap:Liabilities,us-gaap:LiabilitiesCurrent
+us-gaap:Liabilities,us-gaap:LiabilitiesNoncurrent
+us-gaap:StockholdersEquity,us-gaap:RetainedEarningsAccumulatedDeficit
+us-gaap:StockholdersEquity,us-gaap:CommonStockValue
+us-gaap:Revenues,us-gaap:SalesRevenueNet
+us-gaap:Revenues,us-gaap:ContractWithCustomerRevenue
+us-gaap:CostsAndExpenses,us-gaap:CostOfGoodsAndServicesSold
+us-gaap:CostsAndExpenses,us-gaap:SellingGeneralAndAdministrativeExpense
+us-gaap:OperatingIncomeLoss,us-gaap:GrossProfit
+us-gaap:OperatingIncomeLoss,us-gaap:OperatingExpenses
+us-gaap:NetIncomeLoss,us-gaap:IncomeLossFromContinuingOperations
+us-gaap:CashAndCashEquivalentsAtCarryingValue,us-gaap:CashAndCashEquivalentsAtCarryingValueContinuingAndDiscontinuedOperations
+us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents,us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDiscontinuedOperations
