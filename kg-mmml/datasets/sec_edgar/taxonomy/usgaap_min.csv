@@ -14,3 +14,15 @@ us-gaap:OperatingIncomeLoss,us-gaap:OperatingExpenses
 us-gaap:NetIncomeLoss,us-gaap:IncomeLossFromContinuingOperations
 us-gaap:CashAndCashEquivalentsAtCarryingValue,us-gaap:CashAndCashEquivalentsAtCarryingValueContinuingAndDiscontinuedOperations
 us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents,us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDiscontinuedOperations
+us-gaap:Assets,us-gaap:AccountsReceivableNetCurrent
+us-gaap:Assets,us-gaap:InventoryNet
+us-gaap:Assets,us-gaap:PropertyPlantAndEquipmentNet
+us-gaap:Liabilities,us-gaap:AccountsPayableCurrent
+us-gaap:Liabilities,us-gaap:LongTermDebtNoncurrent
+us-gaap:Liabilities,us-gaap:AccruedLiabilitiesCurrent
+us-gaap:Liabilities,us-gaap:DeferredRevenueCurrent
+us-gaap:StockholdersEquity,us-gaap:AdditionalPaidInCapital
+us-gaap:StockholdersEquity,us-gaap:TreasuryStockValue
+us-gaap:Revenues,us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+us-gaap:CostsAndExpenses,us-gaap:CostOfRevenue
+us-gaap:CostsAndExpenses,us-gaap:ResearchAndDevelopmentExpense
