@@ -1,37 +1,76 @@
 parents:
   "us-gaap:CurrentAssets":
-    - "^(Cash(AndCashEquivalents)?|CashAndCashEquivalentsAtCarryingValue)$"
-    - "^ShortTermInvestments$"
-    - "^AccountsReceivable.*Current$"
-    - "^Inventory.*$"
-    - "^Prepaid.*$"
+    - "Cash"
+    - "ShortTermInvestment"
+    - "AccountsReceivable"
+    - "Inventory"
+    - "Prepaid"
+    - "MarketableSecurities"
+    
   "us-gaap:NoncurrentAssets":
-    - "^PropertyPlantAndEquipment.*$"
-    - "^(Goodwill|FiniteLivedIntangibleAssets.*|IndefiniteLivedIntangibleAssets.*)$"
-    - "^OperatingLeaseRightOfUseAsset.*$"
+    - "PropertyPlantAndEquipment"
+    - "Goodwill"
+    - "IntangibleAsset"
+    - "OperatingLeaseRightOfUseAsset"
+    - "LongTermInvestment"
+    - "DeferredTaxAsset"
+    
   "us-gaap:CurrentLiabilities":
-    - "^AccountsPayable.*Current$"
-    - "^AccruedLiabilities.*Current$"
-    - "^CurrentPortionOfLongTermDebt.*$"
-    - "^ContractWithCustomerLiabilityCurrent$"
+    - "AccountsPayable"
+    - "AccruedLiabilities"
+    - "AccruedExpense"
+    - "CurrentPortionOfLongTermDebt"
+    - "ContractWithCustomerLiability.*Current"
+    - "DeferredRevenue.*Current"
+    - "ShortTermDebt"
+    
   "us-gaap:NoncurrentLiabilities":
-    - "^LongTermDebt.*Noncurrent$"
-    - "^OperatingLeaseLiabilityNoncurrent$"
-    - "^DeferredTaxLiabilitiesNoncurrent$"
-  "us-gaap:OperatingExpenses":
-    - "^SellingGeneralAndAdministrativeExpense.*$"
-    - "^ResearchAndDevelopmentExpense.*$"
-  "us-gaap:CostOfRevenue":
-    - "^(CostOfRevenue|CostOfGoodsSold).*$"
+    - "LongTermDebt.*Noncurrent"
+    - "OperatingLeaseLiability.*Noncurrent"
+    - "DeferredTaxLiabilities.*Noncurrent"
+    - "PensionAndOtherPostretirement"
+    
+  "us-gaap:Assets":
+    - "Asset(?!s)"
+    
+  "us-gaap:Liabilities":
+    - "Liability"
+    - "Liabilities(?!And)"
+    
+  "us-gaap:StockholdersEquity":
+    - "CommonStock"
+    - "AdditionalPaidInCapital"
+    - "RetainedEarnings"
+    - "AccumulatedOtherComprehensiveIncome"
+    - "TreasuryStock"
+    
   "us-gaap:Revenues":
-    - "^(RevenueFromContractWithCustomer.*|SalesRevenueNet.*)$"
+    - "Revenue"
+    - "SalesRevenue"
+    - "ContractWithCustomerRevenue"
+    
+  "us-gaap:CostOfRevenue":
+    - "CostOfRevenue"
+    - "CostOfGoodsSold"
+    - "CostOfSales"
+    
+  "us-gaap:OperatingExpenses":
+    - "SellingGeneralAndAdministrativeExpense"
+    - "ResearchAndDevelopmentExpense"
+    - "OperatingExpense(?!s$)"
+    
+  "us-gaap:OperatingIncomeLoss":
+    - "OperatingIncome"
+    - "GrossProfit"
+    
   "us-gaap:NetIncomeLoss":
-    - "^NetIncomeLoss.*$"
+    - "NetIncome"
+    
   "us-gaap:IncomeTaxExpenseBenefit":
-    - "^IncomeTax.*(Expense|Benefit).*$"
+    - "IncomeTax"
+    
   "us-gaap:InterestExpense":
-    - "^InterestExpense.*$"
-  "us-gaap:EarningsPerShareDiluted":
-    - "^EarningsPerShareDiluted.*$"
-  "us-gaap:CashAndCashEquivalentsAtCarryingValue":
-    - "^Cash.*Equivalents.*$"
+    - "InterestExpense"
+    
+  "us-gaap:EarningsPerShare":
+    - "EarningsPerShare"
