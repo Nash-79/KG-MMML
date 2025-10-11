@@ -1,5 +1,4 @@
-# configs/experiment_kge.yaml (and experiment_joint.yaml)
 data:
   dataset: sec_edgar_text_v1
+  kg_snapshot: data/kg/sec_edgar_2025-10-11
   split: official_2022_2024
-  kg_snapshot: sec_edgar_2025-09-22
