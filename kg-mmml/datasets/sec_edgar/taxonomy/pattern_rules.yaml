@@ -1,0 +1,31 @@
+# Parent concept  :  list of regex patterns (high-precision only)
+us-gaap:Assets:
+  - '^(?!Assets$).*Receivable'            # AccountsReceivableNetCurrent, etc.
+  - '^Inventory'
+  - '^PropertyPlantAndEquipment'
+  - '^MarketableSecurities'
+  - '^Cash(And| |$)'                      # Cash*, CashAndCashEquivalents...
+  - '^OtherAssets'
+us-gaap:Liabilities:
+  - 'Payable'
+  - '^LongTermDebt'
+  - '^ShortTermBorrowings'
+  - '^Accrued.*'
+  - '^DeferredRevenue'
+us-gaap:Revenues:
+  - 'Revenue'
+  - 'SalesRevenue'
+us-gaap:CostsAndExpenses:
+  - 'CostOfRevenue'
+  - 'ResearchAndDevelopment'
+  - 'SellingGeneralAndAdministrative'
+  - 'Depreciation|Amortization'
+us-gaap:StockholdersEquity:
+  - '^AdditionalPaidInCapital'
+  - '^RetainedEarnings'
+  - '^TreasuryStock'
+us-gaap:OperatingIncomeLoss:
+  - '^GrossProfit'
+  - '^OperatingExpenses'
+us-gaap:NetIncomeLoss:
+  - '^Income(Loss)?FromContinuingOperations'
