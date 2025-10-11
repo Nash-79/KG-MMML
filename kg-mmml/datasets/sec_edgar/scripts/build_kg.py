@@ -1,19 +1,88 @@
 # datasets/sec_edgar/scripts/build_kg.py
 import argparse, json, pathlib, csv
+from typing import List, Tuple
 
-def load_taxonomy(csv_path: str):
-    """Load parent,child rows from a CSV (header: parent,child)."""
-    pairs = []
+def normalise_concept_id(ns: str, concept: str) -> str:
+    """
+    Ensure concept IDs align with taxonomy (e.g., 'us-gaap:Assets').
+    If facts provide ns='us-gaap' and concept='Assets', produce 'us-gaap:Assets'.
+    If concept already has a prefix, keep it as-is.
+    """
+    ns = (ns or "").strip()
+    cname = (concept or "").strip()
+    if not cname:
+        return "UNKNOWN"
+    if ":" in cname:
+        # Already namespaced; normalise spacing
+        prefix, name = cname.split(":", 1)
+        return f"{prefix}:{name}"
+    if ns:
+        return f"{ns}:{cname}"
+    # Default to us-gaap if none given (facts usually provide ns)
+    return f"us-gaap:{cname}"
+
+def _detect_columns_and_iter(reader: csv.DictReader):
+    """
+    Detect orientation and yield (child, parent) pairs, normalised.
+    Accepts CSVs with header either:
+      - child,parent,[...]
+      - parent,child,[...]
+      - or two unnamed columns in that order.
+    """
+    # Lowercase mapping for convenience
+    cols = {k.lower(): k for k in reader.fieldnames or []}
+
+    def norm_ns(s: str) -> str:
+        s = (s or "").strip()
+        if not s:
+            return ""
+        if ":" in s:
+            pref, name = s.split(":", 1)
+            return f"{pref}:{name}"
+        return f"us-gaap:{s}"
+
+    # Case 1: has both child & parent headers
+    if "child" in cols and "parent" in cols:
+        for row in reader:
+            child = norm_ns(row.get(cols["child"], ""))
+            parent = norm_ns(row.get(cols["parent"], ""))
+            if child and parent and child != parent:
+                yield (child, parent)
+        return
+
+    # Case 2: has 'parent' header but no 'child' header (assume parent,child)
+    if "parent" in cols and "child" not in cols:
+        # Find a second column name (first two columns)
+        fns = reader.fieldnames or []
+        if len(fns) >= 2:
+            parent_key = cols["parent"]
+            # pick the first non-parent as child
+            child_key = next((c for c in fns if c != parent_key), fns[0])
+            for row in reader:
+                parent = norm_ns(row.get(parent_key, ""))
+                child = norm_ns(row.get(child_key, ""))
+                if child and parent and child != parent:
+                    yield (child, parent)
+            return
+
+    # Case 3: no headers / unknown layout — treat first two columns as (child,parent) if possible
+    # Re-open as plain CSV without DictReader to read raw columns
+    raise ValueError("Unable to detect taxonomy columns; ensure CSV has child,parent or parent,child headers.")
+
+def load_taxonomy(csv_path: str) -> List[Tuple[str, str]]:
+    """Load taxonomy edges and normalise to (child, parent) tuples with namespaces."""
     p = pathlib.Path(csv_path)
     if not p.exists():
-        return pairs
+        return []
+    pairs = []
     with p.open("r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        for row in reader:
-            parent = (row.get("parent") or "").strip()
-            child = (row.get("child") or "").strip()
-            if parent and child:
-                pairs.append((parent, child))
+        if reader.fieldnames is None:
+            raise ValueError(f"{csv_path} has no header; add 'child,parent' or 'parent,child'")
+        for child, parent in _detect_columns_and_iter(reader):
+            pairs.append((child, parent))
+    # de-dup and drop self-loops (already filtered)
+    pairs = sorted(set(pairs))
     return pairs
 
 def write_csv(nodes, edges, outdir: pathlib.Path):
@@ -29,29 +98,15 @@ def write_csv(nodes, edges, outdir: pathlib.Path):
         for e in edges:
             ew.writerow([e["src"], e["type"], e["dst"], json.dumps(e.get("attrs", {}))])
 
-def normalise_concept_id(ns: str, concept: str) -> str:
-    """
-    Ensure concept IDs align with taxonomy (e.g., 'us-gaap:Assets').
-    If facts provide ns='us-gaap' and concept='Assets', produce 'us-gaap:Assets'.
-    If concept already has a prefix, keep it as-is.
-    """
-    ns = (ns or "").strip()
-    cname = (concept or "").strip()
-    if not cname:
-        return "UNKNOWN"
-    if ns and not cname.startswith(ns + ":"):
-        cname = f"{ns}:{cname}"
-    return cname
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--selected", default="data/raw/sec_edgar/selected.json",
                     help="JSON produced by select_filings.py (CIK -> {10-K/10-Q:[{accession,doc}]})")
     ap.add_argument("--facts", default="data/processed/sec_edgar/facts.jsonl",
                     help="Normalised facts JSONL (ns, concept, unit, value, period_end, accn)")
-    ap.add_argument("--taxonomy", default="datasets/sec_edgar/taxonomy/usgaap_min.csv",
-                    help="CSV of parent,child concept pairs (us-gaap:* names)")
-    ap.add_argument("--snapshot", default="data/kg/sec_edgar_2025-09-22",
+    ap.add_argument("--taxonomy", default="datasets/sec_edgar/taxonomy/usgaap_combined.csv",
+                    help="CSV of concept hierarchy (child,parent or parent,child supported)")
+    ap.add_argument("--snapshot", default="data/kg/sec_edgar_YYYY-MM-DD",
                     help="Output folder for kg_nodes.csv and kg_edges.csv")
     args = ap.parse_args()
 
@@ -63,6 +118,9 @@ def main():
         raise FileNotFoundError(f"Missing --selected file: {sel_path}")
     selected = json.loads(sel_path.read_text())
 
+    # ------------------------
+    # Collect facts
+    # ------------------------
     facts = []
     if facts_path.exists():
         with facts_path.open("r", encoding="utf-8") as f:
@@ -74,9 +132,14 @@ def main():
                     except json.JSONDecodeError:
                         continue
 
-    taxonomy_pairs = load_taxonomy(args.taxonomy)
+    # ------------------------
+    # Load taxonomy edges (child,parent), normalised
+    # ------------------------
+    taxonomy_pairs = load_taxonomy(args.taxonomy)  # list of (child, parent)
 
+    # ------------------------
     # Build graph
+    # ------------------------
     nodes, edges = [], []
     seen_nodes = set()            # (id,type)
     seen_edges = set()            # (src,type,dst)
@@ -90,12 +153,12 @@ def main():
 
     def add_edge(src: str, etype: str, dst: str, attrs=None):
         key = (src, etype, dst)
-        if key in seen_edges:
+        if key in seen_edges or src == dst:
             return
         edges.append({"src": src, "type": etype, "dst": dst, "attrs": attrs or {}})
         seen_edges.add(key)
 
-    # Companies & filings from selected.json
+    # Companies & filings
     for cik, forms in selected.items():
         cid = f"cik_{cik}"
         add_node(cid, "Company", {"cik": cik})
@@ -106,7 +169,8 @@ def main():
                 add_node(fid, "Filing", {"form": form, "accession": it.get("accession", "")})
                 add_edge(cid, "reports", fid, {})
 
-    # Facts → Concept, Unit, Period (namespace-aware concept IDs)
+    # Facts → Concept, Unit, Period
+    observed_concepts = set()
     for f in facts:
         ns = (f.get("ns") or "").strip()
         cname = normalise_concept_id(ns, f.get("concept", ""))
@@ -117,24 +181,28 @@ def main():
         unt = f"unit_{unit}" if unit else "unit_UNKNOWN"
         per = f"period_{period_end}" if period_end else "period_UNKNOWN"
 
-        add_node(cpt, "Concept", {"ns": ns})
+        add_node(cpt, "Concept", {"ns": cname.split(":",1)[0] if ":" in cname else ""})
+        observed_concepts.add(cname)
         add_node(unt, "Unit", {"symbol": unit})
         add_node(per, "Period", {"end": period_end})
 
-        # Directional edges
         add_edge(cpt, "measured-in", unt, {})
         add_edge(cpt, "for-period", per, {})
 
-    # Taxonomy is-a edges (Concept → Concept)
-    for parent, child in taxonomy_pairs:
-        p_id = f"concept_{parent}"
-        c_id = f"concept_{child}"
-        add_node(p_id, "Concept", {})
-        add_node(c_id, "Concept", {})
-        add_edge(c_id, "is-a", p_id, {})
+    # Ensure taxonomy parents also become Concept nodes (schema concepts)
+    taxonomy_children = {c for (c, p) in taxonomy_pairs}
+    taxonomy_parents  = {p for (c, p) in taxonomy_pairs}
+    taxonomy_concepts = taxonomy_children | taxonomy_parents
+
+    for cname in taxonomy_concepts:
+        add_node(f"concept_{cname}", "Concept", {"ns": cname.split(":",1)[0] if ":" in cname else ""})
+
+    # Taxonomy is-a edges (Concept → Concept): child -> parent
+    for child, parent in taxonomy_pairs:
+        add_edge(f"concept_{child}", "is-a", f"concept_{parent}", {})
 
     write_csv(nodes, edges, snap_dir)
-    print(f"Snapshot: {snap_dir} | nodes: {len(nodes)} | edges: {len(edges)}")
+    print(f"Snapshot: {snap_dir} | nodes: {len(nodes)} | edges: {len(edges)} | taxonomy_pairs: {len(taxonomy_pairs)}")
 
 if __name__ == "__main__":
     main()

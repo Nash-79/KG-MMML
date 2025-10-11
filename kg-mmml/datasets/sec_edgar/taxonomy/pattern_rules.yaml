@@ -1,31 +1,37 @@
-# Parent concept  :  list of regex patterns (high-precision only)
-us-gaap:Assets:
-  - '^(?!Assets$).*Receivable'            # AccountsReceivableNetCurrent, etc.
-  - '^Inventory'
-  - '^PropertyPlantAndEquipment'
-  - '^MarketableSecurities'
-  - '^Cash(And| |$)'                      # Cash*, CashAndCashEquivalents...
-  - '^OtherAssets'
-us-gaap:Liabilities:
-  - 'Payable'
-  - '^LongTermDebt'
-  - '^ShortTermBorrowings'
-  - '^Accrued.*'
-  - '^DeferredRevenue'
-us-gaap:Revenues:
-  - 'Revenue'
-  - 'SalesRevenue'
-us-gaap:CostsAndExpenses:
-  - 'CostOfRevenue'
-  - 'ResearchAndDevelopment'
-  - 'SellingGeneralAndAdministrative'
-  - 'Depreciation|Amortization'
-us-gaap:StockholdersEquity:
-  - '^AdditionalPaidInCapital'
-  - '^RetainedEarnings'
-  - '^TreasuryStock'
-us-gaap:OperatingIncomeLoss:
-  - '^GrossProfit'
-  - '^OperatingExpenses'
-us-gaap:NetIncomeLoss:
-  - '^Income(Loss)?FromContinuingOperations'
+parents:
+  "us-gaap:CurrentAssets":
+    - "^(Cash(AndCashEquivalents)?|CashAndCashEquivalentsAtCarryingValue)$"
+    - "^ShortTermInvestments$"
+    - "^AccountsReceivable.*Current$"
+    - "^Inventory.*$"
+    - "^Prepaid.*$"
+  "us-gaap:NoncurrentAssets":
+    - "^PropertyPlantAndEquipment.*$"
+    - "^(Goodwill|FiniteLivedIntangibleAssets.*|IndefiniteLivedIntangibleAssets.*)$"
+    - "^OperatingLeaseRightOfUseAsset.*$"
+  "us-gaap:CurrentLiabilities":
+    - "^AccountsPayable.*Current$"
+    - "^AccruedLiabilities.*Current$"
+    - "^CurrentPortionOfLongTermDebt.*$"
+    - "^ContractWithCustomerLiabilityCurrent$"
+  "us-gaap:NoncurrentLiabilities":
+    - "^LongTermDebt.*Noncurrent$"
+    - "^OperatingLeaseLiabilityNoncurrent$"
+    - "^DeferredTaxLiabilitiesNoncurrent$"
+  "us-gaap:OperatingExpenses":
+    - "^SellingGeneralAndAdministrativeExpense.*$"
+    - "^ResearchAndDevelopmentExpense.*$"
+  "us-gaap:CostOfRevenue":
+    - "^(CostOfRevenue|CostOfGoodsSold).*$"
+  "us-gaap:Revenues":
+    - "^(RevenueFromContractWithCustomer.*|SalesRevenueNet.*)$"
+  "us-gaap:NetIncomeLoss":
+    - "^NetIncomeLoss.*$"
+  "us-gaap:IncomeTaxExpenseBenefit":
+    - "^IncomeTax.*(Expense|Benefit).*$"
+  "us-gaap:InterestExpense":
+    - "^InterestExpense.*$"
+  "us-gaap:EarningsPerShareDiluted":
+    - "^EarningsPerShareDiluted.*$"
+  "us-gaap:CashAndCashEquivalentsAtCarryingValue":
+    - "^Cash.*Equivalents.*$"
