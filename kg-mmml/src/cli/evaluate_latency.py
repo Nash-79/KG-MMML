@@ -1,11 +1,19 @@
 # src/cli/evaluate_latency.py
-import argparse, json, os, time, pathlib, platform
+import argparse
+import json
+import os
+import time
+import pathlib
+import platform
 import numpy as np
 import pandas as pd
 from collections import defaultdict
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import normalize
 from sklearn.decomposition import TruncatedSVD
+
+from src.utils.data_utils import build_corpus_from_facts
+
 
 def mem_mb():
     try:
@@ -14,30 +22,6 @@ def mem_mb():
     except Exception:
         return None
 
-def build_docs_texts_from_facts(facts_path):
-    def doc_id(r):
-        cik = (r.get("cik") or "").strip()
-        accn = (r.get("accn") or "").replace("-","").strip()
-        return f"filing_{cik}_{accn}" if cik and accn else None
-    def norm(ns, c):
-        if not c: return None
-        c = str(c).strip()
-        return f"{ns}:{c}" if ns and not c.startswith(ns + ":") else c
-
-    bags = defaultdict(list)
-    with open(facts_path, "r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip(): continue
-            r = json.loads(line)
-            did = doc_id(r)
-            if not did: continue
-            cc = norm(r.get("ns"), r.get("concept"))
-            if not cc: continue
-            token = cc.split(":",1)[1].lower() if ":" in cc else cc.lower()
-            bags[did].append(token)
-    docs = sorted(bags.keys())
-    texts = [" ".join(bags[d]) for d in docs]
-    return docs, texts, bags
 
 def percentiles(ms):
     return {
@@ -46,53 +30,61 @@ def percentiles(ms):
         "p99_ms": float(np.percentile(ms, 99)),
     }
 
+
 def run_exact_cosine(X, q_idx, k, drop_warmup=5):
     from scipy import sparse
     Xn = normalize(X, copy=True)
     qn = Xn[q_idx]
     _ = qn[0].dot(Xn.T).toarray().ravel()  # warm
-    ms=[]
-    for i in range(len(q_idx)+drop_warmup):
+    ms = []
+    for i in range(len(q_idx) + drop_warmup):
         v = qn[i % len(q_idx)]
-        t0=time.perf_counter()
+        t0 = time.perf_counter()
         _ = v.dot(Xn.T).toarray().ravel().argpartition(-k)[-k:]
-        if i>=drop_warmup:
-            ms.append((time.perf_counter()-t0)*1000.0)
+        if i >= drop_warmup:
+            ms.append((time.perf_counter() - t0) * 1000.0)
     return ms
 
-def build_filtered_candidates(bags, docs, cap=1000):
+
+def build_filtered_candidates(concept_lists, docs, cap=1000):
     inv = defaultdict(set)
-    for d in docs:
-        for t in set(bags[d]):    # set() = high precision overlap
+    for i, d in enumerate(docs):
+        for t in set(concept_lists[i]):
             inv[t].add(d)
     return inv, cap
 
-def run_filtered_cosine(X, q_idx, k, docs, bags, inv, cap, drop_warmup=5):
+
+def run_filtered_cosine(X, q_idx, k, docs, concept_lists, inv, cap, drop_warmup=5):
     Xn = normalize(X, copy=True)
-    ms=[]; sizes=[]
-    for i in range(len(q_idx)+drop_warmup):
+    ms = []
+    sizes = []
+    pos = {doc: ix for ix, doc in enumerate(docs)}
+    
+    for i in range(len(q_idx) + drop_warmup):
         qi = q_idx[i % len(q_idx)]
-        d  = docs[qi]
+        d = docs[qi]
         cands = set()
-        for t in set(bags[d]):
+        for t in set(concept_lists[qi]):
             cands |= inv.get(t, set())
-        # map doc ids to indices (only once)
-        if i==0:
-            pos={doc:ix for ix,doc in enumerate(docs)}
-        idx=[pos[c] for c in cands if c in pos]
-        if len(idx)>cap:
-            idx = idx[:cap]  # deterministic prefix
+        
+        idx = [pos[c] for c in cands if c in pos]
+        if len(idx) > cap:
+            idx = idx[:cap]
         sizes.append(len(idx))
-        if len(idx)==0:
+        
+        if len(idx) == 0:
             continue
+        
         t0 = time.perf_counter()
         v = Xn[qi]
         sub = Xn[idx]
         _ = v.dot(sub.T).toarray().ravel().argpartition(-k)[-k:]
-        if i>=drop_warmup:
-            ms.append((time.perf_counter()-t0)*1000.0)
+        if i >= drop_warmup:
+            ms.append((time.perf_counter() - t0) * 1000.0)
+    
     avg_size = float(np.mean(sizes[drop_warmup:])) if sizes[drop_warmup:] else 0.0
     return ms, avg_size
+
 
 def run_annoy(Xd, q_idx, k, trees=20, drop_warmup=5):
     from annoy import AnnoyIndex
@@ -101,15 +93,16 @@ def run_annoy(Xd, q_idx, k, trees=20, drop_warmup=5):
     for i in range(Xd.shape[0]):
         ann.add_item(i, Xd[i].astype(np.float32).tolist())
     ann.build(trees)
-    _ = ann.get_nns_by_vector(Xd[q_idx[0]].astype(np.float32).tolist(), k)  # warm
-    ms=[]
-    for i in range(len(q_idx)+drop_warmup):
+    _ = ann.get_nns_by_vector(Xd[q_idx[0]].astype(np.float32).tolist(), k)
+    ms = []
+    for i in range(len(q_idx) + drop_warmup):
         v = Xd[q_idx[i % len(q_idx)]].astype(np.float32).tolist()
-        t0=time.perf_counter()
+        t0 = time.perf_counter()
         _ = ann.get_nns_by_vector(v, k)
-        if i>=drop_warmup:
-            ms.append((time.perf_counter()-t0)*1000.0)
+        if i >= drop_warmup:
+            ms.append((time.perf_counter() - t0) * 1000.0)
     return ms
+
 
 def run_faiss_hnsw(Xd, q_idx, k, M=32, ef=200, drop_warmup=5):
     import faiss
@@ -118,21 +111,23 @@ def run_faiss_hnsw(Xd, q_idx, k, M=32, ef=200, drop_warmup=5):
     index.hnsw.efSearch = ef
     index.hnsw.efConstruction = ef
     index.add(Xd.astype("float32"))
-    _ = index.search(Xd[q_idx[:1]].astype("float32"), k)  # warm
-    ms=[]
-    for i in range(len(q_idx)+drop_warmup):
-        t0=time.perf_counter()
-        _ = index.search(Xd[q_idx[i % len(q_idx)] : q_idx[i % len(q_idx)] + 1].astype("float32"), k)
-        if i>=drop_warmup:
-            ms.append((time.perf_counter()-t0)*1000.0)
+    _ = index.search(Xd[q_idx[:1]].astype("float32"), k)
+    ms = []
+    for i in range(len(q_idx) + drop_warmup):
+        t0 = time.perf_counter()
+        q = Xd[q_idx[i % len(q_idx)] : q_idx[i % len(q_idx)] + 1].astype("float32")
+        _ = index.search(q, k)
+        if i >= drop_warmup:
+            ms.append((time.perf_counter() - t0) * 1000.0)
     return ms
+
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--facts", default="data/processed/sec_edgar/facts.jsonl")
-    ap.add_argument("--out",   default="reports/tables/latency_baseline.csv")
+    ap.add_argument("--out", default="reports/tables/latency_baseline.csv")
     ap.add_argument("--meta_out", default="reports/tables/latency_meta.json")
-    ap.add_argument("--sizes", nargs="+", default=["1000","10000"])
+    ap.add_argument("--sizes", nargs="+", default=["1000", "10000"])
     ap.add_argument("--queries", type=int, default=500)
     ap.add_argument("--k", type=int, default=10)
     ap.add_argument("--svd_dim", type=int, default=256)
@@ -144,70 +139,105 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--threads", type=int, default=1, help="Set OMP/BLAS threads")
     args = ap.parse_args()
-
+    
     os.environ["OMP_NUM_THREADS"] = str(args.threads)
     np.random.seed(args.seed)
-
-    docs, texts, bags = build_docs_texts_from_facts(args.facts)
+    
+    # Build corpus (no taxonomy needed for latency)
+    docs, texts, _, concept_lists = build_corpus_from_facts(args.facts)
+    
     if len(docs) == 0:
         raise SystemExit("No documents built from facts.jsonl — cannot benchmark.")
-
+    
     vec = TfidfVectorizer(min_df=2, max_features=50000)
-    X   = vec.fit_transform(texts)
-
+    X = vec.fit_transform(texts)
+    
     sizes = [min(int(s), X.shape[0]) for s in args.sizes]
     rows = []
-
-    # pre-build filtered candidate index if needed
+    
+    # Pre-build filtered candidate index if needed
     inv = None
     if args.filtered:
-        inv, cap = build_filtered_candidates(bags, docs, cap=args.filter_cap)
-
-    # Optional dense projection (shared by ANN/FAISS)
+        inv, cap = build_filtered_candidates(concept_lists, docs, cap=args.filter_cap)
+    
+    # Optional dense projection cache
     Xd_cache = {}
-
+    
     for N in sizes:
         XN = X[:N]
         qn = min(args.queries, N)
         q_idx = np.random.choice(N, size=qn, replace=False)
-
-        # exact cosine
+        
+        # Exact cosine
         ms = run_exact_cosine(XN, q_idx, args.k, drop_warmup=args.drop_warmup)
-        rows.append({"N":N,"method":"exact-cosine","dim":"tfidf", **percentiles(ms), "q":len(ms), "memory_mb":mem_mb(), "notes":"sparse dot"})
-
-        # filtered cosine (concept overlap prefilter)
+        rows.append({
+            "N": N, "method": "exact-cosine", "dim": "tfidf",
+            **percentiles(ms), "q": len(ms), "memory_mb": mem_mb(),
+            "notes": "sparse dot"
+        })
+        
+        # Filtered cosine
         if args.filtered:
-            ms, avg = run_filtered_cosine(XN, q_idx, args.k, docs[:N], bags, inv, args.filter_cap, drop_warmup=args.drop_warmup)
-            rows.append({"N":N,"method":"filtered-cosine","dim":"tfidf", **percentiles(ms), "q":len(ms), "memory_mb":mem_mb(), "notes":f"graph-filter≈{int(round(avg))}"})
-
+            ms, avg = run_filtered_cosine(
+                XN, q_idx, args.k, docs[:N], concept_lists[:N],
+                inv, args.filter_cap, drop_warmup=args.drop_warmup
+            )
+            rows.append({
+                "N": N, "method": "filtered-cosine", "dim": "tfidf",
+                **percentiles(ms), "q": len(ms), "memory_mb": mem_mb(),
+                "notes": f"graph-filter≈{int(round(avg))}"
+            })
+        
         # Shared SVD projection
         if args.use_annoy or args.use_faiss:
             if N not in Xd_cache:
                 svd = TruncatedSVD(n_components=args.svd_dim, random_state=args.seed)
                 Xd_cache[N] = normalize(svd.fit_transform(XN)).astype("float32")
             Xd = Xd_cache[N]
-
+        
         # Annoy
         if args.use_annoy:
             try:
                 from annoy import AnnoyIndex  # noqa
                 ms = run_annoy(Xd, q_idx, args.k, trees=20, drop_warmup=args.drop_warmup)
-                rows.append({"N":N,"method":"annoy","dim":args.svd_dim, **percentiles(ms), "q":len(ms), "memory_mb":mem_mb(), "notes":"20 trees"})
+                rows.append({
+                    "N": N, "method": "annoy", "dim": args.svd_dim,
+                    **percentiles(ms), "q": len(ms), "memory_mb": mem_mb(),
+                    "notes": "20 trees"
+                })
             except Exception as e:
-                rows.append({"N":N,"method":"annoy","dim":"-", "p50_ms":None,"p95_ms":None,"p99_ms":None,"q":0,"memory_mb":mem_mb(),"notes":f"annoy not available: {e}"})
-
+                rows.append({
+                    "N": N, "method": "annoy", "dim": "-",
+                    "p50_ms": None, "p95_ms": None, "p99_ms": None,
+                    "q": 0, "memory_mb": mem_mb(),
+                    "notes": f"annoy not available: {e}"
+                })
+        
         # FAISS HNSW
         if args.use_faiss:
             try:
                 import faiss  # noqa
-                ms = run_faiss_hnsw(Xd, q_idx, args.k, M=32, ef=200, drop_warmup=args.drop_warmup)
-                rows.append({"N":N,"method":"faiss-hnsw","dim":args.svd_dim, **percentiles(ms), "q":len(ms), "memory_mb":mem_mb(), "notes":"M=32, ef=200"})
+                ms = run_faiss_hnsw(
+                    Xd, q_idx, args.k, M=32, ef=200,
+                    drop_warmup=args.drop_warmup
+                )
+                rows.append({
+                    "N": N, "method": "faiss-hnsw", "dim": args.svd_dim,
+                    **percentiles(ms), "q": len(ms), "memory_mb": mem_mb(),
+                    "notes": "M=32, ef=200"
+                })
             except Exception as e:
-                rows.append({"N":N,"method":"faiss-hnsw","dim":"-", "p50_ms":None,"p95_ms":None,"p99_ms":None,"q":0,"memory_mb":mem_mb(),"notes":f"faiss not available: {e}"})
-
-    outp = pathlib.Path(args.out); outp.parent.mkdir(parents=True, exist_ok=True)
+                rows.append({
+                    "N": N, "method": "faiss-hnsw", "dim": "-",
+                    "p50_ms": None, "p95_ms": None, "p99_ms": None,
+                    "q": 0, "memory_mb": mem_mb(),
+                    "notes": f"faiss not available: {e}"
+                })
+    
+    outp = pathlib.Path(args.out)
+    outp.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(outp, index=False)
-
+    
     meta = {
         "env": {
             "python": platform.python_version(),

@@ -1,4 +1,4 @@
 data:
   dataset: sec_edgar_text_v1
-  kg_snapshot: data/kg/sec_edgar_2025-10-11
+  kg_snapshot: data/kg/sec_edgar_2025-10-12
   split: official_2022_2024
