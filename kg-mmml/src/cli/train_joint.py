@@ -1,78 +1,58 @@
-import argparse, json, pathlib, numpy as np, pandas as pd
+# src/cli/train_joint.py
+import argparse
+import json
+import pathlib
+import numpy as np
+import pandas as pd
 from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer, normalize
 from sklearn.model_selection import train_test_split
-import torch, torch.nn as nn
+import torch
+import torch.nn as nn
 
-# --- data assembly (reuse from your baseline) ---
-def load_taxonomy_parents(tax_path):
-    df = pd.read_csv(tax_path)
-    mp = {}
-    for _,r in df.iterrows():
-        c = str(r["child"]).strip(); p = str(r["parent"]).strip()
-        if c and p: mp.setdefault(c,set()).add(p)
-    return mp
+from src.utils.data_utils import (
+    build_corpus_from_facts,
+    load_taxonomy_parents
+)
 
-def build_docs_text_labels(facts_path, child_to_parents):
-    import json
-    from collections import defaultdict
-    def doc_id(rec):
-        cik = (rec.get("cik") or "").strip()
-        accn = (rec.get("accn") or "").replace("-", "").strip()
-        return f"filing_{cik}_{accn}" if cik and accn else None
-    def norm_c(ns, c):
-        return f"{ns}:{c}" if ns and not c.startswith(ns + ":") else c
 
-    toks = defaultdict(list); labels = defaultdict(set); concepts = defaultdict(list)
-    with open(facts_path, "r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip(): continue
-            rec = json.loads(line)
-            did = doc_id(rec)
-            if not did: continue
-            ns, c = rec.get("ns"), rec.get("concept")
-            cc = norm_c(ns, c)
-            if not cc: continue
-            token = cc.split(":",1)[1].lower() if ":" in cc else cc.lower()
-            toks[did].append(token); concepts[did].append(cc)
-            for p in child_to_parents.get(cc, []):
-                labels[did].add(p)
-    docs = sorted(toks.keys())
-    texts = [" ".join(toks[d]) for d in docs]
-    Ylist = [sorted(labels[d]) for d in docs]
-    Clist = [concepts[d] for d in docs]
-    keep = [i for i,l in enumerate(Ylist) if len(l)>0]
-    docs = [docs[i] for i in keep]; texts = [texts[i] for i in keep]
-    Ylist= [Ylist[i] for i in keep]; Clist= [Clist[i] for i in keep]
-    return docs, texts, Ylist, Clist
-
-def make_parent_support(Clist, parents_vocab, child_to_parents):
-    # Build support vectors per doc: count how many observed children map to each parent
-    pv = {p:i for i,p in enumerate(parents_vocab)}
-    S = np.zeros((len(Clist), len(parents_vocab)), dtype=np.float32)
-    for i, children in enumerate(Clist):
-        for ch in children:
-            for p in child_to_parents.get(ch, []):
-                j = pv.get(p); 
-                if j is not None: S[i,j]+=1.0
-    # normalise rows to sum=1 (if zero, leave zeros)
-    row_sums = S.sum(1, keepdims=True); row_sums[row_sums==0]=1.0
-    return S/row_sums
-
-# --- model ---
 class LogReg(nn.Module):
     def __init__(self, d_in, d_out):
         super().__init__()
         self.lin = nn.Linear(d_in, d_out)
-    def forward(self, x):  # logits
+    
+    def forward(self, x):
         return self.lin(x)
+
+
+def make_parent_support(concept_lists, parents_vocab, child_to_parents):
+    """
+    Build support vectors per doc: count how many observed children 
+    map to each parent.
+    """
+    pv = {p: i for i, p in enumerate(parents_vocab)}
+    S = np.zeros((len(concept_lists), len(parents_vocab)), dtype=np.float32)
+    
+    for i, children in enumerate(concept_lists):
+        for ch in children:
+            for p in child_to_parents.get(ch, []):
+                j = pv.get(p)
+                if j is not None:
+                    S[i, j] += 1.0
+    
+    # Normalize rows to sum=1 (if zero, leave zeros)
+    row_sums = S.sum(1, keepdims=True)
+    row_sums[row_sums == 0] = 1.0
+    return S / row_sums
+
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--facts", default="data/processed/sec_edgar/facts.jsonl")
     ap.add_argument("--taxonomy", default="datasets/sec_edgar/taxonomy/usgaap_combined.csv")
-    ap.add_argument("--concept_npz", default="", help="optional concept features (CSR .npz)")
+    ap.add_argument("--concept_npz", default="", 
+                    help="optional concept features (CSR .npz)")
     ap.add_argument("--concept_index", default="")
     ap.add_argument("--out", default="reports/tables/joint_metrics.json")
     ap.add_argument("--consistency_weight", type=float, default=0.1)
@@ -80,97 +60,129 @@ def main():
     ap.add_argument("--batch", type=int, default=128)
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
-
-    rng = np.random.RandomState(args.seed); torch.manual_seed(args.seed)
+    
+    rng = np.random.RandomState(args.seed)
+    torch.manual_seed(args.seed)
+    
+    # Load taxonomy and build corpus
     child_to_parents = load_taxonomy_parents(args.taxonomy)
-    docs, texts, Ylist, Clist = build_docs_text_labels(args.facts, child_to_parents)
-
-    # labels (parents)
+    docs, texts, labels_list, concept_lists = build_corpus_from_facts(
+        args.facts, child_to_parents
+    )
+    
+    # Filter docs with labels
+    keep = [i for i, l in enumerate(labels_list) if len(l) > 0]
+    docs = [docs[i] for i in keep]
+    texts = [texts[i] for i in keep]
+    labels_list = [labels_list[i] for i in keep]
+    concept_lists = [concept_lists[i] for i in keep]
+    
+    # Multi-label binarization (parents)
     mlb = MultiLabelBinarizer(sparse_output=False)
-    Y = mlb.fit_transform(Ylist).astype(np.float32)
+    Y = mlb.fit_transform(labels_list).astype(np.float32)
     parents_vocab = list(mlb.classes_)
-
-    # text features
+    
+    # Text features
     vec = TfidfVectorizer(min_df=2, max_features=50000)
-    Xt = vec.fit_transform(texts)  # CSR
-
-    # optional concept features
+    Xt = vec.fit_transform(texts)
+    
+    # Optional concept features
     if args.concept_npz and args.concept_index:
-        from scipy.sparse import load_npz
-        Xc = load_npz(args.concept_npz)
+        Xc = sparse.load_npz(args.concept_npz)
         idx = pd.read_csv(args.concept_index)["doc_id"].tolist()
-        pos = {d:i for i,d in enumerate(idx)}
+        pos = {d: i for i, d in enumerate(idx)}
         sel = [pos.get(d, None) for d in docs]
-        sel_rows = [Xc[i] if i is not None else sparse.csr_matrix((1,Xc.shape[1])) for i in sel]
+        sel_rows = [
+            Xc[i] if i is not None else sparse.csr_matrix((1, Xc.shape[1])) 
+            for i in sel
+        ]
         Xc_aligned = sparse.vstack(sel_rows)
         X = sparse.hstack([Xt, Xc_aligned]).tocsr()
     else:
         X = Xt
-
-    # train/test
-    tr, te = train_test_split(np.arange(X.shape[0]), test_size=0.25, random_state=args.seed, stratify=Y.argmax(1))
-    Xtr, Xte = X[tr], X[te]; Ytr, Yte = Y[tr], Y[te]
-    # normalise to l2 (dense) for torch
+    
+    # Train/test split
+    tr, te = train_test_split(
+        np.arange(X.shape[0]), 
+        test_size=0.25, 
+        random_state=args.seed, 
+        stratify=Y.argmax(1)
+    )
+    Xtr, Xte = X[tr], X[te]
+    Ytr, Yte = Y[tr], Y[te]
+    
+    # Normalize to l2 (dense) for torch
     Xtr = normalize(Xtr).astype(np.float32).toarray()
     Xte = normalize(Xte).astype(np.float32).toarray()
-
-    # parent-support from concept evidence (consistency target)
-    S_all = make_parent_support(Clist, parents_vocab, child_to_parents)
+    
+    # Parent-support from concept evidence (consistency target)
+    S_all = make_parent_support(concept_lists, parents_vocab, child_to_parents)
     Str, Ste = S_all[tr], S_all[te]
-
+    
     d_in, d_out = Xtr.shape[1], Y.shape[1]
     model = LogReg(d_in, d_out)
     opt = torch.optim.Adam(model.parameters(), lr=2e-3)
     bce = nn.BCEWithLogitsLoss()
     mse = nn.MSELoss()
-
+    
     def run_epoch(Xn, Yn, Sn, train=True):
         model.train(train)
-        idx = np.arange(Xn.shape[0]); np.random.shuffle(idx)
-        bs = args.batch; total=0.0
-        for s in range(0,len(idx),bs):
+        idx = np.arange(Xn.shape[0])
+        np.random.shuffle(idx)
+        bs = args.batch
+        total = 0.0
+        for s in range(0, len(idx), bs):
             j = idx[s:s+bs]
             xb = torch.from_numpy(Xn[j])
             yb = torch.from_numpy(Yn[j])
             sb = torch.from_numpy(Sn[j])
             logits = model(xb)
             loss = bce(logits, yb)
-            if args.consistency_weight>0:
+            if args.consistency_weight > 0:
                 prob = torch.sigmoid(logits)
                 loss = loss + args.consistency_weight * mse(prob, sb)
             if train:
-                opt.zero_grad(); loss.backward(); opt.step()
-            total += loss.item()*len(j)
-        return total/len(idx)
-
+                opt.zero_grad()
+                loss.backward()
+                opt.step()
+            total += loss.item() * len(j)
+        return total / len(idx)
+    
     def eval_metrics(Xn, Yn):
         model.eval()
         with torch.no_grad():
             logits = model(torch.from_numpy(Xn))
             prob = torch.sigmoid(logits).numpy()
-        # micro/macro F1
         from sklearn.metrics import f1_score
-        Yhat = (prob>=0.5).astype(np.float32)
+        Yhat = (prob >= 0.5).astype(np.float32)
         return {
             "micro_f1": float(f1_score(Yn, Yhat, average="micro", zero_division=0)),
             "macro_f1": float(f1_score(Yn, Yhat, average="macro", zero_division=0)),
         }
-
+    
     for ep in range(args.epochs):
         tr_loss = run_epoch(Xtr, Ytr, Str, train=True)
-
+    
     metrics = {
         "epochs": args.epochs,
         "consistency_weight": args.consistency_weight,
         "train": eval_metrics(Xtr, Ytr),
-        "test":  eval_metrics(Xte, Yte),
+        "test": eval_metrics(Xte, Yte),
         "n_train": int(Xtr.shape[0]),
-        "n_test":  int(Xte.shape[0]),
+        "n_test": int(Xte.shape[0]),
         "labels": parents_vocab,
     }
-    outp = pathlib.Path(args.out); outp.parent.mkdir(parents=True, exist_ok=True)
+    
+    outp = pathlib.Path(args.out)
+    outp.parent.mkdir(parents=True, exist_ok=True)
     outp.write_text(json.dumps(metrics, indent=2))
-    print(json.dumps({"mode":"joint","micro_f1":metrics["test"]["micro_f1"],"macro_f1":metrics["test"]["macro_f1"]}, indent=2))
+    
+    print(json.dumps({
+        "mode": "joint",
+        "micro_f1": metrics["test"]["micro_f1"],
+        "macro_f1": metrics["test"]["macro_f1"]
+    }, indent=2))
+
 
 if __name__ == "__main__":
     main()
