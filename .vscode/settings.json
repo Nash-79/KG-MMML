@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python",
+    "python.pythonPath": "/home/codespace/.python/current/bin/python",
+    "pylance.insidersChannel": "off"
+}
