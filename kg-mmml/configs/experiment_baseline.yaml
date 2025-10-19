@@ -1,21 +1,31 @@
-# Baseline experiment configuration
+# Baseline Experiment Configuration
+# TF-IDF retrieval without KG features
+
 experiment:
-  name: baseline_vl
-  seeds: [13, 17, 23, 29, 31]
+  name: "baseline_tfidf"
+  description: "Baseline TF-IDF retrieval"
+  seed: 42
+
 data:
-  dataset: your_dataset_v1
-  split: official
+  facts_path: "datasets/sec_edgar/facts.jsonl"
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
 model:
-  type: vl_baseline
-  text_encoder: frozen
-  img_encoder: frozen
-train:
-  batch_size: 256
-  lr: 3e-4
-  max_epochs: 20
-eval:
-  metrics: [retrieval_map, zero_shot_f1]
-  srs: {enabled: false}
-  latency_slo_ms: 150
-logging:
-  out_dir: reports
+  type: "tfidf"
+  params:
+    max_features: 5000
+    ngram_range: [1, 2]
+    min_df: 2
+    use_idf: true
+
+training:
+  batch_size: 32
+  max_epochs: 10
+
+evaluation:
+  metrics:
+    - "precision@10"
+    - "recall@10"
+    - "ndcg@10"

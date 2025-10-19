@@ -10,7 +10,7 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import f1_score, classification_report
 from scipy import sparse
 
-from src.utils.data_utils import (
+from ..utils.data_utils import (
     build_corpus_from_facts,
     load_taxonomy_parents,
     doc_id_from_fact,
