@@ -1,0 +1,22 @@
+{
+  "env": {
+    "python": "3.12.1",
+    "platform": "Linux-6.8.0-1030-azure-x86_64-with-glibc2.39",
+    "threads": 2
+  },
+  "params": {
+    "sizes": [
+      1000,
+      3218
+    ],
+    "queries": 500,
+    "k": 10,
+    "svd_dim": 256,
+    "drop_warmup": 5,
+    "filtered": true,
+    "filter_cap": 1000,
+    "use_annoy": true,
+    "use_faiss": true,
+    "seed": 42
+  }
+}
