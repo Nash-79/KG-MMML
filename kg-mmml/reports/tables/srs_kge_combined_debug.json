@@ -1,0 +1,22 @@
+{
+  "snapshot": "data/kg/sec_edgar_2025-10-12_enhanced",
+  "counts": {
+    "Concept": 4508,
+    "Unit": 130,
+    "Period": 1411,
+    "edges_by_type": {
+      "reports": 86,
+      "measured-in": 4771,
+      "for-period": 275864,
+      "is-a": 1891
+    }
+  },
+  "scores": {
+    "RTF": null,
+    "AP": 1.0,
+    "HP": 0.27262644188110025,
+    "AtP": 0.9986690328305236,
+    "SRS": 0.7570984915705412
+  },
+  "weights_used": {}
+}

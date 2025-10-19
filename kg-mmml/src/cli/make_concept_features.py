@@ -6,7 +6,7 @@ import pandas as pd
 from collections import Counter
 from scipy import sparse
 
-from src.utils.data_utils import build_corpus_from_facts
+from ..utils.data_utils import build_corpus_from_facts
 
 
 def main():

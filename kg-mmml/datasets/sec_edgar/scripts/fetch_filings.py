@@ -1,7 +1,10 @@
 # datasets/sec_edgar/scripts/fetch_filings.py
 import argparse, os, json, time, pathlib, requests, sys
+from dotenv import load_dotenv
 
-UA = "NareshMepani-MScProject/1.0 (your.email@example.com)"  # put a real email
+UA = "Your Name Contact@domain.com"  # Replace with your real name and email per SEC requirements
+load_dotenv()
+UA = os.getenv("SEC_USER_AGENT", "Your Name Contact@domain.com")  # fallback if not set
 SUBMISSIONS = "https://data.sec.gov/submissions/CIK{cik}.json"
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 
