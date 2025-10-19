@@ -1,30 +1,53 @@
 # Python
-.venv/
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
+*.so
+.Python
+build/
+dist/
 *.egg-info/
 
-# Data & models
-/data/*
-!/data/README.md
-/reports/figures/*
-/reports/tables/*
-/reports/progress/*
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDEs
+.idea/
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Data
+datasets/sec_edgar/data/
+*.jsonl
+*.json
+!configs/*.yaml
+
+# Outputs
+outputs/
+.cache/
+
+# Reports
+reports/tables/*.csv
+reports/figures/*.png
+reports/debug/*.json
+
+# Models
 *.pt
-*.bin
-*.ckpt
+*.pth
+*.faiss
 
-# Env & logs
+# Environment
 .env
+
+# OS
 .DS_Store
-
-# Dataset-specific scratch (if any scripts create temp dirs)
-datasets/**/downloads/*
-datasets/**/parsed/*
-
-
-datasets/**/downloads/*
-datasets/**/parsed/*
-/data/*
-!/data/README.md
+Thumbs.db
