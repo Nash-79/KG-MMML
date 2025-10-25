@@ -1,0 +1,1568 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FilingSummary>
+  <Version>3.25.0.1</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>945</ContextCount>
+  <ElementCount>767</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>true</FootnotesReported>
+  <SegmentCount>204</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>25</UnitCount>
+  <MyReports>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>0000001 - Document - Cover</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/Cover</Role>
+      <ShortName>Cover</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R2.htm</HtmlFileName>
+      <LongName>0000002 - Document - Audit Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/AuditInformation</Role>
+      <ShortName>Audit Information</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R3.htm</HtmlFileName>
+      <LongName>9952151 - Statement - Consolidated Statement of Income (Loss)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedStatementofIncomeLoss</Role>
+      <ShortName>Consolidated Statement of Income (Loss)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>3</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R4.htm</HtmlFileName>
+      <LongName>9952152 - Statement - Consolidated Statement of Comprehensive Income (Loss)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedStatementofComprehensiveIncomeLoss</Role>
+      <ShortName>Consolidated Statement of Comprehensive Income (Loss)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>4</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R5.htm</HtmlFileName>
+      <LongName>9952153 - Statement - Consolidated Balance Sheet</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedBalanceSheet</Role>
+      <ShortName>Consolidated Balance Sheet</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>5</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R6.htm</HtmlFileName>
+      <LongName>9952154 - Statement - Consolidated Balance Sheet (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedBalanceSheetParenthetical</Role>
+      <ShortName>Consolidated Balance Sheet (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>6</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R7.htm</HtmlFileName>
+      <LongName>9952155 - Statement - Consolidated Statement of Changes in Equity</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedStatementofChangesinEquity</Role>
+      <ShortName>Consolidated Statement of Changes in Equity</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>7</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R8.htm</HtmlFileName>
+      <LongName>9952156 - Statement - Consolidated Statement of Changes in Equity (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedStatementofChangesinEquityParenthetical</Role>
+      <ShortName>Consolidated Statement of Changes in Equity (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>8</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9.htm</HtmlFileName>
+      <LongName>9952157 - Statement - Supplemental Share Information (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalShareInformationParenthetical</Role>
+      <ShortName>Supplemental Share Information (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>9</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R10.htm</HtmlFileName>
+      <LongName>9952158 - Statement - Consolidated Statement of Cash Flows</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/ConsolidatedStatementofCashFlows</Role>
+      <ShortName>Consolidated Statement of Cash Flows</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>10</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R11.htm</HtmlFileName>
+      <LongName>9952159 - Disclosure - Significant Accounting Policies</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPolicies</Role>
+      <ShortName>Significant Accounting Policies</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>11</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R12.htm</HtmlFileName>
+      <LongName>9952160 - Disclosure - Discontinued Operations</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DiscontinuedOperations</Role>
+      <ShortName>Discontinued Operations</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>12</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R13.htm</HtmlFileName>
+      <LongName>9952161 - Disclosure - Revenue</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/Revenue</Role>
+      <ShortName>Revenue</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>13</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R14.htm</HtmlFileName>
+      <LongName>9952162 - Disclosure - Divestitures</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/Divestitures</Role>
+      <ShortName>Divestitures</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>14</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R15.htm</HtmlFileName>
+      <LongName>9952163 - Disclosure - Goodwill and Intangible Assets</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/GoodwillandIntangibleAssets</Role>
+      <ShortName>Goodwill and Intangible Assets</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>15</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R16.htm</HtmlFileName>
+      <LongName>9952164 - Disclosure - Restructuring Actions</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RestructuringActions</Role>
+      <ShortName>Restructuring Actions</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>16</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R17.htm</HtmlFileName>
+      <LongName>9952165 - Disclosure - Supplemental Income (Loss) Statement Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalIncomeLossStatementInformation</Role>
+      <ShortName>Supplemental Income (Loss) Statement Information</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>17</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R18.htm</HtmlFileName>
+      <LongName>9952166 - Disclosure - Supplemental Balance Sheet Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalBalanceSheetInformation</Role>
+      <ShortName>Supplemental Balance Sheet Information</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>18</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R19.htm</HtmlFileName>
+      <LongName>9952167 - Disclosure - Supplemental Equity and Comprehensive Income (Loss) Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformation</Role>
+      <ShortName>Supplemental Equity and Comprehensive Income (Loss) Information</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>19</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R20.htm</HtmlFileName>
+      <LongName>9952168 - Disclosure - Supplemental Cash Flow Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalCashFlowInformation</Role>
+      <ShortName>Supplemental Cash Flow Information</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>20</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R21.htm</HtmlFileName>
+      <LongName>9952169 - Disclosure - Income Taxes</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxes</Role>
+      <ShortName>Income Taxes</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>21</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R22.htm</HtmlFileName>
+      <LongName>9952170 - Disclosure - Earnings (Loss) Per Share</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/EarningsLossPerShare</Role>
+      <ShortName>Earnings (Loss) Per Share</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>22</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R23.htm</HtmlFileName>
+      <LongName>9952171 - Disclosure - Marketable Securities</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/MarketableSecurities</Role>
+      <ShortName>Marketable Securities</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>23</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R24.htm</HtmlFileName>
+      <LongName>9952172 - Disclosure - Long-Term Debt and Short-Term Borrowings</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowings</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>24</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R25.htm</HtmlFileName>
+      <LongName>9952173 - Disclosure - Pension and Postretirement Benefit Plans</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlans</Role>
+      <ShortName>Pension and Postretirement Benefit Plans</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>25</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R26.htm</HtmlFileName>
+      <LongName>9952174 - Disclosure - Supplier Finance Program Obligations</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplierFinanceProgramObligations</Role>
+      <ShortName>Supplier Finance Program Obligations</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>26</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R27.htm</HtmlFileName>
+      <LongName>9952175 - Disclosure - Derivatives</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/Derivatives</Role>
+      <ShortName>Derivatives</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>27</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R28.htm</HtmlFileName>
+      <LongName>9952176 - Disclosure - Fair Value Measurements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/FairValueMeasurements</Role>
+      <ShortName>Fair Value Measurements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>28</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R29.htm</HtmlFileName>
+      <LongName>9952177 - Disclosure - Commitments and Contingencies</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/CommitmentsandContingencies</Role>
+      <ShortName>Commitments and Contingencies</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>29</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R30.htm</HtmlFileName>
+      <LongName>9952178 - Disclosure - Leases</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/Leases</Role>
+      <ShortName>Leases</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>30</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R31.htm</HtmlFileName>
+      <LongName>9952179 - Disclosure - Stock-Based Compensation</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensation</Role>
+      <ShortName>Stock-Based Compensation</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>31</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R32.htm</HtmlFileName>
+      <LongName>9952180 - Disclosure - Business Segments and Geographic Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/BusinessSegmentsandGeographicInformation</Role>
+      <ShortName>Business Segments and Geographic Information</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>32</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R33.htm</HtmlFileName>
+      <LongName>9952181 - Disclosure - Quarterly Data (Unaudited)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/QuarterlyDataUnaudited</Role>
+      <ShortName>Quarterly Data (Unaudited)</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>33</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R34.htm</HtmlFileName>
+      <LongName>995410 - Disclosure - Pay vs Performance Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/PvpDisclosure</Role>
+      <ShortName>Pay vs Performance Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>34</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R35.htm</HtmlFileName>
+      <LongName>995445 - Disclosure - Insider Trading Arrangements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingArrangements</Role>
+      <ShortName>Insider Trading Arrangements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>35</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R36.htm</HtmlFileName>
+      <LongName>995447 - Disclosure - Insider Trading Policies and Procedures</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingPoliciesProc</Role>
+      <ShortName>Insider Trading Policies and Procedures</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>36</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R37.htm</HtmlFileName>
+      <LongName>995550 - Disclosure - Cybersecurity Risk Management and Strategy Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/cyd/role/CybersecurityRiskManagementAndStrategyDisclosure</Role>
+      <ShortName>Cybersecurity Risk Management and Strategy Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>37</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R38.htm</HtmlFileName>
+      <LongName>9955511 - Disclosure - Significant Accounting Policies (Policies)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesPolicies</Role>
+      <ShortName>Significant Accounting Policies (Policies)</ShortName>
+      <MenuCategory>Policies</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SignificantAccountingPolicies</ParentRole>
+      <Position>38</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R39.htm</HtmlFileName>
+      <LongName>9955512 - Disclosure - Significant Accounting Policies (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesTables</Role>
+      <ShortName>Significant Accounting Policies (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SignificantAccountingPolicies</ParentRole>
+      <Position>39</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R40.htm</HtmlFileName>
+      <LongName>9955513 - Disclosure - Discontinued Operations (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DiscontinuedOperationsTables</Role>
+      <ShortName>Discontinued Operations (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/DiscontinuedOperations</ParentRole>
+      <Position>40</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R41.htm</HtmlFileName>
+      <LongName>9955514 - Disclosure - Revenue (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RevenueTables</Role>
+      <ShortName>Revenue (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/Revenue</ParentRole>
+      <Position>41</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R42.htm</HtmlFileName>
+      <LongName>9955515 - Disclosure - Goodwill and Intangible Assets (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/GoodwillandIntangibleAssetsTables</Role>
+      <ShortName>Goodwill and Intangible Assets (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/GoodwillandIntangibleAssets</ParentRole>
+      <Position>42</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R43.htm</HtmlFileName>
+      <LongName>9955516 - Disclosure - Restructuring Actions (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RestructuringActionsTables</Role>
+      <ShortName>Restructuring Actions (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/RestructuringActions</ParentRole>
+      <Position>43</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R44.htm</HtmlFileName>
+      <LongName>9955517 - Disclosure - Supplemental Income (Loss) Statement Information (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalIncomeLossStatementInformationTables</Role>
+      <ShortName>Supplemental Income (Loss) Statement Information (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalIncomeLossStatementInformation</ParentRole>
+      <Position>44</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R45.htm</HtmlFileName>
+      <LongName>9955518 - Disclosure - Supplemental Balance Sheet Information (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalBalanceSheetInformationTables</Role>
+      <ShortName>Supplemental Balance Sheet Information (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalBalanceSheetInformation</ParentRole>
+      <Position>45</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R46.htm</HtmlFileName>
+      <LongName>9955519 - Disclosure - Supplemental Equity and Comprehensive Income (Loss) Information (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationTables</Role>
+      <ShortName>Supplemental Equity and Comprehensive Income (Loss) Information (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformation</ParentRole>
+      <Position>46</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R47.htm</HtmlFileName>
+      <LongName>9955520 - Disclosure - Supplemental Cash Flow Information (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalCashFlowInformationTables</Role>
+      <ShortName>Supplemental Cash Flow Information (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalCashFlowInformation</ParentRole>
+      <Position>47</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R48.htm</HtmlFileName>
+      <LongName>9955521 - Disclosure - Income Taxes (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesTables</Role>
+      <ShortName>Income Taxes (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/IncomeTaxes</ParentRole>
+      <Position>48</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R49.htm</HtmlFileName>
+      <LongName>9955522 - Disclosure - Earnings (Loss) Per Share (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/EarningsLossPerShareTables</Role>
+      <ShortName>Earnings (Loss) Per Share (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/EarningsLossPerShare</ParentRole>
+      <Position>49</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R50.htm</HtmlFileName>
+      <LongName>9955523 - Disclosure - Marketable Securities (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/MarketableSecuritiesTables</Role>
+      <ShortName>Marketable Securities (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/MarketableSecurities</ParentRole>
+      <Position>50</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R51.htm</HtmlFileName>
+      <LongName>9955524 - Disclosure - Long-Term Debt and Short-Term Borrowings (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowingsTables</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/LongTermDebtandShortTermBorrowings</ParentRole>
+      <Position>51</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R52.htm</HtmlFileName>
+      <LongName>9955525 - Disclosure - Pension and Postretirement Benefit Plans (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansTables</Role>
+      <ShortName>Pension and Postretirement Benefit Plans (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/PensionandPostretirementBenefitPlans</ParentRole>
+      <Position>52</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R53.htm</HtmlFileName>
+      <LongName>9955526 - Disclosure - Derivatives (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesTables</Role>
+      <ShortName>Derivatives (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/Derivatives</ParentRole>
+      <Position>53</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R54.htm</HtmlFileName>
+      <LongName>9955527 - Disclosure - Fair Value Measurements (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/FairValueMeasurementsTables</Role>
+      <ShortName>Fair Value Measurements (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/FairValueMeasurements</ParentRole>
+      <Position>54</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R55.htm</HtmlFileName>
+      <LongName>9955528 - Disclosure - Leases (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LeasesTables</Role>
+      <ShortName>Leases (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/Leases</ParentRole>
+      <Position>55</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R56.htm</HtmlFileName>
+      <LongName>9955529 - Disclosure - Stock-Based Compensation (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensationTables</Role>
+      <ShortName>Stock-Based Compensation (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/StockBasedCompensation</ParentRole>
+      <Position>56</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R57.htm</HtmlFileName>
+      <LongName>9955530 - Disclosure - Business Segments and Geographic Information (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/BusinessSegmentsandGeographicInformationTables</Role>
+      <ShortName>Business Segments and Geographic Information (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/BusinessSegmentsandGeographicInformation</ParentRole>
+      <Position>57</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R58.htm</HtmlFileName>
+      <LongName>9955531 - Disclosure - Quarterly Data (Unaudited) (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/QuarterlyDataUnauditedTables</Role>
+      <ShortName>Quarterly Data (Unaudited) (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/QuarterlyDataUnaudited</ParentRole>
+      <Position>58</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R59.htm</HtmlFileName>
+      <LongName>9955532 - Disclosure - Significant Accounting Policies - Nature of Operations and Basis of Presentation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesNatureofOperationsandBasisofPresentationDetails</Role>
+      <ShortName>Significant Accounting Policies - Nature of Operations and Basis of Presentation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>59</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R60.htm</HtmlFileName>
+      <LongName>9955533 - Disclosure - Significant Accounting Policies - Property, Plant and Equipment (PPE) and Definite-Lived Intangible Assets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesPropertyPlantandEquipmentPPEandDefiniteLivedIntangibleAssetsDetails</Role>
+      <ShortName>Significant Accounting Policies - Property, Plant and Equipment (PPE) and Definite-Lived Intangible Assets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>60</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R61.htm</HtmlFileName>
+      <LongName>9955534 - Disclosure - Significant Accounting Policies - Conditional Asset Retirement Obligations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesConditionalAssetRetirementObligationsDetails</Role>
+      <ShortName>Significant Accounting Policies - Conditional Asset Retirement Obligations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>61</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R62.htm</HtmlFileName>
+      <LongName>9955535 - Disclosure - Significant Accounting Policies - Advertising and Merchandising (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesAdvertisingandMerchandisingDetails</Role>
+      <ShortName>Significant Accounting Policies - Advertising and Merchandising (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>62</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R63.htm</HtmlFileName>
+      <LongName>9955536 - Disclosure - Significant Accounting Policies - Research, Development and Related Expenses (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesResearchDevelopmentandRelatedExpensesDetails</Role>
+      <ShortName>Significant Accounting Policies - Research, Development and Related Expenses (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>63</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R64.htm</HtmlFileName>
+      <LongName>9955537 - Disclosure - Significant Accounting Policies - Leases (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SignificantAccountingPoliciesLeasesDetails</Role>
+      <ShortName>Significant Accounting Policies - Leases (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>64</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R65.htm</HtmlFileName>
+      <LongName>9955538 - Disclosure - Discontinued Operations - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DiscontinuedOperationsNarrativeDetails</Role>
+      <ShortName>Discontinued Operations - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>65</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R66.htm</HtmlFileName>
+      <LongName>9955539 - Disclosure - Discontinued Operations - Income (Loss) from Discontinued Operations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DiscontinuedOperationsIncomeLossfromDiscontinuedOperationsDetails</Role>
+      <ShortName>Discontinued Operations - Income (Loss) from Discontinued Operations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>66</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R67.htm</HtmlFileName>
+      <LongName>9955540 - Disclosure - Discontinued Operations - Assets and Liabilities of Discontinued Operations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DiscontinuedOperationsAssetsandLiabilitiesofDiscontinuedOperationsDetails</Role>
+      <ShortName>Discontinued Operations - Assets and Liabilities of Discontinued Operations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>67</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R68.htm</HtmlFileName>
+      <LongName>9955541 - Disclosure - Discontinued Operations - Cash Flows from Discontinued Operations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DiscontinuedOperationsCashFlowsfromDiscontinuedOperationsDetails</Role>
+      <ShortName>Discontinued Operations - Cash Flows from Discontinued Operations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>68</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R69.htm</HtmlFileName>
+      <LongName>9955542 - Disclosure - Revenue - Disaggregated Revenue (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RevenueDisaggregatedRevenueDetails</Role>
+      <ShortName>Revenue - Disaggregated Revenue (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>69</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R70.htm</HtmlFileName>
+      <LongName>9955543 - Disclosure - Revenue - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RevenueNarrativeDetails</Role>
+      <ShortName>Revenue - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>70</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R71.htm</HtmlFileName>
+      <LongName>9955544 - Disclosure - Divestitures (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DivestituresDetails</Role>
+      <ShortName>Divestitures (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/Divestitures</ParentRole>
+      <Position>71</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R72.htm</HtmlFileName>
+      <LongName>9955545 - Disclosure - Goodwill and Intangible Assets - Goodwill Balance by Business Segment (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/GoodwillandIntangibleAssetsGoodwillBalancebyBusinessSegmentDetails</Role>
+      <ShortName>Goodwill and Intangible Assets - Goodwill Balance by Business Segment (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>72</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R73.htm</HtmlFileName>
+      <LongName>9955546 - Disclosure - Goodwill and Intangible Assets - Acquired Intangible Assets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/GoodwillandIntangibleAssetsAcquiredIntangibleAssetsDetails</Role>
+      <ShortName>Goodwill and Intangible Assets - Acquired Intangible Assets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>73</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R74.htm</HtmlFileName>
+      <LongName>9955547 - Disclosure - Goodwill and Intangible Assets - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/GoodwillandIntangibleAssetsNarrativeDetails</Role>
+      <ShortName>Goodwill and Intangible Assets - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>74</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R75.htm</HtmlFileName>
+      <LongName>9955548 - Disclosure - Goodwill and Intangible Assets - Amortization Expense (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/GoodwillandIntangibleAssetsAmortizationExpenseDetails</Role>
+      <ShortName>Goodwill and Intangible Assets - Amortization Expense (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>75</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R76.htm</HtmlFileName>
+      <LongName>9955549 - Disclosure - Restructuring Actions - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RestructuringActionsNarrativeDetails</Role>
+      <ShortName>Restructuring Actions - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>76</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R77.htm</HtmlFileName>
+      <LongName>9955550 - Disclosure - Restructuring Actions - Restructuring Charges (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RestructuringActionsRestructuringChargesDetails</Role>
+      <ShortName>Restructuring Actions - Restructuring Charges (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>77</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R78.htm</HtmlFileName>
+      <LongName>9955551 - Disclosure - Restructuring Actions - Impact of Restructuring Charges (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RestructuringActionsImpactofRestructuringChargesDetails</Role>
+      <ShortName>Restructuring Actions - Impact of Restructuring Charges (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>78</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R79.htm</HtmlFileName>
+      <LongName>9955552 - Disclosure - Restructuring Actions - Cash and Non-Cash Impacts (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/RestructuringActionsCashandNonCashImpactsDetails</Role>
+      <ShortName>Restructuring Actions - Cash and Non-Cash Impacts (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>79</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R80.htm</HtmlFileName>
+      <LongName>9955553 - Disclosure - Supplemental Income (Loss) Statement Information - Other Expense (Income), Net (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalIncomeLossStatementInformationOtherExpenseIncomeNetDetails</Role>
+      <ShortName>Supplemental Income (Loss) Statement Information - Other Expense (Income), Net (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalIncomeLossStatementInformationTables</ParentRole>
+      <Position>80</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R81.htm</HtmlFileName>
+      <LongName>9955554 - Disclosure - Supplemental Income (Loss) Statement Information - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalIncomeLossStatementInformationNarrativeDetails</Role>
+      <ShortName>Supplemental Income (Loss) Statement Information - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalIncomeLossStatementInformationTables</ParentRole>
+      <Position>81</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R82.htm</HtmlFileName>
+      <LongName>9955555 - Disclosure - Supplemental Balance Sheet Information - Schedule of Supplemental Balance Sheet Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalBalanceSheetInformationScheduleofSupplementalBalanceSheetInformationDetails</Role>
+      <ShortName>Supplemental Balance Sheet Information - Schedule of Supplemental Balance Sheet Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>82</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R83.htm</HtmlFileName>
+      <LongName>9955556 - Disclosure - Supplemental Balance Sheet Information - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalBalanceSheetInformationNarrativeDetails</Role>
+      <ShortName>Supplemental Balance Sheet Information - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>83</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R84.htm</HtmlFileName>
+      <LongName>9955557 - Disclosure - Supplemental Equity and Comprehensive Income (Loss) Information - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationNarrativeDetails</Role>
+      <ShortName>Supplemental Equity and Comprehensive Income (Loss) Information - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationTables</ParentRole>
+      <Position>84</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R85.htm</HtmlFileName>
+      <LongName>9955558 - Disclosure - Supplemental Equity and Comprehensive Income (Loss) Information - AOCI Rollforward (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationAOCIRollforwardDetails</Role>
+      <ShortName>Supplemental Equity and Comprehensive Income (Loss) Information - AOCI Rollforward (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationTables</ParentRole>
+      <Position>85</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R86.htm</HtmlFileName>
+      <LongName>9955559 - Disclosure - Supplemental Equity and Comprehensive Income (Loss) Information - Reclassifications Out of AOCI (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationReclassificationsOutofAOCIDetails</Role>
+      <ShortName>Supplemental Equity and Comprehensive Income (Loss) Information - Reclassifications Out of AOCI (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalEquityandComprehensiveIncomeLossInformationTables</ParentRole>
+      <Position>86</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R87.htm</HtmlFileName>
+      <LongName>9955560 - Disclosure - Supplemental Cash Flow Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplementalCashFlowInformationDetails</Role>
+      <ShortName>Supplemental Cash Flow Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplementalCashFlowInformationTables</ParentRole>
+      <Position>87</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R88.htm</HtmlFileName>
+      <LongName>9955561 - Disclosure - Income Taxes - Income (Loss) Before Taxes (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesIncomeLossBeforeTaxesDetails</Role>
+      <ShortName>Income Taxes - Income (Loss) Before Taxes (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>88</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R89.htm</HtmlFileName>
+      <LongName>9955562 - Disclosure - Income Taxes - Provision (Benefit) for Income Taxes (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesProvisionBenefitforIncomeTaxesDetails</Role>
+      <ShortName>Income Taxes - Provision (Benefit) for Income Taxes (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>89</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R90.htm</HtmlFileName>
+      <LongName>9955563 - Disclosure - Income Taxes - Deferred Tax Assets and Liabilities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesDeferredTaxAssetsandLiabilitiesDetails</Role>
+      <ShortName>Income Taxes - Deferred Tax Assets and Liabilities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>90</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R91.htm</HtmlFileName>
+      <LongName>9955564 - Disclosure - Income Taxes - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesNarrativeDetails</Role>
+      <ShortName>Income Taxes - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>91</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R92.htm</HtmlFileName>
+      <LongName>9955565 - Disclosure - Income Taxes - Reconciliation of Effective Income Tax Rate (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesReconciliationofEffectiveIncomeTaxRateDetails</Role>
+      <ShortName>Income Taxes - Reconciliation of Effective Income Tax Rate (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>92</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R93.htm</HtmlFileName>
+      <LongName>9955566 - Disclosure - Income Taxes - Reconciliation of unrecognized tax benefits (UTB) (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/IncomeTaxesReconciliationofunrecognizedtaxbenefitsUTBDetails</Role>
+      <ShortName>Income Taxes - Reconciliation of unrecognized tax benefits (UTB) (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>93</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R94.htm</HtmlFileName>
+      <LongName>9955567 - Disclosure - Earnings (Loss) Per Share (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/EarningsLossPerShareDetails</Role>
+      <ShortName>Earnings (Loss) Per Share (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/EarningsLossPerShareTables</ParentRole>
+      <Position>94</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R95.htm</HtmlFileName>
+      <LongName>9955568 - Disclosure - Marketable Securities - Current and Non-current (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/MarketableSecuritiesCurrentandNoncurrentDetails</Role>
+      <ShortName>Marketable Securities - Current and Non-current (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>95</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R96.htm</HtmlFileName>
+      <LongName>9955569 - Disclosure - Marketable Securities - Contractual Maturity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/MarketableSecuritiesContractualMaturityDetails</Role>
+      <ShortName>Marketable Securities - Contractual Maturity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>96</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R97.htm</HtmlFileName>
+      <LongName>9955570 - Disclosure - Long-Term Debt and Short-Term Borrowings - Long-Term Debt (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowingsLongTermDebtDetails</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings - Long-Term Debt (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>97</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R98.htm</HtmlFileName>
+      <LongName>9955571 - Disclosure - Long-Term Debt and Short-Term Borrowings - Post-Swap Borrowing, Long-Term Debt, Including Current Portion (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowingsPostSwapBorrowingLongTermDebtIncludingCurrentPortionDetails</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings - Post-Swap Borrowing, Long-Term Debt, Including Current Portion (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>98</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R99.htm</HtmlFileName>
+      <LongName>9955572 - Disclosure - Long-Term Debt and Short-Term Borrowings - Short-Term Borrowings and Current Portion of Long-Term Debt (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowingsShortTermBorrowingsandCurrentPortionofLongTermDebtDetails</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings - Short-Term Borrowings and Current Portion of Long-Term Debt (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>99</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R100.htm</HtmlFileName>
+      <LongName>9955573 - Disclosure - Long-Term Debt and Short-Term Borrowings - Future Maturities of Long-term Debt (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowingsFutureMaturitiesofLongtermDebtDetails</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings - Future Maturities of Long-term Debt (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>100</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R101.htm</HtmlFileName>
+      <LongName>9955574 - Disclosure - Long-Term Debt and Short-Term Borrowings - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LongTermDebtandShortTermBorrowingsNarrativeDetails</Role>
+      <ShortName>Long-Term Debt and Short-Term Borrowings - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>101</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R102.htm</HtmlFileName>
+      <LongName>9955575 - Disclosure - Pension and Postretirement Benefit Plans - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansNarrativeDetails</Role>
+      <ShortName>Pension and Postretirement Benefit Plans - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>102</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R103.htm</HtmlFileName>
+      <LongName>9955576 - Disclosure - Pension and Postretirement Benefit Plans - Change in Benefit Obligation and Plan Assets and Amounts Recognized in Balance Sheet and AOCI (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansChangeinBenefitObligationandPlanAssetsandAmountsRecognizedinBalanceSheetandAOCIDetails</Role>
+      <ShortName>Pension and Postretirement Benefit Plans - Change in Benefit Obligation and Plan Assets and Amounts Recognized in Balance Sheet and AOCI (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>103</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R104.htm</HtmlFileName>
+      <LongName>9955577 - Disclosure - Pension and Postretirement Benefit Plans - Components of Net Periodic Benefit Cost and Other Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansComponentsofNetPeriodicBenefitCostandOtherInformationDetails</Role>
+      <ShortName>Pension and Postretirement Benefit Plans - Components of Net Periodic Benefit Cost and Other Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>104</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R105.htm</HtmlFileName>
+      <LongName>9955578 - Disclosure - Pension and Postretirement Benefit Plans - US Pension Weighted Averages and Expected Returns Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansUSPensionWeightedAveragesandExpectedReturnsInformationDetails</Role>
+      <ShortName>Pension and Postretirement Benefit Plans - US Pension Weighted Averages and Expected Returns Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>105</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R106.htm</HtmlFileName>
+      <LongName>9955579 - Disclosure - Pension and Postretirement Benefit Plans - Future Benefit Payments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansFutureBenefitPaymentsDetails</Role>
+      <ShortName>Pension and Postretirement Benefit Plans - Future Benefit Payments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>106</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R107.htm</HtmlFileName>
+      <LongName>9955580 - Disclosure - Pension and Postretirement Benefit Plans - Pension Asset Fair Values (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/PensionandPostretirementBenefitPlansPensionAssetFairValuesDetails</Role>
+      <ShortName>Pension and Postretirement Benefit Plans - Pension Asset Fair Values (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>107</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R108.htm</HtmlFileName>
+      <LongName>9955581 - Disclosure - Supplier Finance Program Obligations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/SupplierFinanceProgramObligationsDetails</Role>
+      <ShortName>Supplier Finance Program Obligations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/SupplierFinanceProgramObligations</ParentRole>
+      <Position>108</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R109.htm</HtmlFileName>
+      <LongName>9955582 - Disclosure - Derivatives - Cash Flow Hedges (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesCashFlowHedgesDetails</Role>
+      <ShortName>Derivatives - Cash Flow Hedges (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>109</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R110.htm</HtmlFileName>
+      <LongName>9955583 - Disclosure - Derivatives - Cash Flow Hedges - Gain (Loss) in OCI or Reclassified from AOCI (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesCashFlowHedgesGainLossinOCIorReclassifiedfromAOCIDetails</Role>
+      <ShortName>Derivatives - Cash Flow Hedges - Gain (Loss) in OCI or Reclassified from AOCI (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>110</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R111.htm</HtmlFileName>
+      <LongName>9955584 - Disclosure - Derivatives - Fair Value Hedge (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesFairValueHedgeDetails</Role>
+      <ShortName>Derivatives - Fair Value Hedge (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>111</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R112.htm</HtmlFileName>
+      <LongName>9955585 - Disclosure - Derivatives - Cumulative Basis Adjustment for Fair Value Hedges (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesCumulativeBasisAdjustmentforFairValueHedgesDetails</Role>
+      <ShortName>Derivatives - Cumulative Basis Adjustment for Fair Value Hedges (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>112</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R113.htm</HtmlFileName>
+      <LongName>9955586 - Disclosure - Derivatives - Net Investment Hedges (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesNetInvestmentHedgesDetails</Role>
+      <ShortName>Derivatives - Net Investment Hedges (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>113</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R114.htm</HtmlFileName>
+      <LongName>9955587 - Disclosure - Derivatives - Income Location and Impact of Cash Flow (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesIncomeLocationandImpactofCashFlowDetails</Role>
+      <ShortName>Derivatives - Income Location and Impact of Cash Flow (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>114</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R115.htm</HtmlFileName>
+      <LongName>9955588 - Disclosure - Derivatives - Balance Sheet Location (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesBalanceSheetLocationDetails</Role>
+      <ShortName>Derivatives - Balance Sheet Location (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>115</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R116.htm</HtmlFileName>
+      <LongName>9955589 - Disclosure - Derivatives - Currency Effects (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/DerivativesCurrencyEffectsDetails</Role>
+      <ShortName>Derivatives - Currency Effects (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>116</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R117.htm</HtmlFileName>
+      <LongName>9955590 - Disclosure - Fair Value Measurements - Recurring Basis (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/FairValueMeasurementsRecurringBasisDetails</Role>
+      <ShortName>Fair Value Measurements - Recurring Basis (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>117</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R118.htm</HtmlFileName>
+      <LongName>9955591 - Disclosure - Fair Value Measurements - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/FairValueMeasurementsNarrativeDetails</Role>
+      <ShortName>Fair Value Measurements - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>118</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R119.htm</HtmlFileName>
+      <LongName>9955592 - Disclosure - Fair Value Measurements - Financial Instruments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/FairValueMeasurementsFinancialInstrumentsDetails</Role>
+      <ShortName>Fair Value Measurements - Financial Instruments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>119</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R120.htm</HtmlFileName>
+      <LongName>9955593 - Disclosure - Commitments and Contingencies - Warranties and Guarantees (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/CommitmentsandContingenciesWarrantiesandGuaranteesDetails</Role>
+      <ShortName>Commitments and Contingencies - Warranties and Guarantees (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>120</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R121.htm</HtmlFileName>
+      <LongName>9955594 - Disclosure - Commitments and Contingencies - Respirator (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/CommitmentsandContingenciesRespiratorDetails</Role>
+      <ShortName>Commitments and Contingencies - Respirator (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>121</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R122.htm</HtmlFileName>
+      <LongName>9955595 - Disclosure - Commitments and Contingencies - Environmental (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/CommitmentsandContingenciesEnvironmentalDetails</Role>
+      <ShortName>Commitments and Contingencies - Environmental (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>122</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R123.htm</HtmlFileName>
+      <LongName>9955596 - Disclosure - Commitments and Contingencies - Product Liability (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/CommitmentsandContingenciesProductLiabilityDetails</Role>
+      <ShortName>Commitments and Contingencies - Product Liability (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>123</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R124.htm</HtmlFileName>
+      <LongName>9955597 - Disclosure - Leases - Components of Lease Expense (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LeasesComponentsofLeaseExpenseDetails</Role>
+      <ShortName>Leases - Components of Lease Expense (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>124</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R125.htm</HtmlFileName>
+      <LongName>9955598 - Disclosure - Leases - Supplemental balance sheet information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LeasesSupplementalbalancesheetinformationDetails</Role>
+      <ShortName>Leases - Supplemental balance sheet information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>125</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R126.htm</HtmlFileName>
+      <LongName>9955599 - Disclosure - Leases - Supplemental cash flow and other information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LeasesSupplementalcashflowandotherinformationDetails</Role>
+      <ShortName>Leases - Supplemental cash flow and other information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>126</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R127.htm</HtmlFileName>
+      <LongName>9955600 - Disclosure - Leases - Maturities of lease liabilities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/LeasesMaturitiesofleaseliabilitiesDetails</Role>
+      <ShortName>Leases - Maturities of lease liabilities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>127</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R128.htm</HtmlFileName>
+      <LongName>9955601 - Disclosure - Stock-Based Compensation - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensationNarrativeDetails</Role>
+      <ShortName>Stock-Based Compensation - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>128</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R129.htm</HtmlFileName>
+      <LongName>9955602 - Disclosure - Stock-Based Compensation - Compensation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensationCompensationDetails</Role>
+      <ShortName>Stock-Based Compensation - Compensation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>129</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R130.htm</HtmlFileName>
+      <LongName>9955603 - Disclosure - Stock-Based Compensation - Stock Option Program (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensationStockOptionProgramDetails</Role>
+      <ShortName>Stock-Based Compensation - Stock Option Program (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>130</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R131.htm</HtmlFileName>
+      <LongName>9955604 - Disclosure - Stock-Based Compensation - RSU, RS, Performance Shares (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensationRSURSPerformanceSharesDetails</Role>
+      <ShortName>Stock-Based Compensation - RSU, RS, Performance Shares (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>131</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R132.htm</HtmlFileName>
+      <LongName>9955605 - Disclosure - Stock-Based Compensation - General Employees Stock Purchase Plan (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/StockBasedCompensationGeneralEmployeesStockPurchasePlanDetails</Role>
+      <ShortName>Stock-Based Compensation - General Employees Stock Purchase Plan (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>132</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R133.htm</HtmlFileName>
+      <LongName>9955606 - Disclosure - Business Segments and Geographic Information - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/BusinessSegmentsandGeographicInformationNarrativeDetails</Role>
+      <ShortName>Business Segments and Geographic Information - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>133</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R134.htm</HtmlFileName>
+      <LongName>9955607 - Disclosure - Business Segments and Geographic Information - Schedule of Business Segment Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/BusinessSegmentsandGeographicInformationScheduleofBusinessSegmentInformationDetails</Role>
+      <ShortName>Business Segments and Geographic Information - Schedule of Business Segment Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>134</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R135.htm</HtmlFileName>
+      <LongName>9955608 - Disclosure - Business Segments and Geographic Information - Schedule of Geographical Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/BusinessSegmentsandGeographicInformationScheduleofGeographicalInformationDetails</Role>
+      <ShortName>Business Segments and Geographic Information - Schedule of Geographical Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>135</Position>
+    </Report>
+    <Report instance="mmm-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R136.htm</HtmlFileName>
+      <LongName>9955609 - Disclosure - Quarterly Data (Unaudited) (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.mmm.com/role/QuarterlyDataUnauditedDetails</Role>
+      <ShortName>Quarterly Data (Unaudited) (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.mmm.com/role/QuarterlyDataUnauditedTables</ParentRole>
+      <Position>136</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <InputFiles>
+    <File doctype="10-K" isDefinitelyFs="true" isUsgaap="true" original="mmm-20241231.htm">mmm-20241231.htm</File>
+    <File>mmm-20241231.xsd</File>
+    <File>mmm-20241231_cal.xml</File>
+    <File>mmm-20241231_def.xml</File>
+    <File>mmm-20241231_lab.xml</File>
+    <File>mmm-20241231_pre.xml</File>
+  </InputFiles>
+  <SupplementalFiles/>
+  <BaseTaxonomies>
+    <BaseTaxonomy items="1">http://fasb.org/srt/2024</BaseTaxonomy>
+    <BaseTaxonomy items="2655">http://fasb.org/us-gaap/2024</BaseTaxonomy>
+    <BaseTaxonomy items="15">http://xbrl.sec.gov/cyd/2024</BaseTaxonomy>
+    <BaseTaxonomy items="50">http://xbrl.sec.gov/dei/2024</BaseTaxonomy>
+    <BaseTaxonomy items="5">http://xbrl.sec.gov/ecd/2024</BaseTaxonomy>
+  </BaseTaxonomies>
+  <HasPresentationLinkbase>true</HasPresentationLinkbase>
+  <HasCalculationLinkbase>true</HasCalculationLinkbase>
+</FilingSummary>
