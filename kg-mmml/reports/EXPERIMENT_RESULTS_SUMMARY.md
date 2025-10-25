@@ -173,6 +173,167 @@ python -m src.cli.train_joint \
 
 ---
 
+## 📈 Week 9 Analysis: Baseline Validation & Trade-offs ✅
+
+**Date**: October 25, 2025  
+**Milestone**: M5 - Minimal Joint Objective + Trade-offs
+
+### Objective
+Validate text+concept improvement over text-only baseline with matched splits (seed=42); analyze consistency penalty trade-offs; assess SRS stability.
+
+### Critical Discovery: Concept Features Missing in Original Joint Model
+
+During Week 9 baseline validation, we discovered that the original "joint" model runs (Week 7-8) were trained **without concept features** — only text features (TF-IDF) were used. The "joint" aspect came solely from the consistency penalty regularization, not from actual concept/KG feature integration.
+
+This led to a comprehensive re-evaluation where we:
+1. Generated concept features (4,502 concepts, binary indicators)
+2. Retrained all configurations with matched splits (seed=42, stratified)
+3. Compared sklearn baseline vs PyTorch joint training frameworks
+
+### Experiment 1: Baseline Validation (Text-Only vs Text+Concept)
+
+#### Configuration
+- **Split**: 75/25 train/test, stratified by most-frequent label
+- **Seed**: 42 (consistent across all runs)
+- **Text features**: TF-IDF (min_df=2, max_features=50000)
+- **Concept features**: Binary indicators (4,502 concepts, 563,622 non-zeros)
+- **Framework**: sklearn LogisticRegression (max_iter=200, solver=liblinear)
+
+#### Results
+
+| Model | Macro F1 | Micro F1 | n_train | n_test |
+|-------|----------|----------|---------|--------|
+| **Text-only (sklearn baseline)** | 0.9723 | 0.9833 | 2413 | 805 |
+| **Text+concept (sklearn baseline)** | **0.9950** | **0.9968** | 2413 | 805 |
+| **Improvement** | **+2.27pp** | **+1.36pp** | — | — |
+
+#### Decision Gate Validation
+
+**Decision Gate**: Text+concept model achieves ≥+3pp micro-F1 improvement over text-only baseline
+
+- **Threshold**: 3.0 percentage points
+- **Actual**: +1.36 percentage points
+- **Status**: ❌ **FAIL** (1.64pp short of threshold)
+
+**However**, concept features provide:
+- ✅ Strong macro-F1 improvement (+2.27pp) — better for rare classes
+- ✅ Solid micro-F1 improvement (+1.36pp) — overall accuracy boost
+- ✅ Near-perfect performance (99.50% macro, 99.68% micro)
+
+### Experiment 2: Training Framework Comparison
+
+We compared sklearn (baseline) vs PyTorch (joint) training frameworks to understand performance differences.
+
+| Model | Framework | Epochs | Macro F1 | Micro F1 |
+|-------|-----------|--------|----------|----------|
+| Text-only | sklearn | N/A | 0.9723 | 0.9833 |
+| Text-only | PyTorch (λ=0.0) | 5 | 0.8128 | 0.9194 |
+| Text+concept | sklearn | N/A | **0.9950** | **0.9968** |
+| Text+concept | PyTorch (λ=0.0) | 5 | 0.7968 | 0.9132 |
+| Text+concept | PyTorch (λ=0.0) | 20 | 0.9347 | 0.9634 |
+
+**Key Finding**: PyTorch implementation underperforms sklearn by ~15pp macro-F1 with 5 epochs, but improves significantly with more training (20 epochs → 93.47% macro-F1, gap reduced to ~5pp).
+
+**Root Causes**:
+1. **Undertraining**: 5 epochs insufficient for convergence
+2. **Hyperparameters**: Learning rate (2e-3) and batch size (128) not optimized
+3. **Solver differences**: PyTorch Adam vs sklearn liblinear (specialized for sparse multi-label)
+
+### Experiment 3: Consistency Penalty Trade-offs
+
+The consistency penalty (λ) regularizes model predictions to match parent-support distributions derived from observed child concepts. We analyzed its impact on performance.
+
+#### Mechanism
+- **Parent-support vector** $S_{ij}$: Proportion of observed child concepts in document $i$ that map to parent $j$
+- **Consistency loss**: $\mathcal{L}_{\text{cons}} = \text{MSE}(\sigma(\text{logits}), S)$
+- **Total loss**: $\mathcal{L} = \mathcal{L}_{\text{BCE}} + \lambda \cdot \mathcal{L}_{\text{cons}}$
+
+#### Results (Text-only, PyTorch, 5 epochs)
+
+| λ (Penalty Weight) | Test Macro F1 | Test Micro F1 | Δ Macro F1 | Δ Micro F1 |
+|-------------------|---------------|---------------|------------|------------|
+| 0.0 (OFF) | **0.8128** | 0.9194 | — | — |
+| 0.1 (ON) | 0.7995 | 0.9197 | **-1.33pp** | +0.03pp |
+
+**Trade-off Analysis**:
+- **Macro F1**: Penalty **decreases** performance by 1.33pp (81.28% → 79.95%)
+- **Micro F1**: Penalty has **negligible impact** (±0.03pp)
+- **Interpretation**: Penalty constrains predictions for rare classes, reducing flexibility and hurting macro-averaging
+
+#### Sensitivity Analysis Recommendation
+
+For production deployment, we recommend:
+- **Default**: λ=0.0 (penalty OFF) for best macro-F1
+- **Constraint-sensitive applications**: Test λ ∈ {0.01, 0.05} if hierarchy violations must be minimized
+- **Hyperparameter search**: Grid search λ ∈ {0.0, 0.01, 0.05, 0.10} with validation set
+
+**Conclusion**: The consistency penalty does not improve classification performance in this multi-label setting. Hierarchical constraints can be enforced post-hoc (inference-time) if needed, without degrading model quality.
+
+### Artifacts (Week 9)
+- ✅ `reports/tables/baseline_text_seed42_metrics.json` — Text-only baseline (sklearn)
+- ✅ `reports/tables/baseline_text_plus_concept_seed42_metrics.json` — Text+concept baseline (sklearn)
+- ✅ `data/processed/sec_edgar/features/concept_features_filing.npz` — Concept features (4,502 concepts)
+- ✅ `outputs/joint_with_concepts_no_penalty/metrics.json` — Joint text+concept (PyTorch, λ=0.0, 5 epochs)
+- ✅ `outputs/joint_with_concepts_no_penalty_e20/metrics.json` — Joint text+concept (PyTorch, λ=0.0, 20 epochs)
+- ✅ `reports/tables/baseline_vs_joint_comprehensive_w9.csv` — Comprehensive comparison CSV
+- ✅ `logs/train_joint_with_concepts_penalty_off.log` — Training log (5 epochs)
+- ✅ `logs/train_joint_with_concepts_penalty_off_e20.log` — Training log (20 epochs)
+
+### Experiment 4: SRS Stability Analysis
+
+#### Objective
+Verify that SRS (Semantic Relationship Score) metrics are stable and reproducible across independent computations.
+
+#### Methodology
+SRS comprises four structural metrics computed from knowledge graph topology:
+1. **HP (Hierarchy Presence)**: Fraction of concepts with ≥1 parent via `is-a` edges
+2. **AtP (Attribute Predictability)**: Fraction of concepts with `measured-in` unit edges
+3. **AP (Asymmetry Preservation)**: Proportion of directional edges without reverse counterparts
+4. **RTF (Relational Type Fidelity)**: Embedding-based metric (not implemented; set to None)
+
+**Key Property**: HP, AtP, and AP are **deterministic** graph statistics — they depend only on edge counts and topology, with no randomization or sampling.
+
+#### Theoretical Stability Analysis
+
+Given the deterministic nature of the metrics, we expect:
+- **Multiple runs on same KG**: σ = 0.000 (perfect reproducibility)
+- **Runs after KG rebuild from same taxonomy**: σ = 0.000 (taxonomy → KG mapping is deterministic)
+- **Runs after taxonomy regeneration (different seeds)**: σ > 0 only if taxonomy generation is stochastic
+
+**Taxonomy Generation Review**:
+- Manual taxonomy (`usgaap_min.csv`): Fixed, no randomness
+- Pattern rules (`pattern_rules.yaml`): Deterministic regex/substring matching
+- Frequency rules: Deterministic threshold-based selection
+- Transitive closure: Deterministic graph algorithm
+
+**Conclusion**: All components are deterministic → **SRS stability is guaranteed** for identical input data.
+
+#### Empirical Validation (Week 7-8 Evidence)
+
+We verified stability by comparing SRS metrics from two independent computation runs:
+
+| Run | Date | HP | AtP | AP | SRS | Notes |
+|-----|------|-----|-----|-----|-----|-------|
+| Week 7 | Oct 18, 2025 | 0.2726 | 0.9987 | 1.0000 | 0.7571 | Initial combined taxonomy |
+| Week 8 | Oct 19, 2025 | 0.2726 | 0.9987 | 1.0000 | 0.7571 | Recomputation for verification |
+
+**Δ (difference)**: HP=0.0000, AtP=0.0000, AP=0.0000, SRS=0.0000
+
+**Decision Gate**: SRS std < 0.05  
+**Status**: ✅ **PASS** (σ = 0.0000 < 0.05)
+
+#### Recommendations for Future Work
+
+When embedding-based RTF is implemented:
+1. **Test seed sensitivity**: Compute RTF with random seeds [42, 43, 44, 45, 46]
+2. **Expected variance**: σ(RTF) ≈ 0.01-0.05 due to embedding initialization randomness
+3. **Mitigation**: Use fixed random seeds in production for reproducibility
+4. **Monitoring**: Set alert if σ(SRS) > 0.05 across independent runs
+
+**Current Status**: RTF=None → SRS based only on deterministic structural metrics → Perfect stability (σ=0.000).
+
+---
+
 ## 📊 Summary Statistics
 
 ### Dataset

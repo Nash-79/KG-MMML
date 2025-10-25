@@ -1,0 +1,8 @@
+model,macro_f1,micro_f1,n_train,n_test
+text-only (sklearn baseline),0.9723,0.9833,2413,805
+text+concept (sklearn baseline),0.9950,0.9968,2413,805
+"text-only (PyTorch joint, λ=0.0)",0.8128,0.9194,2413,805
+"text+concept (PyTorch joint, λ=0.0, e=5)",0.7968,0.9132,2413,805
+"text+concept (PyTorch joint, λ=0.0, e=20)",0.9347,0.9634,2413,805
+--- IMPROVEMENT: text+concept vs text-only (baseline) ---,+2.27pp,+1.36pp,,
+DECISION GATE (≥3.0pp micro-F1 improvement),,❌ FAIL (+1.36pp < 3.0pp),,

@@ -1,0 +1,365 @@
+{
+  "mode": "text+concept",
+  "n_docs_total": 3218,
+  "n_docs_train": 2413,
+  "n_docs_test": 805,
+  "micro_f1": 0.9968264958744446,
+  "macro_f1": 0.995009902197416,
+  "labels": [
+    "us-gaap:AccountsPayableAndAccruedLiabilities",
+    "us-gaap:AccountsReceivableNet",
+    "us-gaap:AccumulatedOtherComprehensiveIncome",
+    "us-gaap:AdditionalPaidInCapital",
+    "us-gaap:Assets",
+    "us-gaap:CashAndCashEquivalents",
+    "us-gaap:CommonStock",
+    "us-gaap:CostOfGoodsSold",
+    "us-gaap:CostOfRevenue",
+    "us-gaap:CostsAndExpenses",
+    "us-gaap:CurrentAssets",
+    "us-gaap:CurrentLiabilities",
+    "us-gaap:DeferredRevenueAndCustomerAdvances",
+    "us-gaap:DeferredTaxAssetsNet",
+    "us-gaap:DeferredTaxLiabilitiesNet",
+    "us-gaap:DepreciationAndAmortization",
+    "us-gaap:EarningsPerShare",
+    "us-gaap:EmployeeBenefitPlans",
+    "us-gaap:IncomeTaxExpenseBenefit",
+    "us-gaap:IntangibleAssetsNet",
+    "us-gaap:InterestExpense",
+    "us-gaap:InventoryNet",
+    "us-gaap:Liabilities",
+    "us-gaap:LongTermDebtAndCapitalLeases",
+    "us-gaap:LongTermInvestments",
+    "us-gaap:NetIncomeLoss",
+    "us-gaap:NoncurrentAssets",
+    "us-gaap:NoncurrentLiabilities",
+    "us-gaap:OperatingExpenses",
+    "us-gaap:OperatingIncomeLoss",
+    "us-gaap:OtherCurrentLiabilities",
+    "us-gaap:OtherNoncurrentAssets",
+    "us-gaap:OtherNoncurrentLiabilities",
+    "us-gaap:OtherOperatingExpenses",
+    "us-gaap:OtherRevenue",
+    "us-gaap:PreferredStock",
+    "us-gaap:PrepaidExpensesAndOtherCurrentAssets",
+    "us-gaap:ProductRevenue",
+    "us-gaap:PropertyPlantAndEquipmentNet",
+    "us-gaap:ResearchAndDevelopmentExpense",
+    "us-gaap:RetainedEarnings",
+    "us-gaap:Revenues",
+    "us-gaap:SellingGeneralAndAdministrativeExpense",
+    "us-gaap:ShortTermDebtAndCurrentMaturities",
+    "us-gaap:ShortTermInvestments",
+    "us-gaap:StockholdersEquity",
+    "us-gaap:TreasuryStock"
+  ],
+  "per_label": {
+    "us-gaap:AccountsPayableAndAccruedLiabilities": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 753.0
+    },
+    "us-gaap:AccountsReceivableNet": {
+      "precision": 0.9984101748807631,
+      "recall": 0.9984101748807631,
+      "f1-score": 0.9984101748807631,
+      "support": 629.0
+    },
+    "us-gaap:AccumulatedOtherComprehensiveIncome": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 803.0
+    },
+    "us-gaap:AdditionalPaidInCapital": {
+      "precision": 0.9954954954954955,
+      "recall": 1.0,
+      "f1-score": 0.9977426636568849,
+      "support": 663.0
+    },
+    "us-gaap:Assets": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 805.0
+    },
+    "us-gaap:CashAndCashEquivalents": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 805.0
+    },
+    "us-gaap:CommonStock": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 628.0
+    },
+    "us-gaap:CostOfGoodsSold": {
+      "precision": 0.9961538461538462,
+      "recall": 0.9961538461538462,
+      "f1-score": 0.9961538461538462,
+      "support": 260.0
+    },
+    "us-gaap:CostOfRevenue": {
+      "precision": 0.9976303317535545,
+      "recall": 0.9976303317535545,
+      "f1-score": 0.9976303317535545,
+      "support": 422.0
+    },
+    "us-gaap:CostsAndExpenses": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 718.0
+    },
+    "us-gaap:CurrentAssets": {
+      "precision": 0.9986431478968792,
+      "recall": 1.0,
+      "f1-score": 0.9993211133740665,
+      "support": 736.0
+    },
+    "us-gaap:CurrentLiabilities": {
+      "precision": 0.9986013986013986,
+      "recall": 1.0,
+      "f1-score": 0.9993002099370188,
+      "support": 714.0
+    },
+    "us-gaap:DeferredRevenueAndCustomerAdvances": {
+      "precision": 0.9974489795918368,
+      "recall": 0.9873737373737373,
+      "f1-score": 0.9923857868020305,
+      "support": 396.0
+    },
+    "us-gaap:DeferredTaxAssetsNet": {
+      "precision": 1.0,
+      "recall": 0.972636815920398,
+      "f1-score": 0.9861286254728878,
+      "support": 402.0
+    },
+    "us-gaap:DeferredTaxLiabilitiesNet": {
+      "precision": 0.9881422924901185,
+      "recall": 0.9727626459143969,
+      "f1-score": 0.9803921568627451,
+      "support": 257.0
+    },
+    "us-gaap:DepreciationAndAmortization": {
+      "precision": 0.9886039886039886,
+      "recall": 0.9914285714285714,
+      "f1-score": 0.9900142653352354,
+      "support": 350.0
+    },
+    "us-gaap:EarningsPerShare": {
+      "precision": 1.0,
+      "recall": 0.9987096774193548,
+      "f1-score": 0.9993544222078761,
+      "support": 775.0
+    },
+    "us-gaap:EmployeeBenefitPlans": {
+      "precision": 0.9798792756539235,
+      "recall": 0.9898373983739838,
+      "f1-score": 0.9848331648129424,
+      "support": 492.0
+    },
+    "us-gaap:IncomeTaxExpenseBenefit": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 804.0
+    },
+    "us-gaap:IntangibleAssetsNet": {
+      "precision": 1.0,
+      "recall": 0.9972565157750343,
+      "f1-score": 0.9986263736263736,
+      "support": 729.0
+    },
+    "us-gaap:InterestExpense": {
+      "precision": 0.9963898916967509,
+      "recall": 0.9822064056939501,
+      "f1-score": 0.989247311827957,
+      "support": 281.0
+    },
+    "us-gaap:InventoryNet": {
+      "precision": 0.9977426636568849,
+      "recall": 0.9910313901345291,
+      "f1-score": 0.9943757030371203,
+      "support": 446.0
+    },
+    "us-gaap:Liabilities": {
+      "precision": 1.0,
+      "recall": 0.9987515605493134,
+      "f1-score": 0.9993753903810119,
+      "support": 801.0
+    },
+    "us-gaap:LongTermDebtAndCapitalLeases": {
+      "precision": 0.9985994397759104,
+      "recall": 0.9972027972027973,
+      "f1-score": 0.9979006298110566,
+      "support": 715.0
+    },
+    "us-gaap:LongTermInvestments": {
+      "precision": 0.9933333333333333,
+      "recall": 0.9867549668874173,
+      "f1-score": 0.9900332225913622,
+      "support": 604.0
+    },
+    "us-gaap:NetIncomeLoss": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 805.0
+    },
+    "us-gaap:NoncurrentAssets": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 804.0
+    },
+    "us-gaap:NoncurrentLiabilities": {
+      "precision": 1.0,
+      "recall": 0.9909502262443439,
+      "f1-score": 0.9954545454545455,
+      "support": 221.0
+    },
+    "us-gaap:OperatingExpenses": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 718.0
+    },
+    "us-gaap:OperatingIncomeLoss": {
+      "precision": 1.0,
+      "recall": 0.9986468200270636,
+      "f1-score": 0.999322951929587,
+      "support": 739.0
+    },
+    "us-gaap:OtherCurrentLiabilities": {
+      "precision": 0.9853556485355649,
+      "recall": 0.9957716701902748,
+      "f1-score": 0.9905362776025236,
+      "support": 473.0
+    },
+    "us-gaap:OtherNoncurrentAssets": {
+      "precision": 0.9987341772151899,
+      "recall": 0.9987341772151899,
+      "f1-score": 0.9987341772151899,
+      "support": 790.0
+    },
+    "us-gaap:OtherNoncurrentLiabilities": {
+      "precision": 0.9953051643192489,
+      "recall": 0.9906542056074766,
+      "f1-score": 0.9929742388758782,
+      "support": 214.0
+    },
+    "us-gaap:OtherOperatingExpenses": {
+      "precision": 0.9945945945945946,
+      "recall": 0.9633507853403142,
+      "f1-score": 0.9787234042553191,
+      "support": 191.0
+    },
+    "us-gaap:OtherRevenue": {
+      "precision": 0.985781990521327,
+      "recall": 0.9674418604651163,
+      "f1-score": 0.9765258215962441,
+      "support": 215.0
+    },
+    "us-gaap:PreferredStock": {
+      "precision": 1.0,
+      "recall": 0.9957081545064378,
+      "f1-score": 0.9978494623655914,
+      "support": 233.0
+    },
+    "us-gaap:PrepaidExpensesAndOtherCurrentAssets": {
+      "precision": 1.0,
+      "recall": 0.9961685823754789,
+      "f1-score": 0.9980806142034548,
+      "support": 522.0
+    },
+    "us-gaap:ProductRevenue": {
+      "precision": 1.0,
+      "recall": 0.991304347826087,
+      "f1-score": 0.9956331877729258,
+      "support": 345.0
+    },
+    "us-gaap:PropertyPlantAndEquipmentNet": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 780.0
+    },
+    "us-gaap:ResearchAndDevelopmentExpense": {
+      "precision": 0.99,
+      "recall": 0.9801980198019802,
+      "f1-score": 0.9850746268656716,
+      "support": 101.0
+    },
+    "us-gaap:RetainedEarnings": {
+      "precision": 0.9987562189054726,
+      "recall": 1.0,
+      "f1-score": 0.9993777224642191,
+      "support": 803.0
+    },
+    "us-gaap:Revenues": {
+      "precision": 0.996694214876033,
+      "recall": 0.9983443708609272,
+      "f1-score": 0.9975186104218362,
+      "support": 604.0
+    },
+    "us-gaap:SellingGeneralAndAdministrativeExpense": {
+      "precision": 1.0,
+      "recall": 0.9877049180327869,
+      "f1-score": 0.9938144329896907,
+      "support": 244.0
+    },
+    "us-gaap:ShortTermDebtAndCurrentMaturities": {
+      "precision": 0.9953488372093023,
+      "recall": 0.9861751152073732,
+      "f1-score": 0.9907407407407407,
+      "support": 434.0
+    },
+    "us-gaap:ShortTermInvestments": {
+      "precision": 0.989010989010989,
+      "recall": 0.994475138121547,
+      "f1-score": 0.9917355371900827,
+      "support": 543.0
+    },
+    "us-gaap:StockholdersEquity": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 805.0
+    },
+    "us-gaap:TreasuryStock": {
+      "precision": 0.9888143176733781,
+      "recall": 0.9954954954954955,
+      "f1-score": 0.9921436588103255,
+      "support": 444.0
+    },
+    "micro avg": {
+      "precision": 0.9975747776879548,
+      "recall": 0.996079335793358,
+      "f1-score": 0.9968264958744446,
+      "support": 26016.0
+    },
+    "macro avg": {
+      "precision": 0.9966695832435272,
+      "recall": 0.9933887387825434,
+      "f1-score": 0.995009902197416,
+      "support": 26016.0
+    },
+    "weighted avg": {
+      "precision": 0.9975800678607639,
+      "recall": 0.996079335793358,
+      "f1-score": 0.9968192161653453,
+      "support": 26016.0
+    },
+    "samples avg": {
+      "precision": 0.9975357732832755,
+      "recall": 0.9961841237463529,
+      "f1-score": 0.9968109337380386,
+      "support": 26016.0
+    }
+  }
+}
