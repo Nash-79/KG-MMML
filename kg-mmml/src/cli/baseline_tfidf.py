@@ -8,6 +8,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import f1_score, classification_report
+from sklearn.model_selection import train_test_split
 from scipy import sparse
 
 from ..utils.data_utils import (
@@ -101,13 +102,13 @@ def main():
         X = X_text
         mode = "text"
     
-    # Train/test split
-    rng = np.random.RandomState(args.random_state)
-    n = len(docs)
-    idx = np.arange(n)
-    rng.shuffle(idx)
-    split = int(n * (1.0 - args.test_size))
-    train_idx, test_idx = idx[:split], idx[split:]
+    # Train/test split (using sklearn for stratification - matches train_joint.py)
+    train_idx, test_idx = train_test_split(
+        np.arange(len(docs)),
+        test_size=args.test_size,
+        random_state=args.random_state,
+        stratify=Y.argmax(1)  # Stratify by most-frequent label
+    )
     
     Xtr, Xte = X[train_idx], X[test_idx]
     Ytr, Yte = Y[train_idx], Y[test_idx]
@@ -119,9 +120,10 @@ def main():
     clf.fit(Xtr, Ytr)
     Yhat = clf.predict(Xte)
     
+    n_total = len(docs)
     metrics = {
         "mode": mode,
-        "n_docs_total": n,
+        "n_docs_total": n_total,
         "n_docs_train": int(Xtr.shape[0]),
         "n_docs_test": int(Xte.shape[0]),
         "micro_f1": float(f1_score(Yte, Yhat, average="micro", zero_division=0)),

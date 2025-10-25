@@ -13,7 +13,14 @@ model:
   type: joint_model
   text_encoder: tfidf
   concept_features: true
-  consistency_weight: 0.1
+  # Consistency penalty weight (lambda): regularizes predictions to match parent-support distribution
+  # Week 9 ablation results (Oct 2025):
+  #   - lambda=0.0: macro-F1=81.28%, micro-F1=91.94% (BEST macro-F1)
+  #   - lambda=0.1: macro-F1=79.95%, micro-F1=91.97% (-1.33pp macro-F1)
+  # Conclusion: Penalty constrains rare-class predictions without measurable benefit.
+  # Recommendation: Use 0.0 (OFF) for production; test 0.01-0.05 only if hierarchical
+  # constraint violations must be minimized (at cost of macro-F1 performance).
+  consistency_weight: 0.0  # Default: penalty OFF (based on W9 ablation)
 
 train:
   batch_size: 128
