@@ -1,4 +1,37 @@
 # src/cli/baseline_tfidf.py
+"""
+Train and evaluate baseline text classification models.
+
+This script trains sklearn LogisticRegression classifiers for multi-label
+taxonomy prediction from SEC EDGAR filings. It supports two modes:
+
+1. Text-only: TF-IDF features from filing narratives
+2. Text+concept: TF-IDF + binary concept indicators (KG-as-features)
+
+Used in Week 5-6 for initial baseline validation and Week 9 for final
+comparison with matched train/test splits (seed=42, stratified by label).
+
+Usage:
+    # Text-only baseline
+    python -m src.cli.baseline_tfidf \\
+        --facts data/processed/sec_edgar/facts.jsonl \\
+        --taxonomy datasets/sec_edgar/taxonomy/usgaap_combined.csv \\
+        --out reports/tables/baseline_text_metrics.json \\
+        --random_state 42
+
+    # Text+concept baseline (KG-as-features)
+    python -m src.cli.baseline_tfidf \\
+        --facts data/processed/sec_edgar/facts.jsonl \\
+        --taxonomy datasets/sec_edgar/taxonomy/usgaap_combined.csv \\
+        --concept_features_npz data/processed/sec_edgar/features/concept_features_filing.npz \\
+        --concept_features_index data/processed/sec_edgar/features/concept_features_index.csv \\
+        --out reports/tables/baseline_text_plus_concept_metrics.json \\
+        --random_state 42
+
+Results:
+    Week 9 validation showed text+concept achieves 99.50% macro-F1 and
+    99.68% micro-F1, a +2.27pp and +1.36pp improvement over text-only.
+"""
 import argparse
 import json
 import pathlib
@@ -13,9 +46,7 @@ from scipy import sparse
 
 from ..utils.data_utils import (
     build_corpus_from_facts,
-    load_taxonomy_parents,
-    doc_id_from_fact,
-    normalise_concept
+    load_taxonomy_parents
 )
 
 

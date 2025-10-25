@@ -1,7 +1,26 @@
+"""
+Unified taxonomy builder: combine manual, pattern, and frequency rules.
+
+This script merges multiple sources of parent-child relations:
+1) Manual CSV (seed taxonomy)
+2) Regex pattern rules over observed concepts
+3) Frequency rules for common concept families
+Optionally materializes transitive closure.
+
+Usage:
+    python -m src.cli.build_taxonomy \
+        --facts data/processed/sec_edgar/facts.jsonl \
+        --manual datasets/sec_edgar/taxonomy/usgaap_min.csv \
+        --rules datasets/sec_edgar/taxonomy/pattern_rules.yaml \
+        --out datasets/sec_edgar/taxonomy/usgaap_combined.csv \
+        --min_cik_support 3 --with_closure
+
+Outputs CSV with columns: child,parent
+"""
 # datasets/sec_edgar/scripts/build_taxonomy.py
 import argparse, pathlib, re, yaml, json
 import pandas as pd
-from collections import defaultdict, Counter
+from collections import defaultdict
 
 def load_concepts_from_facts(facts_path, min_cik_support=1):
     """Extract observed concepts with CIK support counts."""
