@@ -1,0 +1,8 @@
+metric,mean,std,min,max,ci_lower_95,ci_upper_95,runs_tested,notes
+HP,0.272600,0.000000,0.272600,0.272600,0.272600,0.272600,2,"Deterministic graph statistic (fraction of concepts with ≥1 parent)"
+AtP,0.998700,0.000000,0.998700,0.998700,0.998700,0.998700,2,"Deterministic graph statistic (fraction of concepts with unit edges)"
+AP,1.000000,0.000000,1.000000,1.000000,1.000000,1.000000,2,"Deterministic graph statistic (asymmetry preservation)"
+SRS,0.757100,0.000000,0.757100,0.757100,0.757100,0.757100,2,"Weighted combination of HP, AtP, AP (no RTF embeddings yet)"
+DECISION_GATE,PASS,std_threshold=0.05,srs_std=0.000000,,,,"✅ Perfect stability: σ=0.000 < 0.05 threshold"
+INTERPRETATION,STABLE,σ=0.000,deterministic,no_variance,,,,"All metrics are topology-based counts with zero variance across runs"
+FUTURE_WORK,RTF,embedding-based,test_seeds,expected_σ~0.01-0.05,,,,"When RTF is implemented, test stability with different embedding seeds"
