@@ -1,0 +1,1414 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FilingSummary>
+  <Version>3.25.0.1</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>1035</ContextCount>
+  <ElementCount>694</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>false</FootnotesReported>
+  <SegmentCount>239</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>12</UnitCount>
+  <MyReports>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>0000001 - Document - Cover Page</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CoverPage</Role>
+      <ShortName>Cover Page</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R2.htm</HtmlFileName>
+      <LongName>0000002 - Document - Audit Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/AuditInformation</Role>
+      <ShortName>Audit Information</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R3.htm</HtmlFileName>
+      <LongName>9952151 - Statement - Consolidated Balance Sheets</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedBalanceSheets</Role>
+      <ShortName>Consolidated Balance Sheets</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>3</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R4.htm</HtmlFileName>
+      <LongName>9952152 - Statement - Consolidated Balance Sheets (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedBalanceSheetsParenthetical</Role>
+      <ShortName>Consolidated Balance Sheets (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>4</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R5.htm</HtmlFileName>
+      <LongName>9952153 - Statement - Consolidated Statements of Earnings</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedStatementsofEarnings</Role>
+      <ShortName>Consolidated Statements of Earnings</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>5</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R6.htm</HtmlFileName>
+      <LongName>9952154 - Statement - Consolidated Statements of Comprehensive Income</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedStatementsofComprehensiveIncome</Role>
+      <ShortName>Consolidated Statements of Comprehensive Income</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>6</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R7.htm</HtmlFileName>
+      <LongName>9952155 - Statement - Consolidated Statements of Comprehensive Income (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedStatementsofComprehensiveIncomeParenthetical</Role>
+      <ShortName>Consolidated Statements of Comprehensive Income (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>7</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R8.htm</HtmlFileName>
+      <LongName>9952156 - Statement - Consolidated Statements of Equity</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedStatementsofEquity</Role>
+      <ShortName>Consolidated Statements of Equity</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>8</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9.htm</HtmlFileName>
+      <LongName>9952157 - Statement - Consolidated Statements of Equity (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedStatementsofEquityParenthetical</Role>
+      <ShortName>Consolidated Statements of Equity (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>9</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R10.htm</HtmlFileName>
+      <LongName>9952158 - Statement - Consolidated Statements of Cash Flows</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/ConsolidatedStatementsofCashFlows</Role>
+      <ShortName>Consolidated Statements of Cash Flows</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>10</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R11.htm</HtmlFileName>
+      <LongName>9952159 - Disclosure - Summary of significant accounting policies</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Summaryofsignificantaccountingpolicies</Role>
+      <ShortName>Summary of significant accounting policies</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>11</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R12.htm</HtmlFileName>
+      <LongName>9952160 - Disclosure - Cash, cash equivalents and current marketable securities</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Cashcashequivalentsandcurrentmarketablesecurities</Role>
+      <ShortName>Cash, cash equivalents and current marketable securities</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>12</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R13.htm</HtmlFileName>
+      <LongName>9952161 - Disclosure - Inventories</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Inventories</Role>
+      <ShortName>Inventories</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>13</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R14.htm</HtmlFileName>
+      <LongName>9952162 - Disclosure - Property, plant and equipment</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Propertyplantandequipment</Role>
+      <ShortName>Property, plant and equipment</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>14</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R15.htm</HtmlFileName>
+      <LongName>9952163 - Disclosure - Intangible assets and goodwill</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Intangibleassetsandgoodwill</Role>
+      <ShortName>Intangible assets and goodwill</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>15</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R16.htm</HtmlFileName>
+      <LongName>9952164 - Disclosure - Fair value measurements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Fairvaluemeasurements</Role>
+      <ShortName>Fair value measurements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>16</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R17.htm</HtmlFileName>
+      <LongName>9952165 - Disclosure - Borrowings</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Borrowings</Role>
+      <ShortName>Borrowings</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>17</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R18.htm</HtmlFileName>
+      <LongName>9952166 - Disclosure - Income taxes</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Incometaxes</Role>
+      <ShortName>Income taxes</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>18</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R19.htm</HtmlFileName>
+      <LongName>9952167 - Disclosure - Employee related obligations</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Employeerelatedobligations</Role>
+      <ShortName>Employee related obligations</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>19</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R20.htm</HtmlFileName>
+      <LongName>9952168 - Disclosure - Pensions and other benefit plans</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Pensionsandotherbenefitplans</Role>
+      <ShortName>Pensions and other benefit plans</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>20</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R21.htm</HtmlFileName>
+      <LongName>9952169 - Disclosure - Savings plan</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Savingsplan</Role>
+      <ShortName>Savings plan</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>21</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R22.htm</HtmlFileName>
+      <LongName>9952170 - Disclosure - Capital and treasury stock</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Capitalandtreasurystock</Role>
+      <ShortName>Capital and treasury stock</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>22</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R23.htm</HtmlFileName>
+      <LongName>9952171 - Disclosure - Accumulated other comprehensive income (loss)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Accumulatedothercomprehensiveincomeloss</Role>
+      <ShortName>Accumulated other comprehensive income (loss)</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>23</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R24.htm</HtmlFileName>
+      <LongName>9952172 - Disclosure - International currency translation</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Internationalcurrencytranslation</Role>
+      <ShortName>International currency translation</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>24</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R25.htm</HtmlFileName>
+      <LongName>9952173 - Disclosure - Earnings per share</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Earningspershare</Role>
+      <ShortName>Earnings per share</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>25</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R26.htm</HtmlFileName>
+      <LongName>9952174 - Disclosure - Common stock, stock option plans and stock compensation agreements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Commonstockstockoptionplansandstockcompensationagreements</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>26</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R27.htm</HtmlFileName>
+      <LongName>9952175 - Disclosure - Segments of business and geographic areas</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Segmentsofbusinessandgeographicareas</Role>
+      <ShortName>Segments of business and geographic areas</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>27</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R28.htm</HtmlFileName>
+      <LongName>9952176 - Disclosure - Acquisitions and divestitures</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Acquisitionsanddivestitures</Role>
+      <ShortName>Acquisitions and divestitures</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>28</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R29.htm</HtmlFileName>
+      <LongName>9952177 - Disclosure - Legal proceedings</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Legalproceedings</Role>
+      <ShortName>Legal proceedings</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>29</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R30.htm</HtmlFileName>
+      <LongName>9952178 - Disclosure - Restructuring</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Restructuring</Role>
+      <ShortName>Restructuring</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>30</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R31.htm</HtmlFileName>
+      <LongName>9952179 - Disclosure - Kenvue separation and discontinued operations</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/Kenvueseparationanddiscontinuedoperations</Role>
+      <ShortName>Kenvue separation and discontinued operations</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>31</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R32.htm</HtmlFileName>
+      <LongName>995410 - Disclosure - Pay vs Performance Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/PvpDisclosure</Role>
+      <ShortName>Pay vs Performance Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>32</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R33.htm</HtmlFileName>
+      <LongName>995445 - Disclosure - Insider Trading Arrangements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingArrangements</Role>
+      <ShortName>Insider Trading Arrangements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>33</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R34.htm</HtmlFileName>
+      <LongName>995447 - Disclosure - Insider Trading Policies and Procedures</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingPoliciesProc</Role>
+      <ShortName>Insider Trading Policies and Procedures</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>34</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R35.htm</HtmlFileName>
+      <LongName>995550 - Disclosure - Cybersecurity Risk Management and Strategy Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/cyd/role/CybersecurityRiskManagementAndStrategyDisclosure</Role>
+      <ShortName>Cybersecurity Risk Management and Strategy Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>35</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R36.htm</HtmlFileName>
+      <LongName>9955511 - Disclosure - Summary of significant accounting policies (Policies)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SummaryofsignificantaccountingpoliciesPolicies</Role>
+      <ShortName>Summary of significant accounting policies (Policies)</ShortName>
+      <MenuCategory>Policies</MenuCategory>
+      <Position>36</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R37.htm</HtmlFileName>
+      <LongName>9955512 - Disclosure - Summary of significant accounting policies (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SummaryofsignificantaccountingpoliciesTables</Role>
+      <ShortName>Summary of significant accounting policies (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Summaryofsignificantaccountingpolicies</ParentRole>
+      <Position>37</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R38.htm</HtmlFileName>
+      <LongName>9955513 - Disclosure - Cash, cash equivalents and current marketable securities (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CashcashequivalentsandcurrentmarketablesecuritiesTables</Role>
+      <ShortName>Cash, cash equivalents and current marketable securities (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Cashcashequivalentsandcurrentmarketablesecurities</ParentRole>
+      <Position>38</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R39.htm</HtmlFileName>
+      <LongName>9955514 - Disclosure - Inventories (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/InventoriesTables</Role>
+      <ShortName>Inventories (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Inventories</ParentRole>
+      <Position>39</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R40.htm</HtmlFileName>
+      <LongName>9955515 - Disclosure - Property, plant and equipment (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PropertyplantandequipmentTables</Role>
+      <ShortName>Property, plant and equipment (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Propertyplantandequipment</ParentRole>
+      <Position>40</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R41.htm</HtmlFileName>
+      <LongName>9955516 - Disclosure - Intangible assets and goodwill (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IntangibleassetsandgoodwillTables</Role>
+      <ShortName>Intangible assets and goodwill (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Intangibleassetsandgoodwill</ParentRole>
+      <Position>41</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R42.htm</HtmlFileName>
+      <LongName>9955517 - Disclosure - Fair value measurements (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsTables</Role>
+      <ShortName>Fair value measurements (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Fairvaluemeasurements</ParentRole>
+      <Position>42</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R43.htm</HtmlFileName>
+      <LongName>9955518 - Disclosure - Borrowings (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/BorrowingsTables</Role>
+      <ShortName>Borrowings (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Borrowings</ParentRole>
+      <Position>43</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R44.htm</HtmlFileName>
+      <LongName>9955519 - Disclosure - Income taxes (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesTables</Role>
+      <ShortName>Income taxes (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Incometaxes</ParentRole>
+      <Position>44</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R45.htm</HtmlFileName>
+      <LongName>9955520 - Disclosure - Employee related obligations (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/EmployeerelatedobligationsTables</Role>
+      <ShortName>Employee related obligations (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Employeerelatedobligations</ParentRole>
+      <Position>45</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R46.htm</HtmlFileName>
+      <LongName>9955521 - Disclosure - Pensions and other benefit plans (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansTables</Role>
+      <ShortName>Pensions and other benefit plans (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Pensionsandotherbenefitplans</ParentRole>
+      <Position>46</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R47.htm</HtmlFileName>
+      <LongName>9955522 - Disclosure - Capital and treasury stock (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CapitalandtreasurystockTables</Role>
+      <ShortName>Capital and treasury stock (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Capitalandtreasurystock</ParentRole>
+      <Position>47</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R48.htm</HtmlFileName>
+      <LongName>9955523 - Disclosure - Accumulated other comprehensive income (loss) (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/AccumulatedothercomprehensiveincomelossTables</Role>
+      <ShortName>Accumulated other comprehensive income (loss) (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Accumulatedothercomprehensiveincomeloss</ParentRole>
+      <Position>48</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R49.htm</HtmlFileName>
+      <LongName>9955524 - Disclosure - Earnings per share (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/EarningspershareTables</Role>
+      <ShortName>Earnings per share (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Earningspershare</ParentRole>
+      <Position>49</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R50.htm</HtmlFileName>
+      <LongName>9955525 - Disclosure - Common stock, stock option plans and stock compensation agreements (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsTables</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Commonstockstockoptionplansandstockcompensationagreements</ParentRole>
+      <Position>50</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R51.htm</HtmlFileName>
+      <LongName>9955526 - Disclosure - Segments of business and geographic areas (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SegmentsofbusinessandgeographicareasTables</Role>
+      <ShortName>Segments of business and geographic areas (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Segmentsofbusinessandgeographicareas</ParentRole>
+      <Position>51</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R52.htm</HtmlFileName>
+      <LongName>9955527 - Disclosure - Acquisitions and divestitures (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/AcquisitionsanddivestituresTables</Role>
+      <ShortName>Acquisitions and divestitures (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Acquisitionsanddivestitures</ParentRole>
+      <Position>52</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R53.htm</HtmlFileName>
+      <LongName>9955528 - Disclosure - Legal proceedings (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/LegalproceedingsTables</Role>
+      <ShortName>Legal proceedings (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Legalproceedings</ParentRole>
+      <Position>53</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R54.htm</HtmlFileName>
+      <LongName>9955529 - Disclosure - Restructuring (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/RestructuringTables</Role>
+      <ShortName>Restructuring (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Restructuring</ParentRole>
+      <Position>54</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R55.htm</HtmlFileName>
+      <LongName>9955530 - Disclosure - Kenvue separation and discontinued operations (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/KenvueseparationanddiscontinuedoperationsTables</Role>
+      <ShortName>Kenvue separation and discontinued operations (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Kenvueseparationanddiscontinuedoperations</ParentRole>
+      <Position>55</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R56.htm</HtmlFileName>
+      <LongName>9955531 - Disclosure - Summary of significant accounting policies - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SummaryofsignificantaccountingpoliciesNarrativeDetails</Role>
+      <ShortName>Summary of significant accounting policies - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>56</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R57.htm</HtmlFileName>
+      <LongName>9955532 - Disclosure - Summary of significant accounting policies - Estimated Useful Lives of Assets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SummaryofsignificantaccountingpoliciesEstimatedUsefulLivesofAssetsDetails</Role>
+      <ShortName>Summary of significant accounting policies - Estimated Useful Lives of Assets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>57</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R58.htm</HtmlFileName>
+      <LongName>9955533 - Disclosure - Summary of significant accounting policies - Supplier Finance Program (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SummaryofsignificantaccountingpoliciesSupplierFinanceProgramDetails</Role>
+      <ShortName>Summary of significant accounting policies - Supplier Finance Program (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>58</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R59.htm</HtmlFileName>
+      <LongName>9955534 - Disclosure - Cash, cash equivalents and current marketable securities - Cash and Cash Equivalent Composition (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CashcashequivalentsandcurrentmarketablesecuritiesCashandCashEquivalentCompositionDetails</Role>
+      <ShortName>Cash, cash equivalents and current marketable securities - Cash and Cash Equivalent Composition (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>59</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R60.htm</HtmlFileName>
+      <LongName>9955535 - Disclosure - Cash, cash equivalents and current marketable securities - Contractual Maturities of Available for Sale Securities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CashcashequivalentsandcurrentmarketablesecuritiesContractualMaturitiesofAvailableforSaleSecuritiesDetails</Role>
+      <ShortName>Cash, cash equivalents and current marketable securities - Contractual Maturities of Available for Sale Securities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>60</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R61.htm</HtmlFileName>
+      <LongName>9955536 - Disclosure - Inventories (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/InventoriesDetails</Role>
+      <ShortName>Inventories (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/InventoriesTables</ParentRole>
+      <Position>61</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R62.htm</HtmlFileName>
+      <LongName>9955537 - Disclosure - Property, plant and equipment - Property, Plant and Equipment at Cost and Accumulated Depreciation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PropertyplantandequipmentPropertyPlantandEquipmentatCostandAccumulatedDepreciationDetails</Role>
+      <ShortName>Property, plant and equipment - Property, Plant and Equipment at Cost and Accumulated Depreciation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>62</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R63.htm</HtmlFileName>
+      <LongName>9955538 - Disclosure - Property, plant and equipment - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PropertyplantandequipmentNarrativeDetails</Role>
+      <ShortName>Property, plant and equipment - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>63</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R64.htm</HtmlFileName>
+      <LongName>9955539 - Disclosure - Intangible assets and goodwil - Schedule of Intangible Assets and Goodwill (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IntangibleassetsandgoodwilScheduleofIntangibleAssetsandGoodwillDetails</Role>
+      <ShortName>Intangible assets and goodwil - Schedule of Intangible Assets and Goodwill (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>64</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R65.htm</HtmlFileName>
+      <LongName>9955540 - Disclosure - Intangible assets and goodwill - Goodwill (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IntangibleassetsandgoodwillGoodwillDetails</Role>
+      <ShortName>Intangible assets and goodwill - Goodwill (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>65</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R66.htm</HtmlFileName>
+      <LongName>9955541 - Disclosure - Intangible assets and goodwill - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IntangibleassetsandgoodwillNarrativeDetails</Role>
+      <ShortName>Intangible assets and goodwill - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>66</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R67.htm</HtmlFileName>
+      <LongName>9955542 - Disclosure - Intangible assets and goodwill - Estimated Amortization of Intangible Assets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IntangibleassetsandgoodwillEstimatedAmortizationofIntangibleAssetsDetails</Role>
+      <ShortName>Intangible assets and goodwill - Estimated Amortization of Intangible Assets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>67</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R68.htm</HtmlFileName>
+      <LongName>9955543 - Disclosure - Fair value measurements - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsNarrativeDetails</Role>
+      <ShortName>Fair value measurements - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>68</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R69.htm</HtmlFileName>
+      <LongName>9955544 - Disclosure - Fair value measurements - Summary of Derivative Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsSummaryofDerivativeActivityDetails</Role>
+      <ShortName>Fair value measurements - Summary of Derivative Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>69</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R70.htm</HtmlFileName>
+      <LongName>9955545 - Disclosure - Fair value measurements - Schedule of Derivatives Recorded in Consolidated Balance Sheets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsScheduleofDerivativesRecordedinConsolidatedBalanceSheetsDetails</Role>
+      <ShortName>Fair value measurements - Schedule of Derivatives Recorded in Consolidated Balance Sheets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>70</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R71.htm</HtmlFileName>
+      <LongName>9955546 - Disclosure - Fair value measurements - Schedule of Effect of Derivatives not Designated as Hedging Instruments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsScheduleofEffectofDerivativesnotDesignatedasHedgingInstrumentsDetails</Role>
+      <ShortName>Fair value measurements - Schedule of Effect of Derivatives not Designated as Hedging Instruments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>71</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R72.htm</HtmlFileName>
+      <LongName>9955547 - Disclosure - Fair value measurements - Schedule of Effect of Net Investment Hedges (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsScheduleofEffectofNetInvestmentHedgesDetails</Role>
+      <ShortName>Fair value measurements - Schedule of Effect of Net Investment Hedges (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>72</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R73.htm</HtmlFileName>
+      <LongName>9955548 - Disclosure - Fair value measurements - Summary of Activity Related to Equity Investments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsSummaryofActivityRelatedtoEquityInvestmentsDetails</Role>
+      <ShortName>Fair value measurements - Summary of Activity Related to Equity Investments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>73</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R74.htm</HtmlFileName>
+      <LongName>9955549 - Disclosure - Fair value measurements - Financial Assets and Liabilities at Fair Value (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/FairvaluemeasurementsFinancialAssetsandLiabilitiesatFairValueDetails</Role>
+      <ShortName>Fair value measurements - Financial Assets and Liabilities at Fair Value (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>74</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R75.htm</HtmlFileName>
+      <LongName>9955550 - Disclosure - Borrowings - Schedule of Long-term Debt Instruments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/BorrowingsScheduleofLongtermDebtInstrumentsDetails</Role>
+      <ShortName>Borrowings - Schedule of Long-term Debt Instruments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>75</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R76.htm</HtmlFileName>
+      <LongName>9955551 - Disclosure - Borrowings - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/BorrowingsNarrativeDetails</Role>
+      <ShortName>Borrowings - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>76</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R77.htm</HtmlFileName>
+      <LongName>9955552 - Disclosure - Borrowings - Aggregate Maturities of Long Term Obligations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/BorrowingsAggregateMaturitiesofLongTermObligationsDetails</Role>
+      <ShortName>Borrowings - Aggregate Maturities of Long Term Obligations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>77</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R78.htm</HtmlFileName>
+      <LongName>9955553 - Disclosure - Income taxes - Provision for Income Taxes (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesProvisionforIncomeTaxesDetails</Role>
+      <ShortName>Income taxes - Provision for Income Taxes (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>78</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R79.htm</HtmlFileName>
+      <LongName>9955554 - Disclosure - Income taxes - Comparison of Income Taxes at Statutory Rate and Company's Effective Tax Rate (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesComparisonofIncomeTaxesatStatutoryRateandCompanysEffectiveTaxRateDetails</Role>
+      <ShortName>Income taxes - Comparison of Income Taxes at Statutory Rate and Company's Effective Tax Rate (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>79</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R80.htm</HtmlFileName>
+      <LongName>9955555 - Disclosure - Income taxes - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesNarrativeDetails</Role>
+      <ShortName>Income taxes - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>80</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R81.htm</HtmlFileName>
+      <LongName>9955556 - Disclosure - Income taxes - Temporary Differences and Carryforwards (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesTemporaryDifferencesandCarryforwardsDetails</Role>
+      <ShortName>Income taxes - Temporary Differences and Carryforwards (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>81</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R82.htm</HtmlFileName>
+      <LongName>9955557 - Disclosure - Income taxes - Valuation Allowance Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesValuationAllowanceActivityDetails</Role>
+      <ShortName>Income taxes - Valuation Allowance Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>82</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R83.htm</HtmlFileName>
+      <LongName>9955558 - Disclosure - Income taxes - Summary of Activity Related to Unrecognized Tax Benefits (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/IncometaxesSummaryofActivityRelatedtoUnrecognizedTaxBenefitsDetails</Role>
+      <ShortName>Income taxes - Summary of Activity Related to Unrecognized Tax Benefits (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>83</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R84.htm</HtmlFileName>
+      <LongName>9955559 - Disclosure - Employee related obligations - Employee Related Obligations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/EmployeerelatedobligationsEmployeeRelatedObligationsDetails</Role>
+      <ShortName>Employee related obligations - Employee Related Obligations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>84</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R85.htm</HtmlFileName>
+      <LongName>9955560 - Disclosure - Employee related obligations - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/EmployeerelatedobligationsNarrativeDetails</Role>
+      <ShortName>Employee related obligations - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>85</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R86.htm</HtmlFileName>
+      <LongName>9955561 - Disclosure - Pensions and other benefit plans - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansNarrativeDetails</Role>
+      <ShortName>Pensions and other benefit plans - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>86</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R87.htm</HtmlFileName>
+      <LongName>9955562 - Disclosure - Pensions and other benefit plans - Components of Net Periodic Benefit Cost (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansComponentsofNetPeriodicBenefitCostDetails</Role>
+      <ShortName>Pensions and other benefit plans - Components of Net Periodic Benefit Cost (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>87</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R88.htm</HtmlFileName>
+      <LongName>9955563 - Disclosure - Pensions and other benefit plans - Rates Used to Develop Actuarial Present Value of Projected Benefit Obligation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansRatesUsedtoDevelopActuarialPresentValueofProjectedBenefitObligationDetails</Role>
+      <ShortName>Pensions and other benefit plans - Rates Used to Develop Actuarial Present Value of Projected Benefit Obligation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>88</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R89.htm</HtmlFileName>
+      <LongName>9955564 - Disclosure - Pensions and other benefit plans - Assumed Health Care Cost Trend Rates (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansAssumedHealthCareCostTrendRatesDetails</Role>
+      <ShortName>Pensions and other benefit plans - Assumed Health Care Cost Trend Rates (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>89</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R90.htm</HtmlFileName>
+      <LongName>9955565 - Disclosure - Pensions and other benefit plans - Schedule of Net Funded Status (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansScheduleofNetFundedStatusDetails</Role>
+      <ShortName>Pensions and other benefit plans - Schedule of Net Funded Status (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>90</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R91.htm</HtmlFileName>
+      <LongName>9955566 - Disclosure - Pensions and other benefit plans - Information Related to the Benefit Obligation and the Fair Value of Plan Assets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansInformationRelatedtotheBenefitObligationandtheFairValueofPlanAssetsDetails</Role>
+      <ShortName>Pensions and other benefit plans - Information Related to the Benefit Obligation and the Fair Value of Plan Assets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>91</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R92.htm</HtmlFileName>
+      <LongName>9955567 - Disclosure - Pensions and other benefit plans - Projected Future Benefit Payments from Company's Retirement and Other Benefit Plans (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansProjectedFutureBenefitPaymentsfromCompanysRetirementandOtherBenefitPlansDetails</Role>
+      <ShortName>Pensions and other benefit plans - Projected Future Benefit Payments from Company's Retirement and Other Benefit Plans (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>92</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R93.htm</HtmlFileName>
+      <LongName>9955568 - Disclosure - Pensions and other benefit plans - Projected Future Minimum Contributions to the Company's U.S. and International Unfunded Retirement Plans (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansProjectedFutureMinimumContributionstotheCompanysUSandInternationalUnfundedRetirementPlansDetails</Role>
+      <ShortName>Pensions and other benefit plans - Projected Future Minimum Contributions to the Company's U.S. and International Unfunded Retirement Plans (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>93</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R94.htm</HtmlFileName>
+      <LongName>9955569 - Disclosure - Pensions and other benefit plans - Company' Retirement Plan Asset Allocation and Target Allocations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansCompanyRetirementPlanAssetAllocationandTargetAllocationsDetails</Role>
+      <ShortName>Pensions and other benefit plans - Company' Retirement Plan Asset Allocation and Target Allocations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>94</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R95.htm</HtmlFileName>
+      <LongName>9955570 - Disclosure - Pensions and other benefit plans - Schedule of Defined Benefit Plans Disclosures (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/PensionsandotherbenefitplansScheduleofDefinedBenefitPlansDisclosuresDetails</Role>
+      <ShortName>Pensions and other benefit plans - Schedule of Defined Benefit Plans Disclosures (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>95</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R96.htm</HtmlFileName>
+      <LongName>9955571 - Disclosure - Savings plan (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SavingsplanDetails</Role>
+      <ShortName>Savings plan (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Savingsplan</ParentRole>
+      <Position>96</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R97.htm</HtmlFileName>
+      <LongName>9955572 - Disclosure - Capital and treasury stock - Changes in Treasury Stock (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CapitalandtreasurystockChangesinTreasuryStockDetails</Role>
+      <ShortName>Capital and treasury stock - Changes in Treasury Stock (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>97</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R98.htm</HtmlFileName>
+      <LongName>9955573 - Disclosure - Capital and treasury stock - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CapitalandtreasurystockNarrativeDetails</Role>
+      <ShortName>Capital and treasury stock - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>98</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R99.htm</HtmlFileName>
+      <LongName>9955574 - Disclosure - Accumulated other comprehensive income (loss) (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/AccumulatedothercomprehensiveincomelossDetails</Role>
+      <ShortName>Accumulated other comprehensive income (loss) (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/AccumulatedothercomprehensiveincomelossTables</ParentRole>
+      <Position>99</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R100.htm</HtmlFileName>
+      <LongName>9955575 - Disclosure - International currency translation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/InternationalcurrencytranslationDetails</Role>
+      <ShortName>International currency translation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/Internationalcurrencytranslation</ParentRole>
+      <Position>100</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R101.htm</HtmlFileName>
+      <LongName>9955576 - Disclosure - Earnings per share - Reconciliation of Basic Net Earnings per Share to Diluted Net Earnings per Share (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/EarningspershareReconciliationofBasicNetEarningsperSharetoDilutedNetEarningsperShareDetails</Role>
+      <ShortName>Earnings per share - Reconciliation of Basic Net Earnings per Share to Diluted Net Earnings per Share (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>101</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R102.htm</HtmlFileName>
+      <LongName>9955577 - Disclosure - Earnings per share - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/EarningspershareNarrativeDetails</Role>
+      <ShortName>Earnings per share - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>102</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R103.htm</HtmlFileName>
+      <LongName>9955578 - Disclosure - Common stock, stock option plans and stock compensation agreements - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsNarrativeDetails</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsTables</ParentRole>
+      <Position>103</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R104.htm</HtmlFileName>
+      <LongName>9955579 - Disclosure - Common stock, stock option plans and stock compensation agreements - Schedule Valuation Assumptions (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsScheduleValuationAssumptionsDetails</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements - Schedule Valuation Assumptions (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>104</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R105.htm</HtmlFileName>
+      <LongName>9955580 - Disclosure - Common stock, stock option plans and stock compensation agreements - Summary of Stock Option Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsSummaryofStockOptionActivityDetails</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements - Summary of Stock Option Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>105</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R106.htm</HtmlFileName>
+      <LongName>9955581 - Disclosure - Common stock, stock option plans and stock compensation agreements - Summary of Options Outstanding (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsSummaryofOptionsOutstandingDetails</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements - Summary of Options Outstanding (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>106</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R107.htm</HtmlFileName>
+      <LongName>9955582 - Disclosure - Common stock, stock option plans and stock compensation agreements - Summary of Restricted Share Units (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/CommonstockstockoptionplansandstockcompensationagreementsSummaryofRestrictedShareUnitsDetails</Role>
+      <ShortName>Common stock, stock option plans and stock compensation agreements - Summary of Restricted Share Units (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>107</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R108.htm</HtmlFileName>
+      <LongName>9955583 - Disclosure - Segments of Business and Geographic Areas - Sales by Segment of Business (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SegmentsofBusinessandGeographicAreasSalesbySegmentofBusinessDetails</Role>
+      <ShortName>Segments of Business and Geographic Areas - Sales by Segment of Business (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>108</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R109.htm</HtmlFileName>
+      <LongName>9955584 - Disclosure - Segments of Business and Geographic Areas - Income Before Tax by Segment (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SegmentsofBusinessandGeographicAreasIncomeBeforeTaxbySegmentDetails</Role>
+      <ShortName>Segments of Business and Geographic Areas - Income Before Tax by Segment (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>109</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R110.htm</HtmlFileName>
+      <LongName>9955585 - Disclosure - Segments of Business and Geographic Areas - Schedule of Segment Reporting Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SegmentsofBusinessandGeographicAreasScheduleofSegmentReportingInformationDetails</Role>
+      <ShortName>Segments of Business and Geographic Areas - Schedule of Segment Reporting Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>110</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R111.htm</HtmlFileName>
+      <LongName>9955586 - Disclosure - Segments of Business and Geographic Areas - Schedule of Segment Reporting By Geographic Area (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/SegmentsofBusinessandGeographicAreasScheduleofSegmentReportingByGeographicAreaDetails</Role>
+      <ShortName>Segments of Business and Geographic Areas - Schedule of Segment Reporting By Geographic Area (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>111</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R112.htm</HtmlFileName>
+      <LongName>9955587 - Disclosure - Acquisitions and divestitures - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/AcquisitionsanddivestituresNarrativeDetails</Role>
+      <ShortName>Acquisitions and divestitures - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>112</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R113.htm</HtmlFileName>
+      <LongName>9955588 - Disclosure - Acquisitions and divestitures (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/AcquisitionsanddivestituresDetails</Role>
+      <ShortName>Acquisitions and divestitures (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/AcquisitionsanddivestituresTables</ParentRole>
+      <Position>113</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R114.htm</HtmlFileName>
+      <LongName>9955589 - Disclosure - Legal proceedings - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/LegalproceedingsNarrativeDetails</Role>
+      <ShortName>Legal proceedings - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>114</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R115.htm</HtmlFileName>
+      <LongName>9955590 - Disclosure - Legal proceedings - Product Liabilities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/LegalproceedingsProductLiabilitiesDetails</Role>
+      <ShortName>Legal proceedings - Product Liabilities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>115</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R116.htm</HtmlFileName>
+      <LongName>9955591 - Disclosure - Restructuring - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/RestructuringNarrativeDetails</Role>
+      <ShortName>Restructuring - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>116</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R117.htm</HtmlFileName>
+      <LongName>9955592 - Disclosure - Restructuring - Schedule of Restructuring Reserve (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/RestructuringScheduleofRestructuringReserveDetails</Role>
+      <ShortName>Restructuring - Schedule of Restructuring Reserve (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>117</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R118.htm</HtmlFileName>
+      <LongName>9955593 - Disclosure - Kenvue separation and discontinued operations - Details (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/KenvueseparationanddiscontinuedoperationsDetailsDetails</Role>
+      <ShortName>Kenvue separation and discontinued operations - Details (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.jnj.com/role/KenvueseparationanddiscontinuedoperationsTables</ParentRole>
+      <Position>118</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R119.htm</HtmlFileName>
+      <LongName>9955594 - Disclosure - Kenvue separation and discontinued operations - Net Earnings from Discontinued Operation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/KenvueseparationanddiscontinuedoperationsNetEarningsfromDiscontinuedOperationDetails</Role>
+      <ShortName>Kenvue separation and discontinued operations - Net Earnings from Discontinued Operation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>119</Position>
+    </Report>
+    <Report instance="jnj-20241229.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R120.htm</HtmlFileName>
+      <LongName>9955595 - Disclosure - Kenvue separation and discontinued operations - Depreciation and Amortization of Discontinued Operation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.jnj.com/role/KenvueseparationanddiscontinuedoperationsDepreciationandAmortizationofDiscontinuedOperationDetails</Role>
+      <ShortName>Kenvue separation and discontinued operations - Depreciation and Amortization of Discontinued Operation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>120</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <InputFiles>
+    <File doctype="10-K" isDefinitelyFs="true" isUsgaap="true" original="jnj-20241229.htm">jnj-20241229.htm</File>
+    <File>jnj-20241229.xsd</File>
+    <File>jnj-20241229_cal.xml</File>
+    <File>jnj-20241229_def.xml</File>
+    <File>jnj-20241229_lab.xml</File>
+    <File>jnj-20241229_pre.xml</File>
+  </InputFiles>
+  <SupplementalFiles>
+    <File>jnj-20241229_g1.jpg</File>
+    <File>jnj-20241229_g10.jpg</File>
+    <File>jnj-20241229_g11.jpg</File>
+    <File>jnj-20241229_g12.jpg</File>
+    <File>jnj-20241229_g13.jpg</File>
+    <File>jnj-20241229_g14.jpg</File>
+    <File>jnj-20241229_g15.jpg</File>
+    <File>jnj-20241229_g16.jpg</File>
+    <File>jnj-20241229_g17.jpg</File>
+    <File>jnj-20241229_g18.jpg</File>
+    <File>jnj-20241229_g19.jpg</File>
+    <File>jnj-20241229_g2.jpg</File>
+    <File>jnj-20241229_g20.jpg</File>
+    <File>jnj-20241229_g21.jpg</File>
+    <File>jnj-20241229_g22.jpg</File>
+    <File>jnj-20241229_g23.jpg</File>
+    <File>jnj-20241229_g24.jpg</File>
+    <File>jnj-20241229_g25.jpg</File>
+    <File>jnj-20241229_g26.jpg</File>
+    <File>jnj-20241229_g3.jpg</File>
+    <File>jnj-20241229_g4.jpg</File>
+    <File>jnj-20241229_g5.jpg</File>
+    <File>jnj-20241229_g6.jpg</File>
+    <File>jnj-20241229_g7.jpg</File>
+    <File>jnj-20241229_g8.jpg</File>
+    <File>jnj-20241229_g9.jpg</File>
+  </SupplementalFiles>
+  <BaseTaxonomies>
+    <BaseTaxonomy items="1">http://fasb.org/srt/2024</BaseTaxonomy>
+    <BaseTaxonomy items="2595">http://fasb.org/us-gaap/2024</BaseTaxonomy>
+    <BaseTaxonomy items="15">http://xbrl.sec.gov/cyd/2024</BaseTaxonomy>
+    <BaseTaxonomy items="53">http://xbrl.sec.gov/dei/2024</BaseTaxonomy>
+    <BaseTaxonomy items="5">http://xbrl.sec.gov/ecd/2024</BaseTaxonomy>
+  </BaseTaxonomies>
+  <HasPresentationLinkbase>true</HasPresentationLinkbase>
+  <HasCalculationLinkbase>true</HasCalculationLinkbase>
+</FilingSummary>

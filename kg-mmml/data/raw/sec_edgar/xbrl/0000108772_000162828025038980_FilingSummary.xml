@@ -1,0 +1,1299 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FilingSummary>
+  <Version>3.25.2</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>692</ContextCount>
+  <ElementCount>438</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>true</FootnotesReported>
+  <SegmentCount>137</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>8</UnitCount>
+  <MyReports>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>0000001 - Document - Cover Page</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/CoverPage</Role>
+      <ShortName>Cover Page</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R2.htm</HtmlFileName>
+      <LongName>9952151 - Statement - XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF (LOSS) INCOME (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXHOLDINGSCORPORATIONCONDENSEDCONSOLIDATEDSTATEMENTSOFLOSSINCOMEUNAUDITED</Role>
+      <ShortName>XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF (LOSS) INCOME (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R3.htm</HtmlFileName>
+      <LongName>9952152 - Statement - XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXHOLDINGSCORPORATIONCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSSUNAUDITED</Role>
+      <ShortName>XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>3</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R4.htm</HtmlFileName>
+      <LongName>9952153 - Statement - XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXHOLDINGSCORPORATIONCONDENSEDCONSOLIDATEDBALANCESHEETSUNAUDITED</Role>
+      <ShortName>XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>4</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R5.htm</HtmlFileName>
+      <LongName>9952154 - Statement - XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED) (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXHOLDINGSCORPORATIONCONDENSEDCONSOLIDATEDBALANCESHEETSUNAUDITEDParenthetical</Role>
+      <ShortName>XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED) (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>5</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R6.htm</HtmlFileName>
+      <LongName>9952155 - Statement - XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXHOLDINGSCORPORATIONCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWSUNAUDITED</Role>
+      <ShortName>XEROX HOLDINGS CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>6</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R7.htm</HtmlFileName>
+      <LongName>9952156 - Statement - XEROX CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF (LOSS) INCOME (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXCORPORATIONCONDENSEDCONSOLIDATEDSTATEMENTSOFLOSSINCOMEUNAUDITED</Role>
+      <ShortName>XEROX CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF (LOSS) INCOME (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>7</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R8.htm</HtmlFileName>
+      <LongName>9952157 - Statement - XEROX CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXCORPORATIONCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSSUNAUDITED</Role>
+      <ShortName>XEROX CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>8</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9.htm</HtmlFileName>
+      <LongName>9952158 - Statement - XEROX CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXCORPORATIONCONDENSEDCONSOLIDATEDBALANCESHEETSUNAUDITED</Role>
+      <ShortName>XEROX CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>9</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R10.htm</HtmlFileName>
+      <LongName>9952159 - Statement - XEROX CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED) (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXCORPORATIONCONDENSEDCONSOLIDATEDBALANCESHEETSUNAUDITEDParenthetical</Role>
+      <ShortName>XEROX CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (UNAUDITED) (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>10</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R11.htm</HtmlFileName>
+      <LongName>9952160 - Statement - XEROX CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (UNAUDITED)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/XEROXCORPORATIONCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWSUNAUDITED</Role>
+      <ShortName>XEROX CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (UNAUDITED)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>11</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R12.htm</HtmlFileName>
+      <LongName>9952161 - Disclosure - Basis of Presentation</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/BasisofPresentation</Role>
+      <ShortName>Basis of Presentation</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>12</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R13.htm</HtmlFileName>
+      <LongName>9952162 - Disclosure - Recent Accounting Pronouncements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RecentAccountingPronouncements</Role>
+      <ShortName>Recent Accounting Pronouncements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>13</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R14.htm</HtmlFileName>
+      <LongName>9952163 - Disclosure - Revenue</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/Revenue</Role>
+      <ShortName>Revenue</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>14</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R15.htm</HtmlFileName>
+      <LongName>9952164 - Disclosure - Segment Reporting</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SegmentReporting</Role>
+      <ShortName>Segment Reporting</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>15</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R16.htm</HtmlFileName>
+      <LongName>9952165 - Disclosure - Lessor</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/Lessor</Role>
+      <ShortName>Lessor</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>16</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R17.htm</HtmlFileName>
+      <LongName>9952166 - Disclosure - Accounts Receivable, Net</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/AccountsReceivableNet</Role>
+      <ShortName>Accounts Receivable, Net</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>17</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R18.htm</HtmlFileName>
+      <LongName>9952167 - Disclosure - Finance Receivables, Net</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNet</Role>
+      <ShortName>Finance Receivables, Net</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>18</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R19.htm</HtmlFileName>
+      <LongName>9952168 - Disclosure - Inventories and Equipment on Operating Leases, Net</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNet</Role>
+      <ShortName>Inventories and Equipment on Operating Leases, Net</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>19</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R20.htm</HtmlFileName>
+      <LongName>9952169 - Disclosure - Lessee</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/Lessee</Role>
+      <ShortName>Lessee</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>20</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R21.htm</HtmlFileName>
+      <LongName>9952170 - Disclosure - Restructuring Programs</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringPrograms</Role>
+      <ShortName>Restructuring Programs</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>21</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R22.htm</HtmlFileName>
+      <LongName>9952171 - Disclosure - Supplementary Financial Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformation</Role>
+      <ShortName>Supplementary Financial Information</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>22</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R23.htm</HtmlFileName>
+      <LongName>9952172 - Disclosure - Debt</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/Debt</Role>
+      <ShortName>Debt</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>23</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R24.htm</HtmlFileName>
+      <LongName>9952173 - Disclosure - Financial Instruments</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinancialInstruments</Role>
+      <ShortName>Financial Instruments</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>24</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R25.htm</HtmlFileName>
+      <LongName>9952174 - Disclosure - Fair Value of Financial Assets and Liabilities</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FairValueofFinancialAssetsandLiabilities</Role>
+      <ShortName>Fair Value of Financial Assets and Liabilities</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>25</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R26.htm</HtmlFileName>
+      <LongName>9952175 - Disclosure - Employee Benefit Plans</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/EmployeeBenefitPlans</Role>
+      <ShortName>Employee Benefit Plans</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>26</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R27.htm</HtmlFileName>
+      <LongName>9952176 - Disclosure - Shareholders??? Equity of Xerox Holdings</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXeroxHoldings</Role>
+      <ShortName>Shareholders??? Equity of Xerox Holdings</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>27</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R28.htm</HtmlFileName>
+      <LongName>9952177 - Disclosure - Shareholder's Equity of Xerox</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXerox</Role>
+      <ShortName>Shareholder's Equity of Xerox</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>28</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R29.htm</HtmlFileName>
+      <LongName>9952178 - Disclosure - Other Comprehensive Income (Loss)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/OtherComprehensiveIncomeLoss</Role>
+      <ShortName>Other Comprehensive Income (Loss)</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>29</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R30.htm</HtmlFileName>
+      <LongName>9952179 - Disclosure - (Loss) Earnings per Share</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LossEarningsperShare</Role>
+      <ShortName>(Loss) Earnings per Share</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>30</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R31.htm</HtmlFileName>
+      <LongName>9952180 - Disclosure - Contingencies and Litigation</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ContingenciesandLitigation</Role>
+      <ShortName>Contingencies and Litigation</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>31</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R32.htm</HtmlFileName>
+      <LongName>9952181 - Disclosure - Subsequent Events</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SubsequentEvents</Role>
+      <ShortName>Subsequent Events</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>32</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R33.htm</HtmlFileName>
+      <LongName>995445 - Disclosure - Insider Trading Arrangements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingArrangements</Role>
+      <ShortName>Insider Trading Arrangements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>33</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R34.htm</HtmlFileName>
+      <LongName>9955511 - Disclosure - Recent Accounting Pronouncements (Policies)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RecentAccountingPronouncementsPolicies</Role>
+      <ShortName>Recent Accounting Pronouncements (Policies)</ShortName>
+      <MenuCategory>Policies</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/RecentAccountingPronouncements</ParentRole>
+      <Position>34</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R35.htm</HtmlFileName>
+      <LongName>9955512 - Disclosure - Basis of Presentation (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/BasisofPresentationTables</Role>
+      <ShortName>Basis of Presentation (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/BasisofPresentation</ParentRole>
+      <Position>35</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R36.htm</HtmlFileName>
+      <LongName>9955513 - Disclosure - Revenue (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RevenueTables</Role>
+      <ShortName>Revenue (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/Revenue</ParentRole>
+      <Position>36</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R37.htm</HtmlFileName>
+      <LongName>9955514 - Disclosure - Segment Reporting (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SegmentReportingTables</Role>
+      <ShortName>Segment Reporting (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/SegmentReporting</ParentRole>
+      <Position>37</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R38.htm</HtmlFileName>
+      <LongName>9955515 - Disclosure - Lessor (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LessorTables</Role>
+      <ShortName>Lessor (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/Lessor</ParentRole>
+      <Position>38</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R39.htm</HtmlFileName>
+      <LongName>9955516 - Disclosure - Accounts Receivable, Net (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/AccountsReceivableNetTables</Role>
+      <ShortName>Accounts Receivable, Net (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/AccountsReceivableNet</ParentRole>
+      <Position>39</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R40.htm</HtmlFileName>
+      <LongName>9955517 - Disclosure - Finance Receivables, Net (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetTables</Role>
+      <ShortName>Finance Receivables, Net (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/FinanceReceivablesNet</ParentRole>
+      <Position>40</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R41.htm</HtmlFileName>
+      <LongName>9955518 - Disclosure - Inventories and Equipment on Operating Leases, Net (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNetTables</Role>
+      <ShortName>Inventories and Equipment on Operating Leases, Net (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNet</ParentRole>
+      <Position>41</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R42.htm</HtmlFileName>
+      <LongName>9955519 - Disclosure - Lessee (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LesseeTables</Role>
+      <ShortName>Lessee (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/Lessee</ParentRole>
+      <Position>42</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R43.htm</HtmlFileName>
+      <LongName>9955520 - Disclosure - Restructuring Programs (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsTables</Role>
+      <ShortName>Restructuring Programs (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/RestructuringPrograms</ParentRole>
+      <Position>43</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R44.htm</HtmlFileName>
+      <LongName>9955521 - Disclosure - Supplementary Financial Information (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformationTables</Role>
+      <ShortName>Supplementary Financial Information (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/SupplementaryFinancialInformation</ParentRole>
+      <Position>44</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R45.htm</HtmlFileName>
+      <LongName>9955522 - Disclosure - Debt (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/DebtTables</Role>
+      <ShortName>Debt (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/Debt</ParentRole>
+      <Position>45</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R46.htm</HtmlFileName>
+      <LongName>9955523 - Disclosure - Financial Instruments (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinancialInstrumentsTables</Role>
+      <ShortName>Financial Instruments (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/FinancialInstruments</ParentRole>
+      <Position>46</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R47.htm</HtmlFileName>
+      <LongName>9955524 - Disclosure - Fair Value of Financial Assets and Liabilities (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FairValueofFinancialAssetsandLiabilitiesTables</Role>
+      <ShortName>Fair Value of Financial Assets and Liabilities (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/FairValueofFinancialAssetsandLiabilities</ParentRole>
+      <Position>47</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R48.htm</HtmlFileName>
+      <LongName>9955525 - Disclosure - Employee Benefit Plans (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/EmployeeBenefitPlansTables</Role>
+      <ShortName>Employee Benefit Plans (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/EmployeeBenefitPlans</ParentRole>
+      <Position>48</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R49.htm</HtmlFileName>
+      <LongName>9955526 - Disclosure - Shareholders??? Equity of Xerox Holdings (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXeroxHoldingsTables</Role>
+      <ShortName>Shareholders??? Equity of Xerox Holdings (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/ShareholdersEquityofXeroxHoldings</ParentRole>
+      <Position>49</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R50.htm</HtmlFileName>
+      <LongName>9955527 - Disclosure - Shareholder's Equity of Xerox (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXeroxTables</Role>
+      <ShortName>Shareholder's Equity of Xerox (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/ShareholdersEquityofXerox</ParentRole>
+      <Position>50</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R51.htm</HtmlFileName>
+      <LongName>9955528 - Disclosure - Other Comprehensive Income (Loss) (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/OtherComprehensiveIncomeLossTables</Role>
+      <ShortName>Other Comprehensive Income (Loss) (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/OtherComprehensiveIncomeLoss</ParentRole>
+      <Position>51</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R52.htm</HtmlFileName>
+      <LongName>9955529 - Disclosure - (Loss) Earnings per Share (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LossEarningsperShareTables</Role>
+      <ShortName>(Loss) Earnings per Share (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/LossEarningsperShare</ParentRole>
+      <Position>52</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R53.htm</HtmlFileName>
+      <LongName>9955530 - Disclosure - Contingencies and Litigation (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ContingenciesandLitigationTables</Role>
+      <ShortName>Contingencies and Litigation (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/ContingenciesandLitigation</ParentRole>
+      <Position>53</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R54.htm</HtmlFileName>
+      <LongName>9955531 - Disclosure - Subsequent Events (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SubsequentEventsTables</Role>
+      <ShortName>Subsequent Events (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/SubsequentEvents</ParentRole>
+      <Position>54</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R55.htm</HtmlFileName>
+      <LongName>9955532 - Disclosure - Basis of Presentation - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/BasisofPresentationNarrativeDetails</Role>
+      <ShortName>Basis of Presentation - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>55</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R56.htm</HtmlFileName>
+      <LongName>9955533 - Disclosure - Basis of Presentation - Condensed Consolidated Statement of Loss (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/BasisofPresentationCondensedConsolidatedStatementofLossDetails</Role>
+      <ShortName>Basis of Presentation - Condensed Consolidated Statement of Loss (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>56</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R57.htm</HtmlFileName>
+      <LongName>9955534 - Disclosure - Revenue - Disaggregation of Revenue (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RevenueDisaggregationofRevenueDetails</Role>
+      <ShortName>Revenue - Disaggregation of Revenue (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>57</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R58.htm</HtmlFileName>
+      <LongName>9955535 - Disclosure - Revenue - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RevenueNarrativeDetails</Role>
+      <ShortName>Revenue - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>58</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R59.htm</HtmlFileName>
+      <LongName>9955536 - Disclosure - Revenue - Capitalized Contract Cost (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RevenueCapitalizedContractCostDetails</Role>
+      <ShortName>Revenue - Capitalized Contract Cost (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>59</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R60.htm</HtmlFileName>
+      <LongName>9955537 - Disclosure - Segment Reporting - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SegmentReportingNarrativeDetails</Role>
+      <ShortName>Segment Reporting - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>60</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R61.htm</HtmlFileName>
+      <LongName>9955538 - Disclosure - Segment Reporting - Selected Financial Information for Reportable Segments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SegmentReportingSelectedFinancialInformationforReportableSegmentsDetails</Role>
+      <ShortName>Segment Reporting - Selected Financial Information for Reportable Segments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>61</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R62.htm</HtmlFileName>
+      <LongName>9955539 - Disclosure - Segment Reporting - Reportable Segments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SegmentReportingReportableSegmentsDetails</Role>
+      <ShortName>Segment Reporting - Reportable Segments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>62</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R63.htm</HtmlFileName>
+      <LongName>9955540 - Disclosure - Lessor (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LessorDetails</Role>
+      <ShortName>Lessor (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/LessorTables</ParentRole>
+      <Position>63</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R64.htm</HtmlFileName>
+      <LongName>9955541 - Disclosure - Accounts Receivable, Net - Accounts Receivables (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/AccountsReceivableNetAccountsReceivablesDetails</Role>
+      <ShortName>Accounts Receivable, Net - Accounts Receivables (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>64</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R65.htm</HtmlFileName>
+      <LongName>9955542 - Disclosure - Accounts Receivable, Net - Allowance for Doubtful Accounts (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/AccountsReceivableNetAllowanceforDoubtfulAccountsDetails</Role>
+      <ShortName>Accounts Receivable, Net - Allowance for Doubtful Accounts (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>65</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R66.htm</HtmlFileName>
+      <LongName>9955543 - Disclosure - Accounts Receivable, Net - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/AccountsReceivableNetNarrativeDetails</Role>
+      <ShortName>Accounts Receivable, Net - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>66</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R67.htm</HtmlFileName>
+      <LongName>9955544 - Disclosure - Accounts Receivable, Net - Accounts Receivable Sales Arrangements (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/AccountsReceivableNetAccountsReceivableSalesArrangementsDetails</Role>
+      <ShortName>Accounts Receivable, Net - Accounts Receivable Sales Arrangements (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>67</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R68.htm</HtmlFileName>
+      <LongName>9955545 - Disclosure - Finance Receivables, Net - Finance Receivables (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetFinanceReceivablesDetails</Role>
+      <ShortName>Finance Receivables, Net - Finance Receivables (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>68</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R69.htm</HtmlFileName>
+      <LongName>9955546 - Disclosure - Finance Receivables, Net - Allowance for Credit Losses (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetAllowanceforCreditLossesDetails</Role>
+      <ShortName>Finance Receivables, Net - Allowance for Credit Losses (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>69</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R70.htm</HtmlFileName>
+      <LongName>9955547 - Disclosure - Finance Receivables, Net - Credit Quality Indicators (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetCreditQualityIndicatorsDetails</Role>
+      <ShortName>Finance Receivables, Net - Credit Quality Indicators (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>70</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R71.htm</HtmlFileName>
+      <LongName>9955548 - Disclosure - Finance Receivables, Net - Aging of Billed Finance Receivables (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetAgingofBilledFinanceReceivablesDetails</Role>
+      <ShortName>Finance Receivables, Net - Aging of Billed Finance Receivables (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>71</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R72.htm</HtmlFileName>
+      <LongName>9955549 - Disclosure - Finance Receivables, Net - Sales of Receivables (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetSalesofReceivablesDetails</Role>
+      <ShortName>Finance Receivables, Net - Sales of Receivables (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>72</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R73.htm</HtmlFileName>
+      <LongName>9955550 - Disclosure - Finance Receivables, Net- Finance Receivable Sale Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinanceReceivablesNetFinanceReceivableSaleActivityDetails</Role>
+      <ShortName>Finance Receivables, Net- Finance Receivable Sale Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>73</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R74.htm</HtmlFileName>
+      <LongName>9955551 - Disclosure - Inventories and Equipment on Operating Leases, Net - Inventories by Major Category (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNetInventoriesbyMajorCategoryDetails</Role>
+      <ShortName>Inventories and Equipment on Operating Leases, Net - Inventories by Major Category (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>74</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R75.htm</HtmlFileName>
+      <LongName>9955552 - Disclosure - Inventories and Equipment on Operating Leases, Net - Equipment on Operating Leases and Related Accumulated Depreciation (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNetEquipmentonOperatingLeasesandRelatedAccumulatedDepreciationDetails</Role>
+      <ShortName>Inventories and Equipment on Operating Leases, Net - Equipment on Operating Leases and Related Accumulated Depreciation (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>75</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R76.htm</HtmlFileName>
+      <LongName>9955553 - Disclosure - Inventories and Equipment on Operating Leases, Net - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNetNarrativeDetails</Role>
+      <ShortName>Inventories and Equipment on Operating Leases, Net - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/InventoriesandEquipmentonOperatingLeasesNetTables</ParentRole>
+      <Position>76</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R77.htm</HtmlFileName>
+      <LongName>9955554 - Disclosure - Lessee - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LesseeNarrativeDetails</Role>
+      <ShortName>Lessee - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>77</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R78.htm</HtmlFileName>
+      <LongName>9955555 - Disclosure - Lessee - Components of Lease Expense (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LesseeComponentsofLeaseExpenseDetails</Role>
+      <ShortName>Lessee - Components of Lease Expense (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>78</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R79.htm</HtmlFileName>
+      <LongName>9955556 - Disclosure - Lessee - Operating Lease ROU Asset- Operating Leases Assets and Liabilities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LesseeOperatingLeaseROUAssetOperatingLeasesAssetsandLiabilitiesDetails</Role>
+      <ShortName>Lessee - Operating Lease ROU Asset- Operating Leases Assets and Liabilities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>79</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R80.htm</HtmlFileName>
+      <LongName>9955557 - Disclosure - Lessee - Finance Lease ROU Asset- Financing Leases Assets and Liabilities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LesseeFinanceLeaseROUAssetFinancingLeasesAssetsandLiabilitiesDetails</Role>
+      <ShortName>Lessee - Finance Lease ROU Asset- Financing Leases Assets and Liabilities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>80</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R81.htm</HtmlFileName>
+      <LongName>9955558 - Disclosure - Restructuring Programs - Restructuring and Related Costs, Net Reflect (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsRestructuringandRelatedCostsNetReflectDetails</Role>
+      <ShortName>Restructuring Programs - Restructuring and Related Costs, Net Reflect (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>81</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R82.htm</HtmlFileName>
+      <LongName>9955559 - Disclosure - Restructuring Programs - Restructuring Program Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsRestructuringProgramActivityDetails</Role>
+      <ShortName>Restructuring Programs - Restructuring Program Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>82</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R83.htm</HtmlFileName>
+      <LongName>9955560 - Disclosure - Restructuring Programs - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsNarrativeDetails</Role>
+      <ShortName>Restructuring Programs - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>83</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R84.htm</HtmlFileName>
+      <LongName>9955561 - Disclosure - Restructuring Programs -Reconciliation to the Consolidated Statements of Cash Flows (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsReconciliationtotheConsolidatedStatementsofCashFlowsDetails</Role>
+      <ShortName>Restructuring Programs -Reconciliation to the Consolidated Statements of Cash Flows (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>84</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R85.htm</HtmlFileName>
+      <LongName>9955562 - Disclosure - Restructuring Programs - Restructuring Related Asset Impairment Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsRestructuringRelatedAssetImpairmentActivityDetails</Role>
+      <ShortName>Restructuring Programs - Restructuring Related Asset Impairment Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>85</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R86.htm</HtmlFileName>
+      <LongName>9955563 - Disclosure - Restructuring Programs - Restructuring and Related Costs (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/RestructuringProgramsRestructuringandRelatedCostsDetails</Role>
+      <ShortName>Restructuring Programs - Restructuring and Related Costs (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>86</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R87.htm</HtmlFileName>
+      <LongName>9955564 - Disclosure - Supplementary Financial Information - Cash, Cash Equivalents and Restricted Cash (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformationCashCashEquivalentsandRestrictedCashDetails</Role>
+      <ShortName>Supplementary Financial Information - Cash, Cash Equivalents and Restricted Cash (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>87</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R88.htm</HtmlFileName>
+      <LongName>9955565 - Disclosure - Supplementary Financial Information - Restricted Cash Balance Sheet Location (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformationRestrictedCashBalanceSheetLocationDetails</Role>
+      <ShortName>Supplementary Financial Information - Restricted Cash Balance Sheet Location (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>88</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R89.htm</HtmlFileName>
+      <LongName>9955566 - Disclosure - Supplementary Financial Information - Cash Flow Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformationCashFlowInformationDetails</Role>
+      <ShortName>Supplementary Financial Information - Cash Flow Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>89</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R90.htm</HtmlFileName>
+      <LongName>9955567 - Disclosure - Supplementary Financial Information - Supplier Finance Programs (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformationSupplierFinanceProgramsDetails</Role>
+      <ShortName>Supplementary Financial Information - Supplier Finance Programs (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>90</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R91.htm</HtmlFileName>
+      <LongName>9955568 - Disclosure - Supplementary Financial Information - Our Supplier Finance Program Activity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SupplementaryFinancialInformationOurSupplierFinanceProgramActivityDetails</Role>
+      <ShortName>Supplementary Financial Information - Our Supplier Finance Program Activity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>91</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R92.htm</HtmlFileName>
+      <LongName>9955569 - Disclosure - Debt - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/DebtNarrativeDetails</Role>
+      <ShortName>Debt - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>92</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R93.htm</HtmlFileName>
+      <LongName>9955570 - Disclosure - Debt - Interest Income and Interest Expense Disclosure (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/DebtInterestIncomeandInterestExpenseDisclosureDetails</Role>
+      <ShortName>Debt - Interest Income and Interest Expense Disclosure (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>93</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R94.htm</HtmlFileName>
+      <LongName>9955571 - Disclosure - Financial Instruments - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinancialInstrumentsNarrativeDetails</Role>
+      <ShortName>Financial Instruments - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>94</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R95.htm</HtmlFileName>
+      <LongName>9955572 - Disclosure - Financial Instruments - Interest Rate Derivatives Outstanding (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinancialInstrumentsInterestRateDerivativesOutstandingDetails</Role>
+      <ShortName>Financial Instruments - Interest Rate Derivatives Outstanding (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>95</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R96.htm</HtmlFileName>
+      <LongName>9955573 - Disclosure - Financial Instruments - Gains (Losses) on Derivative Instruments (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinancialInstrumentsGainsLossesonDerivativeInstrumentsDetails</Role>
+      <ShortName>Financial Instruments - Gains (Losses) on Derivative Instruments (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>96</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R97.htm</HtmlFileName>
+      <LongName>9955574 - Disclosure - Financial Instruments - Derivatives Not Designated as Hedging Instruments Gains (Losses) (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FinancialInstrumentsDerivativesNotDesignatedasHedgingInstrumentsGainsLossesDetails</Role>
+      <ShortName>Financial Instruments - Derivatives Not Designated as Hedging Instruments Gains (Losses) (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>97</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R98.htm</HtmlFileName>
+      <LongName>9955575 - Disclosure - Fair Value of Financial Assets and Liabilities - Recurring (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FairValueofFinancialAssetsandLiabilitiesRecurringDetails</Role>
+      <ShortName>Fair Value of Financial Assets and Liabilities - Recurring (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>98</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R99.htm</HtmlFileName>
+      <LongName>9955576 - Disclosure - Fair Value of Financial Assets and Liabilities - Nonrecurring (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/FairValueofFinancialAssetsandLiabilitiesNonrecurringDetails</Role>
+      <ShortName>Fair Value of Financial Assets and Liabilities - Nonrecurring (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>99</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R100.htm</HtmlFileName>
+      <LongName>9955577 - Disclosure - Employee Benefit Plans - Net Periodic Benefit Cost and Other Changes in Plan Assets and Benefit Obligations (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/EmployeeBenefitPlansNetPeriodicBenefitCostandOtherChangesinPlanAssetsandBenefitObligationsDetails</Role>
+      <ShortName>Employee Benefit Plans - Net Periodic Benefit Cost and Other Changes in Plan Assets and Benefit Obligations (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>100</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R101.htm</HtmlFileName>
+      <LongName>9955578 - Disclosure - Employee Benefit Plans - Contributions and Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/EmployeeBenefitPlansContributionsandNarrativeDetails</Role>
+      <ShortName>Employee Benefit Plans - Contributions and Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>101</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R102.htm</HtmlFileName>
+      <LongName>9955579 - Disclosure - Shareholders??? Equity of Xerox Holdings - Shareholders' Equity (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXeroxHoldingsShareholdersEquityDetails</Role>
+      <ShortName>Shareholders??? Equity of Xerox Holdings - Shareholders' Equity (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>102</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R103.htm</HtmlFileName>
+      <LongName>9955580 - Disclosure - Shareholders??? Equity of Xerox Holdings - Common Stock (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXeroxHoldingsCommonStockDetails</Role>
+      <ShortName>Shareholders??? Equity of Xerox Holdings - Common Stock (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>103</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R104.htm</HtmlFileName>
+      <LongName>9955581 - Disclosure - Shareholder's Equity of Xerox (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ShareholdersEquityofXeroxDetails</Role>
+      <ShortName>Shareholder's Equity of Xerox (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/ShareholdersEquityofXeroxTables</ParentRole>
+      <Position>104</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R105.htm</HtmlFileName>
+      <LongName>9955582 - Disclosure - Other Comprehensive Income (Loss) - Other Comprehensive (Loss) Income (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/OtherComprehensiveIncomeLossOtherComprehensiveLossIncomeDetails</Role>
+      <ShortName>Other Comprehensive Income (Loss) - Other Comprehensive (Loss) Income (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/OtherComprehensiveIncomeLossTables</ParentRole>
+      <Position>105</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R106.htm</HtmlFileName>
+      <LongName>9955583 - Disclosure - Other Comprehensive Income (Loss) - Accumulated Other Comprehensive Loss (AOCL) (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/OtherComprehensiveIncomeLossAccumulatedOtherComprehensiveLossAOCLDetails</Role>
+      <ShortName>Other Comprehensive Income (Loss) - Accumulated Other Comprehensive Loss (AOCL) (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.xerox.com/role/OtherComprehensiveIncomeLossTables</ParentRole>
+      <Position>106</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R107.htm</HtmlFileName>
+      <LongName>9955584 - Disclosure - (Loss) Earnings per Share - Basic and Diluted (Loss) Earnings Per Share (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LossEarningsperShareBasicandDilutedLossEarningsPerShareDetails</Role>
+      <ShortName>(Loss) Earnings per Share - Basic and Diluted (Loss) Earnings Per Share (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>107</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R108.htm</HtmlFileName>
+      <LongName>9955585 - Disclosure - (Loss) Earnings per Share - Anti-Dilutive Securities (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/LossEarningsperShareAntiDilutiveSecuritiesDetails</Role>
+      <ShortName>(Loss) Earnings per Share - Anti-Dilutive Securities (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>108</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R109.htm</HtmlFileName>
+      <LongName>9955586 - Disclosure - Contingencies and Litigation - Loss Contingencies by Contingency (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ContingenciesandLitigationLossContingenciesbyContingencyDetails</Role>
+      <ShortName>Contingencies and Litigation - Loss Contingencies by Contingency (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>109</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R110.htm</HtmlFileName>
+      <LongName>9955587 - Disclosure - Contingencies and Litigation - Other Pending Litigation - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/ContingenciesandLitigationOtherPendingLitigationNarrativeDetails</Role>
+      <ShortName>Contingencies and Litigation - Other Pending Litigation - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>110</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R111.htm</HtmlFileName>
+      <LongName>9955588 - Disclosure - Subsequent Events- Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SubsequentEventsNarrativeDetails</Role>
+      <ShortName>Subsequent Events- Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>111</Position>
+    </Report>
+    <Report instance="xrx-20250630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R112.htm</HtmlFileName>
+      <LongName>9955589 - Disclosure - Subsequent Events - Initial Interest Rate (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xerox.com/role/SubsequentEventsInitialInterestRateDetails</Role>
+      <ShortName>Subsequent Events - Initial Interest Rate (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>112</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <InputFiles>
+    <File doctype="10-Q" isDefinitelyFs="true" isUsgaap="true" original="xrx-20250630.htm">xrx-20250630.htm</File>
+    <File>xrx-20250630.xsd</File>
+    <File>xrx-20250630_cal.xml</File>
+    <File>xrx-20250630_def.xml</File>
+    <File>xrx-20250630_lab.xml</File>
+    <File>xrx-20250630_pre.xml</File>
+  </InputFiles>
+  <SupplementalFiles>
+    <File>xrx-20250630_g1.jpg</File>
+  </SupplementalFiles>
+  <BaseTaxonomies>
+    <BaseTaxonomy items="2300">http://fasb.org/us-gaap/2025</BaseTaxonomy>
+    <BaseTaxonomy items="45">http://xbrl.sec.gov/dei/2025</BaseTaxonomy>
+    <BaseTaxonomy items="4">http://xbrl.sec.gov/ecd/2025</BaseTaxonomy>
+  </BaseTaxonomies>
+  <HasPresentationLinkbase>true</HasPresentationLinkbase>
+  <HasCalculationLinkbase>true</HasCalculationLinkbase>
+</FilingSummary>

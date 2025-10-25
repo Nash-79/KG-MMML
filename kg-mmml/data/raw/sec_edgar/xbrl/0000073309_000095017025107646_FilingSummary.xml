@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FilingSummary>
+  <Version>3.25.2</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>238</ContextCount>
+  <ElementCount>265</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>true</FootnotesReported>
+  <SegmentCount>47</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>4</UnitCount>
+  <MyReports>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>75000 - Document - Document and Entity Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DocumentDocumentAndEntityInformation</Role>
+      <ShortName>Document and Entity Information</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R2.htm</HtmlFileName>
+      <LongName>75010 - Statement - Condensed Consolidated Statements of Earnings</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfEarnings</Role>
+      <ShortName>Condensed Consolidated Statements of Earnings</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R3.htm</HtmlFileName>
+      <LongName>75020 - Statement - Condensed Consolidated Statements of Comprehensive Income</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfComprehensiveIncome</Role>
+      <ShortName>Condensed Consolidated Statements of Comprehensive Income</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>3</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R4.htm</HtmlFileName>
+      <LongName>75030 - Statement - Condensed Consolidated Statements of Comprehensive Income (Parenthetical)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfComprehensiveIncomeParenthetical</Role>
+      <ShortName>Condensed Consolidated Statements of Comprehensive Income (Parenthetical)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>4</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R5.htm</HtmlFileName>
+      <LongName>75040 - Statement - Condensed Consolidated Balance Sheets</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_StatementCondensedConsolidatedBalanceSheets</Role>
+      <ShortName>Condensed Consolidated Balance Sheets</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>5</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R6.htm</HtmlFileName>
+      <LongName>75050 - Statement - Condensed Consolidated Statements of Cash Flows</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfCashFlows</Role>
+      <ShortName>Condensed Consolidated Statements of Cash Flows</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>6</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R7.htm</HtmlFileName>
+      <LongName>995410 - Disclosure - Pay vs Performance Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/PvpDisclosure</Role>
+      <ShortName>Pay vs Performance Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>7</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R8.htm</HtmlFileName>
+      <LongName>995445 - Disclosure - Insider Trading Arrangements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingArrangements</Role>
+      <ShortName>Insider Trading Arrangements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>8</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9.htm</HtmlFileName>
+      <LongName>995455 - Disclosure - Basis of Interim Presentation</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureBasisOfInterimPresentation</Role>
+      <ShortName>Basis of Interim Presentation</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>9</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R10.htm</HtmlFileName>
+      <LongName>995465 - Disclosure - Inventories</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureInventories</Role>
+      <ShortName>Inventories</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>10</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R11.htm</HtmlFileName>
+      <LongName>995475 - Disclosure - Property, Plant and Equipment</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosurePropertyPlantAndEquipment</Role>
+      <ShortName>Property, Plant and Equipment</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>11</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R12.htm</HtmlFileName>
+      <LongName>995485 - Disclosure - Goodwill and Other Intangible Assets</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureGoodwillAndOtherIntangibleAssets</Role>
+      <ShortName>Goodwill and Other Intangible Assets</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>12</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R13.htm</HtmlFileName>
+      <LongName>995495 - Disclosure - Current Liabilities</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureCurrentLiabilities</Role>
+      <ShortName>Current Liabilities</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>13</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R14.htm</HtmlFileName>
+      <LongName>995505 - Disclosure - Fair Value Measurements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureFairValueMeasurements</Role>
+      <ShortName>Fair Value Measurements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>14</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R15.htm</HtmlFileName>
+      <LongName>995515 - Disclosure - Contingencies</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureContingencies</Role>
+      <ShortName>Contingencies</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>15</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R16.htm</HtmlFileName>
+      <LongName>995525 - Disclosure - Stock-Based Compensation</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensation</Role>
+      <ShortName>Stock-Based Compensation</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>16</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R17.htm</HtmlFileName>
+      <LongName>995535 - Disclosure - Employee Benefit Plan</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureEmployeeBenefitPlan</Role>
+      <ShortName>Employee Benefit Plan</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>17</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R18.htm</HtmlFileName>
+      <LongName>995545 - Disclosure - Interest Expense (Income)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureInterestExpenseIncome</Role>
+      <ShortName>Interest Expense (Income)</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>18</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R19.htm</HtmlFileName>
+      <LongName>995555 - Disclosure - Income Taxes</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureIncomeTaxes</Role>
+      <ShortName>Income Taxes</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>19</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R20.htm</HtmlFileName>
+      <LongName>995565 - Disclosure - Stockholders' Equity</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockholdersEquity</Role>
+      <ShortName>Stockholders' Equity</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>20</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R21.htm</HtmlFileName>
+      <LongName>995575 - Disclosure - Accumulated Other Comprehensive Income (Loss)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLoss</Role>
+      <ShortName>Accumulated Other Comprehensive Income (Loss)</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>21</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R22.htm</HtmlFileName>
+      <LongName>995585 - Disclosure - Segments</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureSegments</Role>
+      <ShortName>Segments</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>22</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R23.htm</HtmlFileName>
+      <LongName>995595 - Disclosure - Revenue</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureRevenue</Role>
+      <ShortName>Revenue</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>23</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R24.htm</HtmlFileName>
+      <LongName>995605 - Disclosure - Earnings Per Share</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureEarningsPerShare</Role>
+      <ShortName>Earnings Per Share</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>24</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R25.htm</HtmlFileName>
+      <LongName>995615 - Disclosure - Debt and Other Financing Arrangements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureDebtAndOtherFinancingArrangements</Role>
+      <ShortName>Debt and Other Financing Arrangements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>25</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R26.htm</HtmlFileName>
+      <LongName>995645 - Disclosure - Basis of Interim Presentation (Policies)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureBasisOfInterimPresentationPolicies</Role>
+      <ShortName>Basis of Interim Presentation (Policies)</ShortName>
+      <MenuCategory>Policies</MenuCategory>
+      <Position>26</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R27.htm</HtmlFileName>
+      <LongName>995655 - Disclosure - Goodwill and Other Intangible Assets (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureGoodwillAndOtherIntangibleAssetsTables</Role>
+      <ShortName>Goodwill and Other Intangible Assets (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureGoodwillAndOtherIntangibleAssets</ParentRole>
+      <Position>27</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R28.htm</HtmlFileName>
+      <LongName>995665 - Disclosure - Fair Value Measurements (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureFairValueMeasurementsTables</Role>
+      <ShortName>Fair Value Measurements (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureFairValueMeasurements</ParentRole>
+      <Position>28</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R29.htm</HtmlFileName>
+      <LongName>995675 - Disclosure - Stock-Based Compensation (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensationTables</Role>
+      <ShortName>Stock-Based Compensation (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensation</ParentRole>
+      <Position>29</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R30.htm</HtmlFileName>
+      <LongName>995685 - Disclosure - Interest Expense (Income) (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureInterestExpenseIncomeTables</Role>
+      <ShortName>Interest Expense (Income) (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/DisclosureInterestExpenseIncome</ParentRole>
+      <Position>30</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R31.htm</HtmlFileName>
+      <LongName>995695 - Disclosure - Stockholders' Equity (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockholdersEquityTables</Role>
+      <ShortName>Stockholders' Equity (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockholdersEquity</ParentRole>
+      <Position>31</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R32.htm</HtmlFileName>
+      <LongName>995705 - Disclosure - Accumulated Other Comprehensive Income (Loss) (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLossTables</Role>
+      <ShortName>Accumulated Other Comprehensive Income (Loss) (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLoss</ParentRole>
+      <Position>32</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R33.htm</HtmlFileName>
+      <LongName>995715 - Disclosure - Segments (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureSegmentsTables</Role>
+      <ShortName>Segments (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureSegments</ParentRole>
+      <Position>33</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R34.htm</HtmlFileName>
+      <LongName>995735 - Disclosure - Earnings Per Share (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureEarningsPerShareTables</Role>
+      <ShortName>Earnings Per Share (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureEarningsPerShare</ParentRole>
+      <Position>34</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R35.htm</HtmlFileName>
+      <LongName>995755 - Disclosure - Inventories - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureInventoriesAdditionalInformationDetail</Role>
+      <ShortName>Inventories - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>35</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R36.htm</HtmlFileName>
+      <LongName>995765 - Disclosure - Property, Plant and Equipment - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosurePropertyPlantAndEquipmentAdditionalInformationDetail</Role>
+      <ShortName>Property, Plant and Equipment - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>36</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R37.htm</HtmlFileName>
+      <LongName>995775 - Disclosure - Goodwill and Other Intangible Assets - Schedule of Change in Net Carrying Amount of Goodwill by Segment (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureGoodwillAndOtherIntangibleAssetsScheduleOfChangeInNetCarryingAmountOfGoodwillBySegmentDetail</Role>
+      <ShortName>Goodwill and Other Intangible Assets - Schedule of Change in Net Carrying Amount of Goodwill by Segment (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>37</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R38.htm</HtmlFileName>
+      <LongName>995785 - Disclosure - Goodwill and Other Intangible Assets - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureGoodwillAndOtherIntangibleAssetsAdditionalInformationDetail</Role>
+      <ShortName>Goodwill and Other Intangible Assets - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>38</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R39.htm</HtmlFileName>
+      <LongName>995795 - Disclosure - Goodwill and Other Intangible Assets - Schedule of Intangible Assets (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureGoodwillAndOtherIntangibleAssetsScheduleOfIntangibleAssetsDetail</Role>
+      <ShortName>Goodwill and Other Intangible Assets - Schedule of Intangible Assets (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>39</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R40.htm</HtmlFileName>
+      <LongName>995805 - Disclosure - Current Liabilities - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureCurrentLiabilitiesAdditionalInformationDetail</Role>
+      <ShortName>Current Liabilities - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>40</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R41.htm</HtmlFileName>
+      <LongName>995815 - Disclosure - Fair Value Measurements - Schedule of Financial Assets and Liabilities Measured at Fair Value (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureFairValueMeasurementsScheduleOfFinancialAssetsAndLiabilitiesMeasuredAtFairValueDetail</Role>
+      <ShortName>Fair Value Measurements - Schedule of Financial Assets and Liabilities Measured at Fair Value (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>41</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R42.htm</HtmlFileName>
+      <LongName>995825 - Disclosure - Fair Value Measurements - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureFairValueMeasurementsAdditionalInformationDetail</Role>
+      <ShortName>Fair Value Measurements - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>42</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R43.htm</HtmlFileName>
+      <LongName>995835 - Disclosure - Stock-Based Compensation - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensationAdditionalInformationDetail</Role>
+      <ShortName>Stock-Based Compensation - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>43</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R44.htm</HtmlFileName>
+      <LongName>995845 - Disclosure - Stock-Based Compensation - Schedule of Stock Option Plans Activity (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensationScheduleOfStockOptionPlansActivityDetail</Role>
+      <ShortName>Stock-Based Compensation - Schedule of Stock Option Plans Activity (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>44</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R45.htm</HtmlFileName>
+      <LongName>995855 - Disclosure - Stock-Based Compensation - Schedule of Grant Date Fair Value Black-Scholes Options-Pricing Model Assumptions (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureStockbasedCompensationScheduleOfGrantDateFairValueBlackscholesOptionspricingModelAssumptionsDetails</Role>
+      <ShortName>Stock-Based Compensation - Schedule of Grant Date Fair Value Black-Scholes Options-Pricing Model Assumptions (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>45</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R46.htm</HtmlFileName>
+      <LongName>995865 - Disclosure - Stock-Based Compensation - Summary of Nucor's Restricted Stock Unit ("RSU") Activity (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfNucorSRestrictedStockUnitRSUActivityDetail</Role>
+      <ShortName>Stock-Based Compensation - Summary of Nucor's Restricted Stock Unit ("RSU") Activity (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>46</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R47.htm</HtmlFileName>
+      <LongName>995875 - Disclosure - Stock-Based Compensation - Summary of Nucor's Restricted Stock Activity under AIP and LTIP (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfNucorSRestrictedStockActivityUnderAIPAndLTIPDetail</Role>
+      <ShortName>Stock-Based Compensation - Summary of Nucor's Restricted Stock Activity under AIP and LTIP (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>47</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R48.htm</HtmlFileName>
+      <LongName>995885 - Disclosure - Employee Benefit Plan - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureEmployeeBenefitPlanAdditionalInformationDetail</Role>
+      <ShortName>Employee Benefit Plan - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>48</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R49.htm</HtmlFileName>
+      <LongName>995895 - Disclosure - Interest Expense (Income) - Schedule of Components of Net Interest (Income) Expense (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureInterestExpenseIncomeScheduleOfComponentsOfNetInterestIncomeExpenseDetail</Role>
+      <ShortName>Interest Expense (Income) - Schedule of Components of Net Interest (Income) Expense (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/DisclosureInterestExpenseIncomeTables</ParentRole>
+      <Position>49</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R50.htm</HtmlFileName>
+      <LongName>995905 - Disclosure - Income Taxes - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureIncomeTaxesAdditionalInformationDetail</Role>
+      <ShortName>Income Taxes - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>50</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R51.htm</HtmlFileName>
+      <LongName>995915 - Disclosure - Stockholders' Equity - Schedule of Change in Stockholder's Equity (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockholdersEquityScheduleOfChangeInStockholderSEquityDetail</Role>
+      <ShortName>Stockholders' Equity - Schedule of Change in Stockholder's Equity (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>51</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R52.htm</HtmlFileName>
+      <LongName>995925 - Disclosure - Stockholders' Equity - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureStockholdersEquityAdditionalInformationDetail</Role>
+      <ShortName>Stockholders' Equity - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>52</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R53.htm</HtmlFileName>
+      <LongName>995935 - Disclosure - Accumulated Other Comprehensive Income (Loss) - Components of Accumulated Other Comprehensive Income (Loss) (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLossComponentsOfAccumulatedOtherComprehensiveIncomeLossDetail</Role>
+      <ShortName>Accumulated Other Comprehensive Income (Loss) - Components of Accumulated Other Comprehensive Income (Loss) (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLossTables</ParentRole>
+      <Position>53</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R54.htm</HtmlFileName>
+      <LongName>995945 - Disclosure - Accumulated Other Comprehensive Income (Loss) - Components of Accumulated Other Comprehensive Income (Loss) (Parenthetical) (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLossComponentsOfAccumulatedOtherComprehensiveIncomeLossParentheticalDetail</Role>
+      <ShortName>Accumulated Other Comprehensive Income (Loss) - Components of Accumulated Other Comprehensive Income (Loss) (Parenthetical) (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://nucor.com/20250705/taxonomy/role/Role_DisclosureAccumulatedOtherComprehensiveIncomeLossTables</ParentRole>
+      <Position>54</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R55.htm</HtmlFileName>
+      <LongName>995955 - Disclosure - Segments - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureSegmentsAdditionalInformationDetail</Role>
+      <ShortName>Segments - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>55</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R56.htm</HtmlFileName>
+      <LongName>995965 - Disclosure - Segments - Segments (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureSegmentsSegmentsDetail</Role>
+      <ShortName>Segments - Segments (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>56</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R57.htm</HtmlFileName>
+      <LongName>995975 - Disclosure - Segments - Schedule of Net Sale by Product to External Customers (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureSegmentsScheduleOfNetSaleByProductToExternalCustomersDetail</Role>
+      <ShortName>Segments - Schedule of Net Sale by Product to External Customers (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>57</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R58.htm</HtmlFileName>
+      <LongName>995995 - Disclosure - Revenue - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureRevenueAdditionalInformationDetail</Role>
+      <ShortName>Revenue - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>58</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R59.htm</HtmlFileName>
+      <LongName>996015 - Disclosure - Earnings Per Share - Computations of Basic and Diluted Net Earnings Per Share (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureEarningsPerShareComputationsOfBasicAndDilutedNetEarningsPerShareDetail</Role>
+      <ShortName>Earnings Per Share - Computations of Basic and Diluted Net Earnings Per Share (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>59</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R60.htm</HtmlFileName>
+      <LongName>996025 - Disclosure - Earnings Per Share - Anti-dilutive Stock Options (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/DisclosureEarningsPerShareAntidilutiveStockOptionsDetail</Role>
+      <ShortName>Earnings Per Share - Anti-dilutive Stock Options (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>60</Position>
+    </Report>
+    <Report instance="nue-20250705.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R61.htm</HtmlFileName>
+      <LongName>996035 - Disclosure - Debt and Other Financing Arrangements - Additional Information (Detail)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://nucor.com/20250705/taxonomy/role/Role_DisclosureDebtAndOtherFinancingArrangementsAdditionalInformationDetail</Role>
+      <ShortName>Debt and Other Financing Arrangements - Additional Information (Detail)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>61</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <InputFiles>
+    <File doctype="10-Q" isDefinitelyFs="true" isUsgaap="true" original="nue-20250705.htm">nue-20250705.htm</File>
+    <File>nue-20250705.xsd</File>
+  </InputFiles>
+  <SupplementalFiles/>
+  <BaseTaxonomies>
+    <BaseTaxonomy items="1">http://fasb.org/srt/2025</BaseTaxonomy>
+    <BaseTaxonomy items="880">http://fasb.org/us-gaap/2025</BaseTaxonomy>
+    <BaseTaxonomy items="29">http://xbrl.sec.gov/dei/2025</BaseTaxonomy>
+    <BaseTaxonomy items="4">http://xbrl.sec.gov/ecd/2025</BaseTaxonomy>
+  </BaseTaxonomies>
+  <HasPresentationLinkbase>false</HasPresentationLinkbase>
+  <HasCalculationLinkbase>false</HasCalculationLinkbase>
+</FilingSummary>

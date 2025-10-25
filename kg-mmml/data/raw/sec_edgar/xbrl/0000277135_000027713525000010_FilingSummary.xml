@@ -1,0 +1,842 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FilingSummary>
+  <Version>3.25.0.1</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>317</ContextCount>
+  <ElementCount>413</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>false</FootnotesReported>
+  <SegmentCount>77</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>6</UnitCount>
+  <MyReports>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>0000001 - Document - COVER</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/COVER</Role>
+      <ShortName>COVER</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R2.htm</HtmlFileName>
+      <LongName>0000002 - Document - Audit Information</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/AuditInformation</Role>
+      <ShortName>Audit Information</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R3.htm</HtmlFileName>
+      <LongName>9952151 - Statement - CONSOLIDATED STATEMENTS OF EARNINGS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGS</Role>
+      <ShortName>CONSOLIDATED STATEMENTS OF EARNINGS</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>3</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R4.htm</HtmlFileName>
+      <LongName>9952152 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE EARNINGS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEEARNINGS</Role>
+      <ShortName>CONSOLIDATED STATEMENTS OF COMPREHENSIVE EARNINGS</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>4</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R5.htm</HtmlFileName>
+      <LongName>9952153 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE EARNINGS Parentheticals</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEEARNINGSParentheticals</Role>
+      <ShortName>CONSOLIDATED STATEMENTS OF COMPREHENSIVE EARNINGS Parentheticals</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>5</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R6.htm</HtmlFileName>
+      <LongName>9952154 - Statement - CONSOLIDATED BALANCE SHEETS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDBALANCESHEETS</Role>
+      <ShortName>CONSOLIDATED BALANCE SHEETS</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>6</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R7.htm</HtmlFileName>
+      <LongName>9952155 - Statement - CONSOLIDATED BALANCE SHEETS (Parentheticals)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDBALANCESHEETSParentheticals</Role>
+      <ShortName>CONSOLIDATED BALANCE SHEETS (Parentheticals)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>7</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R8.htm</HtmlFileName>
+      <LongName>9952156 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS</Role>
+      <ShortName>CONSOLIDATED STATEMENTS OF CASH FLOWS</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>8</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9.htm</HtmlFileName>
+      <LongName>9952157 - Statement - CONSOLIDATED STATEMENTS OF SHAREHOLDERS' EQUITY</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDSTATEMENTSOFSHAREHOLDERSEQUITY</Role>
+      <ShortName>CONSOLIDATED STATEMENTS OF SHAREHOLDERS' EQUITY</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>9</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R10.htm</HtmlFileName>
+      <LongName>9952158 - Statement - CONSOLIDATED STATEMENTS OF SHAREHOLDERS' EQUITY (Parentheticals)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONSOLIDATEDSTATEMENTSOFSHAREHOLDERSEQUITYParentheticals</Role>
+      <ShortName>CONSOLIDATED STATEMENTS OF SHAREHOLDERS' EQUITY (Parentheticals)</ShortName>
+      <MenuCategory>Statements</MenuCategory>
+      <Position>10</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R11.htm</HtmlFileName>
+      <LongName>9952159 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES</Role>
+      <ShortName>SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>11</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R12.htm</HtmlFileName>
+      <LongName>9952160 - Disclosure - REVENUE</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/REVENUE</Role>
+      <ShortName>REVENUE</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>12</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R13.htm</HtmlFileName>
+      <LongName>9952161 - Disclosure - PROPERTY, BUILDINGS AND EQUIPMENT</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/PROPERTYBUILDINGSANDEQUIPMENT</Role>
+      <ShortName>PROPERTY, BUILDINGS AND EQUIPMENT</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>13</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R14.htm</HtmlFileName>
+      <LongName>9952162 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETS</Role>
+      <ShortName>GOODWILL AND OTHER INTANGIBLE ASSETS</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>14</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R15.htm</HtmlFileName>
+      <LongName>9952163 - Disclosure - DEBT</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/DEBT</Role>
+      <ShortName>DEBT</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>15</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R16.htm</HtmlFileName>
+      <LongName>9952164 - Disclosure - EMPLOYEE BENEFITS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/EMPLOYEEBENEFITS</Role>
+      <ShortName>EMPLOYEE BENEFITS</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>16</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R17.htm</HtmlFileName>
+      <LongName>9952165 - Disclosure - LEASES</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/LEASES</Role>
+      <ShortName>LEASES</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>17</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R18.htm</HtmlFileName>
+      <LongName>9952166 - Disclosure - STOCK INCENTIVE PLANS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/STOCKINCENTIVEPLANS</Role>
+      <ShortName>STOCK INCENTIVE PLANS</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>18</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R19.htm</HtmlFileName>
+      <LongName>9952167 - Disclosure - CAPITAL STOCK</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CAPITALSTOCK</Role>
+      <ShortName>CAPITAL STOCK</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>19</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R20.htm</HtmlFileName>
+      <LongName>9952168 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE EARNINGS (LOSSES) (AOCE)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/ACCUMULATEDOTHERCOMPREHENSIVEEARNINGSLOSSESAOCE</Role>
+      <ShortName>ACCUMULATED OTHER COMPREHENSIVE EARNINGS (LOSSES) (AOCE)</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>20</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R21.htm</HtmlFileName>
+      <LongName>9952169 - Disclosure - INCOME TAXES</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXES</Role>
+      <ShortName>INCOME TAXES</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>21</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R22.htm</HtmlFileName>
+      <LongName>9952170 - Disclosure - SEGMENT INFORMATION</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SEGMENTINFORMATION</Role>
+      <ShortName>SEGMENT INFORMATION</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>22</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R23.htm</HtmlFileName>
+      <LongName>9952171 - Disclosure - CONTINGENCIES AND LEGAL MATTERS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CONTINGENCIESANDLEGALMATTERS</Role>
+      <ShortName>CONTINGENCIES AND LEGAL MATTERS</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>23</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R24.htm</HtmlFileName>
+      <LongName>9952172 - Disclosure - SUBSEQUENT EVENTS</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SUBSEQUENTEVENTS</Role>
+      <ShortName>SUBSEQUENT EVENTS</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>24</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R25.htm</HtmlFileName>
+      <LongName>995410 - Disclosure - Pay vs Performance Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/PvpDisclosure</Role>
+      <ShortName>Pay vs Performance Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>25</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R26.htm</HtmlFileName>
+      <LongName>995445 - Disclosure - Insider Trading Arrangements</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingArrangements</Role>
+      <ShortName>Insider Trading Arrangements</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>26</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R27.htm</HtmlFileName>
+      <LongName>995447 - Disclosure - Insider Trading Policies and Procedures</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/ecd/role/InsiderTradingPoliciesProc</Role>
+      <ShortName>Insider Trading Policies and Procedures</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>27</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R28.htm</HtmlFileName>
+      <LongName>995550 - Disclosure - Cybersecurity Risk Management and Strategy Disclosure</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/cyd/role/CybersecurityRiskManagementAndStrategyDisclosure</Role>
+      <ShortName>Cybersecurity Risk Management and Strategy Disclosure</ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>28</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R29.htm</HtmlFileName>
+      <LongName>9955511 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies</Role>
+      <ShortName>SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</ShortName>
+      <MenuCategory>Policies</MenuCategory>
+      <Position>29</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R30.htm</HtmlFileName>
+      <LongName>9955512 - Disclosure - REVENUE (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/REVENUETables</Role>
+      <ShortName>REVENUE (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/REVENUE</ParentRole>
+      <Position>30</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R31.htm</HtmlFileName>
+      <LongName>9955513 - Disclosure - PROPERTY, BUILDINGS AND EQUIPMENT (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/PROPERTYBUILDINGSANDEQUIPMENTTables</Role>
+      <ShortName>PROPERTY, BUILDINGS AND EQUIPMENT (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/PROPERTYBUILDINGSANDEQUIPMENT</ParentRole>
+      <Position>31</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R32.htm</HtmlFileName>
+      <LongName>9955514 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETSTables</Role>
+      <ShortName>GOODWILL AND OTHER INTANGIBLE ASSETS (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETS</ParentRole>
+      <Position>32</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R33.htm</HtmlFileName>
+      <LongName>9955515 - Disclosure - DEBT (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/DEBTTables</Role>
+      <ShortName>DEBT (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/DEBT</ParentRole>
+      <Position>33</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R34.htm</HtmlFileName>
+      <LongName>9955516 - Disclosure - EMPLOYEE BENEFITS (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/EMPLOYEEBENEFITSTables</Role>
+      <ShortName>EMPLOYEE BENEFITS (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/EMPLOYEEBENEFITS</ParentRole>
+      <Position>34</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R35.htm</HtmlFileName>
+      <LongName>9955517 - Disclosure - LEASES (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/LEASESTables</Role>
+      <ShortName>LEASES (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/LEASES</ParentRole>
+      <Position>35</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R36.htm</HtmlFileName>
+      <LongName>9955518 - Disclosure - STOCK INCENTIVE PLANS (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/STOCKINCENTIVEPLANSTables</Role>
+      <ShortName>STOCK INCENTIVE PLANS (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/STOCKINCENTIVEPLANS</ParentRole>
+      <Position>36</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R37.htm</HtmlFileName>
+      <LongName>9955519 - Disclosure - CAPITAL STOCK (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CAPITALSTOCKTables</Role>
+      <ShortName>CAPITAL STOCK (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/CAPITALSTOCK</ParentRole>
+      <Position>37</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R38.htm</HtmlFileName>
+      <LongName>9955520 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE EARNINGS (LOSSES) (AOCE) (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/ACCUMULATEDOTHERCOMPREHENSIVEEARNINGSLOSSESAOCETables</Role>
+      <ShortName>ACCUMULATED OTHER COMPREHENSIVE EARNINGS (LOSSES) (AOCE) (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/ACCUMULATEDOTHERCOMPREHENSIVEEARNINGSLOSSESAOCE</ParentRole>
+      <Position>38</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R39.htm</HtmlFileName>
+      <LongName>9955521 - Disclosure - INCOME TAXES (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESTables</Role>
+      <ShortName>INCOME TAXES (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/INCOMETAXES</ParentRole>
+      <Position>39</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R40.htm</HtmlFileName>
+      <LongName>9955522 - Disclosure - SEGMENT INFORMATION (Tables)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SEGMENTINFORMATIONTables</Role>
+      <ShortName>SEGMENT INFORMATION (Tables)</ShortName>
+      <MenuCategory>Tables</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/SEGMENTINFORMATION</ParentRole>
+      <Position>40</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R41.htm</HtmlFileName>
+      <LongName>9955523 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails</Role>
+      <ShortName>SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies</ParentRole>
+      <Position>41</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R42.htm</HtmlFileName>
+      <LongName>9955524 - Disclosure - REVENUE (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/REVENUEDetails</Role>
+      <ShortName>REVENUE (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/REVENUETables</ParentRole>
+      <Position>42</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R43.htm</HtmlFileName>
+      <LongName>9955525 - Disclosure - PROPERTY, BUILDINGS AND EQUIPMENT - Schedule of Property, Buildings and Equipment (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/PROPERTYBUILDINGSANDEQUIPMENTScheduleofPropertyBuildingsandEquipmentDetails</Role>
+      <ShortName>PROPERTY, BUILDINGS AND EQUIPMENT - Schedule of Property, Buildings and Equipment (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>43</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R44.htm</HtmlFileName>
+      <LongName>9955526 - Disclosure - PROPERTY, BUILDINGS AND EQUIPMENT- Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/PROPERTYBUILDINGSANDEQUIPMENTNarrativeDetails</Role>
+      <ShortName>PROPERTY, BUILDINGS AND EQUIPMENT- Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>44</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R45.htm</HtmlFileName>
+      <LongName>9955527 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS Additional Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETSAdditionalInformationDetails</Role>
+      <ShortName>GOODWILL AND OTHER INTANGIBLE ASSETS Additional Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>45</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R46.htm</HtmlFileName>
+      <LongName>9955528 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS Balances and Changes in Carrying Amounts of Goodwill (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETSBalancesandChangesinCarryingAmountsofGoodwillDetails</Role>
+      <ShortName>GOODWILL AND OTHER INTANGIBLE ASSETS Balances and Changes in Carrying Amounts of Goodwill (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>46</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R47.htm</HtmlFileName>
+      <LongName>9955529 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS Intangible assets included in Other assets and intangibles (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETSIntangibleassetsincludedinOtherassetsandintangiblesDetails</Role>
+      <ShortName>GOODWILL AND OTHER INTANGIBLE ASSETS Intangible assets included in Other assets and intangibles (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>47</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R48.htm</HtmlFileName>
+      <LongName>9955530 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS Estimated amortization expense (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/GOODWILLANDOTHERINTANGIBLEASSETSEstimatedamortizationexpenseDetails</Role>
+      <ShortName>GOODWILL AND OTHER INTANGIBLE ASSETS Estimated amortization expense (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>48</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R49.htm</HtmlFileName>
+      <LongName>9955531 - Disclosure - DEBT - SCHEDULE OF LONG-TERM DEBT (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/DEBTSCHEDULEOFLONGTERMDEBTDetails</Role>
+      <ShortName>DEBT - SCHEDULE OF LONG-TERM DEBT (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>49</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R50.htm</HtmlFileName>
+      <LongName>9955532 - Disclosure - DEBT - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/DEBTNarrativeDetails</Role>
+      <ShortName>DEBT - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>50</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R51.htm</HtmlFileName>
+      <LongName>9955533 - Disclosure - DEBT - SCHEDULED AGGREGATE PRINCIPAL PAYMENTS (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/DEBTSCHEDULEDAGGREGATEPRINCIPALPAYMENTSDetails</Role>
+      <ShortName>DEBT - SCHEDULED AGGREGATE PRINCIPAL PAYMENTS (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>51</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R52.htm</HtmlFileName>
+      <LongName>9955534 - Disclosure - EMPLOYEE BENEFITS - Defined Contribution Plans (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/EMPLOYEEBENEFITSDefinedContributionPlansDetails</Role>
+      <ShortName>EMPLOYEE BENEFITS - Defined Contribution Plans (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>52</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R53.htm</HtmlFileName>
+      <LongName>9955535 - Disclosure - EMPLOYEE BENEFITS - Postretirement Benefits (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/EMPLOYEEBENEFITSPostretirementBenefitsDetails</Role>
+      <ShortName>EMPLOYEE BENEFITS - Postretirement Benefits (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>53</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R54.htm</HtmlFileName>
+      <LongName>9955536 - Disclosure - EMPLOYEE BENEFITS - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/EMPLOYEEBENEFITSNarrativeDetails</Role>
+      <ShortName>EMPLOYEE BENEFITS - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>54</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R55.htm</HtmlFileName>
+      <LongName>9955537 - Disclosure - EMPLOYEE BENEFITS - Summary of Plan Assets (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/EMPLOYEEBENEFITSSummaryofPlanAssetsDetails</Role>
+      <ShortName>EMPLOYEE BENEFITS - Summary of Plan Assets (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>55</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R56.htm</HtmlFileName>
+      <LongName>9955538 - Disclosure - LEASES - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/LEASESNarrativeDetails</Role>
+      <ShortName>LEASES - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>56</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R57.htm</HtmlFileName>
+      <LongName>9955539 - Disclosure - LEASES - Schedule of Operating Lease Information (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/LEASESScheduleofOperatingLeaseInformationDetails</Role>
+      <ShortName>LEASES - Schedule of Operating Lease Information (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>57</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R58.htm</HtmlFileName>
+      <LongName>9955540 - Disclosure - LEASES - Schedule of Maturities of Operating Leases (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/LEASESScheduleofMaturitiesofOperatingLeasesDetails</Role>
+      <ShortName>LEASES - Schedule of Maturities of Operating Leases (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>58</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R59.htm</HtmlFileName>
+      <LongName>9955541 - Disclosure - STOCK INCENTIVE PLANS - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/STOCKINCENTIVEPLANSNarrativeDetails</Role>
+      <ShortName>STOCK INCENTIVE PLANS - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>59</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R60.htm</HtmlFileName>
+      <LongName>9955542 - Disclosure - STOCK INCENTIVE PLANS - Restricted Stock Units (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/STOCKINCENTIVEPLANSRestrictedStockUnitsDetails</Role>
+      <ShortName>STOCK INCENTIVE PLANS - Restricted Stock Units (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>60</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R61.htm</HtmlFileName>
+      <LongName>9955543 - Disclosure - CAPITAL STOCK (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/CAPITALSTOCKDetails</Role>
+      <ShortName>CAPITAL STOCK (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/CAPITALSTOCKTables</ParentRole>
+      <Position>61</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R62.htm</HtmlFileName>
+      <LongName>9955544 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE EARNINGS (LOSSES) (AOCE) (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/ACCUMULATEDOTHERCOMPREHENSIVEEARNINGSLOSSESAOCEDetails</Role>
+      <ShortName>ACCUMULATED OTHER COMPREHENSIVE EARNINGS (LOSSES) (AOCE) (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/ACCUMULATEDOTHERCOMPREHENSIVEEARNINGSLOSSESAOCETables</ParentRole>
+      <Position>62</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R63.htm</HtmlFileName>
+      <LongName>9955545 - Disclosure - INCOME TAXES - Net Earnings Before Income Taxes by Geographical Area (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESNetEarningsBeforeIncomeTaxesbyGeographicalAreaDetails</Role>
+      <ShortName>INCOME TAXES - Net Earnings Before Income Taxes by Geographical Area (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>63</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R64.htm</HtmlFileName>
+      <LongName>9955546 - Disclosure - INCOME TAXES (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESDetails</Role>
+      <ShortName>INCOME TAXES (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/INCOMETAXESTables</ParentRole>
+      <Position>64</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R65.htm</HtmlFileName>
+      <LongName>9955547 - Disclosure - INCOME TAXES - Income Tax Effects of Temporary Differences (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESIncomeTaxEffectsofTemporaryDifferencesDetails</Role>
+      <ShortName>INCOME TAXES - Income Tax Effects of Temporary Differences (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>65</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R66.htm</HtmlFileName>
+      <LongName>9955548 - Disclosure - INCOME TAXES - Narrative (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESNarrativeDetails</Role>
+      <ShortName>INCOME TAXES - Narrative (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>66</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R67.htm</HtmlFileName>
+      <LongName>9955549 - Disclosure - INCOME TAXES - Changes in Valuation Allowance (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESChangesinValuationAllowanceDetails</Role>
+      <ShortName>INCOME TAXES - Changes in Valuation Allowance (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>67</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R68.htm</HtmlFileName>
+      <LongName>9955550 - Disclosure - INCOME TAXES - Reconciliation of Income Tax Expense with Federal Income Taxes at the Statutory Rate (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESReconciliationofIncomeTaxExpensewithFederalIncomeTaxesattheStatutoryRateDetails</Role>
+      <ShortName>INCOME TAXES - Reconciliation of Income Tax Expense with Federal Income Taxes at the Statutory Rate (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>68</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R69.htm</HtmlFileName>
+      <LongName>9955551 - Disclosure - INCOME TAXES - Changes in Liability for Tax Uncertainties, Excluding Interest (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/INCOMETAXESChangesinLiabilityforTaxUncertaintiesExcludingInterestDetails</Role>
+      <ShortName>INCOME TAXES - Changes in Liability for Tax Uncertainties, Excluding Interest (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>69</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R70.htm</HtmlFileName>
+      <LongName>9955552 - Disclosure - SEGMENT INFORMATION (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SEGMENTINFORMATIONDetails</Role>
+      <ShortName>SEGMENT INFORMATION (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/SEGMENTINFORMATIONTables</ParentRole>
+      <Position>70</Position>
+    </Report>
+    <Report instance="gww-20241231.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R71.htm</HtmlFileName>
+      <LongName>9955553 - Disclosure - SUBSEQUENT EVENTS (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.grainger.com/role/SUBSEQUENTEVENTSDetails</Role>
+      <ShortName>SUBSEQUENT EVENTS (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <ParentRole>http://www.grainger.com/role/SUBSEQUENTEVENTS</ParentRole>
+      <Position>71</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <InputFiles>
+    <File doctype="10-K" isDefinitelyFs="true" isUsgaap="true" original="gww-20241231.htm">gww-20241231.htm</File>
+    <File>gww-20241231.xsd</File>
+    <File>gww-20241231_cal.xml</File>
+    <File>gww-20241231_def.xml</File>
+    <File>gww-20241231_lab.xml</File>
+    <File>gww-20241231_pre.xml</File>
+  </InputFiles>
+  <SupplementalFiles>
+    <File>gww-20241231_g1.jpg</File>
+    <File>gww-20241231_g2.jpg</File>
+  </SupplementalFiles>
+  <BaseTaxonomies>
+    <BaseTaxonomy items="1019">http://fasb.org/us-gaap/2024</BaseTaxonomy>
+    <BaseTaxonomy items="15">http://xbrl.sec.gov/cyd/2024</BaseTaxonomy>
+    <BaseTaxonomy items="38">http://xbrl.sec.gov/dei/2024</BaseTaxonomy>
+    <BaseTaxonomy items="5">http://xbrl.sec.gov/ecd/2024</BaseTaxonomy>
+  </BaseTaxonomies>
+  <HasPresentationLinkbase>true</HasPresentationLinkbase>
+  <HasCalculationLinkbase>true</HasCalculationLinkbase>
+</FilingSummary>
