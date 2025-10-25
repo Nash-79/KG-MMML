@@ -1,4 +1,35 @@
 # src/cli/evaluate_latency.py
+"""
+Benchmark retrieval latency across different methods and index sizes.
+
+This script measures query latency for multiple retrieval approaches:
+1. Exact cosine similarity (sparse TF-IDF)
+2. Graph-filtered cosine (uses KG to pre-filter candidates)
+3. Annoy ANN (approximate nearest neighbors)
+4. FAISS HNSW (hierarchical navigable small world)
+
+Latency is measured at p50, p95, and p99 percentiles across 500 queries
+at two scales: N=1,000 and N=3,218 documents.
+
+Week 7-8 benchmark results (p99 latency):
+    - Annoy: 0.037ms (best, 4,000× faster than 150ms SLO)
+    - FAISS HNSW: 0.256ms (also fast)
+    - Graph-filtered: 2.43ms (shows promise for hybrid approach)
+    - Exact cosine: 5.48ms (baseline)
+
+All methods comfortably beat the 150ms service-level objective.
+
+Usage:
+    python -m src.cli.evaluate_latency \\
+        --facts data/processed/sec_edgar/facts.jsonl \\
+        --methods exact filtered annoy faiss \\
+        --n_docs 1000 3218 \\
+        --n_queries 500 \\
+        --out reports/tables/latency_baseline.csv
+
+Decision Gate:
+    Latency benchmarks complete ✅ (all methods < 150ms p99)
+"""
 import argparse
 import json
 import os
@@ -32,7 +63,6 @@ def percentiles(ms):
 
 
 def run_exact_cosine(X, q_idx, k, drop_warmup=5):
-    from scipy import sparse
     Xn = normalize(X, copy=True)
     qn = Xn[q_idx]
     _ = qn[0].dot(Xn.T).toarray().ravel()  # warm
@@ -62,7 +92,6 @@ def run_filtered_cosine(X, q_idx, k, docs, concept_lists, inv, cap, drop_warmup=
     
     for i in range(len(q_idx) + drop_warmup):
         qi = q_idx[i % len(q_idx)]
-        d = docs[qi]
         cands = set()
         for t in set(concept_lists[qi]):
             cands |= inv.get(t, set())
