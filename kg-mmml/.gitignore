@@ -17,14 +17,14 @@ ENV/
 .vscode/
 
 # Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Logs
-*.log
-logs/
-
+# Ignore data and environment files (relative to kg-mmml/)
+data/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
 # Data
 datasets/sec_edgar/data/
 *.jsonl
