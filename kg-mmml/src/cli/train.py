@@ -57,8 +57,7 @@ def run_baseline(cfg, seed):
 def run_joint(cfg, seed):
     """Joint model with consistency loss."""
     # Import train_joint logic here or refactor into module
-    from src.cli.train_joint import main as joint_main
-    # Call with args
+    # Currently not used - use train_joint.py directly instead
     return {"micro_f1": 0.0, "macro_f1": 0.0}  # Placeholder
 
 def main():
