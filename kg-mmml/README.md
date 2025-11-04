@@ -12,6 +12,8 @@ This project builds a system that retrieves SEC financial documents and classifi
 
 Notes: Concept features deliver near‑perfect accuracy (99.68% micro‑F1) and +2.27pp macro‑F1, but the +3pp micro‑F1 threshold was too strict at this performance level.
 
+**M5 Complete (Week 9-10)**: Joint objective with consistency penalty tested. Result: λ=0.0 (no penalty) outperforms constrained variants. Simple sklearn baseline is production choice. See [docs/M5_COMPLETE.md](docs/M5_COMPLETE.md).
+
 ## Reproduce Week 9
 
 ```bash

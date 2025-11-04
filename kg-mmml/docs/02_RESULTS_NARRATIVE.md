@@ -20,12 +20,34 @@ This section ties the objectives, decision gates, and evidence into one view.
 - Consistency penalty doesn’t help; simpler model (λ=0.0) performs better.
 - Concept features help classification substantially, though the +3pp micro‑F1 gate was too strict given near‑perfect absolute accuracy.
 
-## Decisions taken
+## Decisions taken (M5 Complete)
 - Adopt sklearn text+concept baseline as production default.
 - Keep λ=0.0 (penalty OFF); enforce hierarchy post‑hoc if required.
 - Use SRS (HP/AtP/AP) as ongoing quality monitor; expect zero variance.
+- **+3pp gate discussion**: Gate missed due to ceiling effect (baseline at 98.32%). Macro-F1 improvement (+2.27pp) and SRS (0.7571) demonstrate KG value. Research contribution is the framework, not hitting arbitrary percentage threshold.
+- **Joint objective conclusion**: Consistency penalty (λ>0) adds complexity without benefit. Simpler model wins.
+
+## M5 Analysis (Week 9-10)
+
+**What we tested**: Joint objective with consistency penalty on directional edges (λ ∈ {0.0, 0.1, 0.5}).
+
+**Result**: λ=0.0 (no penalty) outperforms all constrained variants:
+- λ=0.0: 99.68% micro-F1, 81.28% macro-F1 (stable)
+- λ=0.1: 99.21% micro-F1, 80.15% macro-F1 (unstable training)
+- λ=0.5: 98.87% micro-F1, 79.42% macro-F1 (very unstable)
+
+**Why penalty doesn't help**:
+1. Concept features already capture hierarchy through co-occurrence
+2. Classification loss conflicts with consistency loss
+3. SEC EDGAR data doesn't violate hierarchy (nothing to penalize)
+
+**Production choice**: sklearn text+concept baseline (λ=0.0). Simple, fast, stable, better.
+
+See [docs/M5_COMPLETE.md](M5_COMPLETE.md) for full analysis.
 
 ## Open items
-- Implement RTF to complete SRS (embedding‑based)
-- Scale graph‑filtered retrieval and test at larger corpora
+- **M6 (W11-12)**: Consolidate metrics, tidy outputs, prepare for robustness
+- **M7 (W13-14)**: Robustness tests (taxonomy off, noisy units)
+- **M8 (W15-16)**: Scalability exploration (two-hop+vector, domain vs generic)
+- Implement RTF to complete SRS (embedding‑based) - future work
 - Expand manual taxonomy incrementally for coverage in edge cases
