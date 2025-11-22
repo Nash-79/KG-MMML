@@ -216,7 +216,7 @@ Original gate:
 
 **Thesis argument**:
 - Analytical tests demonstrate graceful degradation
-- Taxonomy-off exceeding threshold is **expected behavior** (architecture designed to use hierarchy)
+- Taxonomy-off exceeding threshold is **expected behaviour** (architecture designed to use hierarchy)
 - Real-world SEC data has high quality (99.87% AtP baseline), so 5% noise is realistic
 
 **Updated gate interpretation**:

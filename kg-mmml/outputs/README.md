@@ -8,7 +8,7 @@ Stores experiment outputs during active development and testing. This directory 
 
 ## Structure
 
-Outputs are organized by experiment name matching configs:
+Outputs are organised by experiment name matching configs:
 
 ```
 outputs/

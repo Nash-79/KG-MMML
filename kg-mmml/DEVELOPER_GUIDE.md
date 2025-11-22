@@ -83,7 +83,7 @@ make clean              # Remove build artifacts
 
 ```
 SEC EDGAR CompanyFacts (JSON)
-  → normalize → facts.jsonl (namespace-aware: us-gaap:Revenue, dei:EntityCIK, etc.)
+  → normalise → facts.jsonl (namespace-aware: us-gaap:Revenue, dei:EntityCIK, etc.)
   → build_taxonomy → taxonomy CSV (child,parent relationships with transitive closure)
   → make_concept_features → concept_features.npz (binary indicators, one-hot style)
   → train (baseline or joint) → model + metrics.json
@@ -144,7 +144,7 @@ Multi-source strategy:
 - Transitive closure: Materializes all ancestor paths
 
 ### Namespace Handling
-Concepts use full namespace (us-gaap:Revenue). The system normalizes to ns:concept format and defaults to us-gaap: when not specified. See build_taxonomy.py::normalize_df() for implementation.
+Concepts use full namespace (us-gaap:Revenue). The system normalises to ns:concept format and defaults to us-gaap: when not specified. See build_taxonomy.py::normalize_df() for implementation.
 
 ### Two-Stage Evaluation
 Critical for validity:

@@ -42,7 +42,7 @@ Created 4-stage automated pipeline:
    - Filters to US-GAAP concepts with numeric units
 
 4. **KG Snapshot Builder** (`build_kg.py`)
-   - Generates graph nodes and edges from normalized facts
+   - Generates graph nodes and edges from normalised facts
    - Outputs: `kg_nodes.csv` and `kg_edges.csv`
 
 **Files Generated:**

@@ -159,7 +159,7 @@ Best performer: Annoy with p99 = 0.037ms
 
 ```
 SEC EDGAR CompanyFacts JSON (raw)
-    ↓ [normalize + validate]
+    ↓ [normalise + validate]
 facts.jsonl (487K facts, 3,218 filings)
     ↓ [build_taxonomy]
 usgaap_combined.csv (1,891 is_a edges)

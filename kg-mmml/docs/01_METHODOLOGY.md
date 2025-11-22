@@ -116,7 +116,7 @@ The literature review (Section 3.3) identified three integration patterns: KG-as
 
 **Statistics**:
 - Raw facts: 1.2M entries
-- After normalization: 852K facts
+- After normalisation: 852K facts
 - After deduplication: 487K unique (CIK, concept, unit, period_end) tuples
 - Final filings: 3,218 with ≥10 distinct concepts
 
@@ -329,7 +329,7 @@ python -m src.cli.build_taxonomy \
 
 **Processing**:
 1. **Tokenization**: CamelCase splitting ("AccountsReceivableNetCurrent" → ["Accounts", "Receivable", "Net", "Current"])
-2. **Lowercase normalization**: ["accounts", "receivable", "net", "current"]
+2. **Lowercase normalisation**: ["accounts", "receivable", "net", "current"]
 3. **Stop-word removal**: None applied (financial terms like "Net" are meaningful)
 4. **N-grams**: Unigrams only (ngram_range=[1,1])
 
@@ -337,7 +337,7 @@ python -m src.cli.build_taxonomy \
 - `min_df=2`: Discard terms appearing in <2 documents (reduces noise from typos)
 - `max_features=50000`: Keep top 50K terms by document frequency (corpus has ~12K unique terms, so no truncation)
 - `use_idf=True`: Apply inverse document frequency weighting
-- `norm='l2'`: L2-normalize rows to unit vectors (cosine similarity equivalence)
+- `norm='l2'`: L2-normalise rows to unit vectors (cosine similarity equivalence)
 
 **Output**: Sparse TF-IDF matrix `X_text` of shape `(n_filings, n_terms)` = `(3218, 12147)`.
 
@@ -612,7 +612,7 @@ macro-F1 = mean([F1(class_i) for i in range(n_classes)])
 
 **Threads**: Fixed at 2 (set via `os.environ['OMP_NUM_THREADS']='2'`)
 
-**Rationale for percentile reporting**: Mean latency hides tail behavior. p99 captures worst-case user experience (important for interactive systems).
+**Rationale for percentile reporting**: Mean latency hides tail behaviour. p99 captures worst-case user experience (important for interactive systems).
 
 ### 6.4 Robustness Tests
 

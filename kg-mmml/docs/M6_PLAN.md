@@ -176,4 +176,4 @@ Working on Milestone M6 (consolidation and calibration).
 
 ## Notes
 
-M6 is mostly about organization and documentation. No new experiments required. Focus on making Phase B results crystal clear before starting Phase C robustness tests.
+M6 is mostly about organisation and documentation. No new experiments required. Focus on making Phase B results crystal clear before starting Phase C robustness tests.

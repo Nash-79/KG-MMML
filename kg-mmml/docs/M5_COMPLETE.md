@@ -87,7 +87,7 @@ Rare classes benefit from concept features, but penalty doesn't add value.
 
 1. **Concept features are sufficient**: Binary presence/absence of concepts already encodes hierarchy through co-occurrence. If "AccountsReceivable" appears, "CurrentAssets" likely appears nearby. Model learns this naturally.
 
-2. **Loss function mismatch**: Classification loss (cross-entropy) optimizes for category separation. Consistency loss optimizes for parent-child proximity. These objectives conflict rather than complement.
+2. **Loss function mismatch**: Classification loss (cross-entropy) optimises for category separation. Consistency loss optimises for parent-child proximity. These objectives conflict rather than complement.
 
 3. **Data sparsity**: SEC EDGAR filings don't violate hierarchy. The data is already consistent. Penalizing violations of a constraint that's never broken doesn't help.
 

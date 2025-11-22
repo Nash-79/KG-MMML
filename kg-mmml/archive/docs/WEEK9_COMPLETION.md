@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-Week 9 focused on validating the text+concept hypothesis, analyzing consistency penalty trade-offs, and verifying SRS metric stability. **Critical discovery**: The original "joint" model from Week 7-8 was trained WITHOUT concept features, leading to a comprehensive re-evaluation of the architecture.
+Week 9 focused on validating the text+concept hypothesis, analysing consistency penalty trade-offs, and verifying SRS metric stability. **Critical discovery**: The original "joint" model from Week 7-8 was trained WITHOUT concept features, leading to a comprehensive re-evaluation of the architecture.
 
 ### Key Outcomes
 1. **Baseline validation completed** (with important caveats)
@@ -270,7 +270,7 @@ Perfect stability (σ=0.000) confirms that structural metrics are reproducible a
 
 Based on Week 9 findings, Week 10 priorities:
 
-1. **Hyperparameter optimization**
+1. **Hyperparameter optimisation**
    - Grid search for optimal PyTorch training (epochs, LR, batch size)
    - Target: Match or exceed sklearn baseline performance
    - Test λ sensitivity (0.01, 0.05) for constraint-sensitive apps

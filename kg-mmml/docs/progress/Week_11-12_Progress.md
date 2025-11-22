@@ -1,7 +1,6 @@
 # Week 11-12 Progress Summary: Consolidation & Calibration (M6)
 
 **Milestone**: M6 - Consolidation and Calibration
-**Dates**: Week 11-12 (November 2024)
 **Status**:  COMPLETE
 
 ---

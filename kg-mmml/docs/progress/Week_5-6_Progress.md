@@ -11,7 +11,7 @@ This period focused on scaling the data pipeline and establishing baseline measu
 
 **Key achievements:**
 - Scaled fact extraction to 1.3M rows from SEC EDGAR filings
-- Rebuilt knowledge graph with normalized concepts (2,832 nodes, 71,882 edges)
+- Rebuilt knowledge graph with normalised concepts (2,832 nodes, 71,882 edges)
 - Implemented SRS computation with structural metrics
 - Built baseline classification system using TF-IDF and concept features
 - Created comparison framework for text-only vs text+concept models
@@ -27,12 +27,12 @@ This period focused on scaling the data pipeline and establishing baseline measu
 ## Data Pipeline and Knowledge Graph
 
 **Data Processing**  
-Extracted and normalized 1,339,327 facts from SEC EDGAR filings. Filtered to US-GAAP concepts with numeric units. Created filing-level aggregation (721 documents with taxonomy labels).
+Extracted and normalised 1,339,327 facts from SEC EDGAR filings. Filtered to US-GAAP concepts with numeric units. Created filing-level aggregation (721 documents with taxonomy labels).
 
 **Knowledge Graph Rebuild**  
 - Nodes: 2,832 (concepts, units, periods)
 - Edges: 71,882 (includes measured-in, for-period, is-a relationships)
-- Applied namespace normalization for consistent concept identifiers
+- Applied namespace normalisation for consistent concept identifiers
 - Integrated initial taxonomy with parent-child relationships
 
 **Files Generated:**
@@ -97,7 +97,7 @@ Comparing to Week 3-4 (when using smaller toy taxonomy):
 
 | Metric | Week 3-4 | Week 5-6 | Change |
 |--------|----------|----------|--------|
-| AtP | ~4% | 99.87% | Much improved due to fact normalization |
+| AtP | ~4% | 99.87% | Much improved due to fact normalisation |
 | HP | ~75% (toy) | 28.15% (real scale) | Lower at scale; needs auto-taxonomy |
 | AP | 100% | 100% | Maintained |
 | SRS | ~59% | 76.0% | +17% improvement |

@@ -156,7 +156,7 @@ This week focuses on completing Phase B's Milestone M5, which validates the mini
 | `reports/figures/lambda_sensitivity_w9.png` | NEW (Optional) | Sensitivity plot for λ parameter |
 | `scripts/compute_srs_stability.py` | NEW | Multi-seed SRS computation script |
 | `reports/tables/srs_stability_w9.csv` | NEW | SRS stability report with confidence intervals |
-| `scripts/visualization/plot_baseline_vs_joint.py` | NEW | Visualization for baseline vs joint comparison |
+| `scripts/visualisation/plot_baseline_vs_joint.py` | NEW | Visualization for baseline vs joint comparison |
 | `reports/figures/baseline_vs_joint_w9.png` | NEW | Macro-F1 and micro-F1 comparison chart |
 | `tests/test_baseline_validation.py` | NEW | Tests for baseline model correctness |
 | `WEEK9_COMPLETION.md` | NEW | Week 9 summary report with all results |
@@ -189,7 +189,7 @@ This week focuses on completing Phase B's Milestone M5, which validates the mini
 ## Next Steps (Week 10 Preview)
 
 After completing Week 9 goals:
-1. **Week 10 Goal 1:** Multi-modal latency optimization (target: <100ms p99)
+1. **Week 10 Goal 1:** Multi-modal latency optimisation (target: <100ms p99)
 2. **Week 10 Goal 2:** Full pipeline integration test (taxonomy → features → joint model → retrieval)
 3. **Week 10 Goal 3:** Production readiness checklist (logging, error handling, CI/CD)
 

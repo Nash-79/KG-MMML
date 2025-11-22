@@ -54,7 +54,7 @@ Generate auto-taxonomy from pattern rules, combine with manual taxonomy, rebuild
 - `data/kg/sec_edgar_2025-10-12_combined/` (KG snapshot)
 - `reports/tables/srs_kge_combined.csv` (metrics)
 - `reports/tables/srs_kge_combined_debug.json` (debug info)
-- `reports/figures/srs_comparison_w5-6_vs_w7-8.png` (visualization)
+- `reports/figures/srs_comparison_w5-6_vs_w7-8.png` (visualisation)
 - `reports/figures/srs_comparison_w5-6_vs_w7-8.pdf` (publication-ready)
 
 ---
@@ -171,7 +171,7 @@ python -m src.cli.train_joint \
 **Milestone**: M5 - Minimal Joint Objective + Trade-offs
 
 ### Objective
-Validate text+concept improvement over text-only baseline with matched splits (seed=42); analyze consistency penalty trade-offs; assess SRS stability.
+Validate text+concept improvement over text-only baseline with matched splits (seed=42); analyse consistency penalty trade-offs; assess SRS stability.
 
 ### Critical Discovery: Concept Features Missing in Original Joint Model
 
@@ -228,12 +228,12 @@ We compared sklearn (baseline) vs PyTorch (joint) training frameworks to underst
 
 **Root Causes**:
 1. **Undertraining**: 5 epochs insufficient for convergence
-2. **Hyperparameters**: Learning rate (2e-3) and batch size (128) not optimized
+2. **Hyperparameters**: Learning rate (2e-3) and batch size (128) not optimised
 3. **Solver differences**: PyTorch Adam vs sklearn liblinear (specialized for sparse multi-label)
 
 ### Experiment 3: Consistency Penalty Trade-offs
 
-The consistency penalty (λ) regularizes model predictions to match parent-support distributions derived from observed child concepts. We analyzed its impact on performance.
+The consistency penalty (λ) regularizes model predictions to match parent-support distributions derived from observed child concepts. We analysed its impact on performance.
 
 #### Mechanism
 - **Parent-support vector** $S_{ij}$: Proportion of observed child concepts in document $i$ that map to parent $j$
@@ -372,7 +372,7 @@ When embedding-based RTF is implemented:
 - `src/cli/compute_srs.py` — SRS metrics computation
 - `src/cli/evaluate_latency.py` — Latency benchmarking
 - `src/cli/train_joint.py` — Joint model training
-- `scripts/visualization/plot_srs_comparison.py` — SRS visualization
+- `scripts/visualisation/plot_srs_comparison.py` — SRS visualisation
 
 ### Data
 - `datasets/sec_edgar/taxonomy/pattern_rules.yaml` — Pattern rules (enhanced)

@@ -59,8 +59,8 @@
 
 ### Documentation
 - `reports/EXPERIMENT_RESULTS_SUMMARY.md` (comprehensive report)
-- `scripts/visualization/plot_srs_comparison.py` (SRS visualization script)
-- `scripts/visualization/plot_joint_comparison.py` (joint model visualization script)
+- `scripts/visualisation/plot_srs_comparison.py` (SRS visualisation script)
+- `scripts/visualisation/plot_joint_comparison.py` (joint model visualisation script)
 
 ## Commands to Reproduce
 
@@ -113,8 +113,8 @@ python -m src.cli.train_joint \
 
 ### Visualizations
 ```bash
-python scripts/visualization/plot_srs_comparison.py
-python scripts/visualization/plot_joint_comparison.py
+python scripts/visualisation/plot_srs_comparison.py
+python scripts/visualisation/plot_joint_comparison.py
 ```
 
 ## Next Steps (Weeks 9-10): Phase B, Milestone M5
@@ -160,7 +160,7 @@ python scripts/visualization/plot_joint_comparison.py
 -  `scripts/compute_srs_stability.py` - SRS stability checker
 
 ### Week 10 Goals (Nov 1-7, 2025) - Planned 📅
-1. Hyperparameter optimization (PyTorch training to match sklearn performance)
+1. Hyperparameter optimisation (PyTorch training to match sklearn performance)
 2. Feature engineering enhancements (concept embeddings, frequency weighting)
 3. Production readiness (inference service, monitoring, post-hoc constraints)
 4. RTF implementation (embedding-based relational fidelity metric)

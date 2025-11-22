@@ -7,7 +7,7 @@
 
 ## Summary
 
-Week 9-10 focused on M5 (Minimal Joint Objective + Trade-offs). Validated baseline performance, analyzed consistency penalty impacts, and verified metric stability. Critical discovery: the original joint model lacked concept features. All configurations retrained with proper features, trade-offs documented, and SRS determinism confirmed.
+Week 9-10 focused on M5 (Minimal Joint Objective + Trade-offs). Validated baseline performance, analysed consistency penalty impacts, and verified metric stability. Critical discovery: the original joint model lacked concept features. All configurations retrained with proper features, trade-offs documented, and SRS determinism confirmed.
 
 **Key achievements:**
 - Discovered and fixed missing concept features in Week 7-8 joint model
