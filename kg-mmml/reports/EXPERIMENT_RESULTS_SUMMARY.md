@@ -6,9 +6,7 @@
 
 ---
 
-## 🎯 Goal A: Auto-Taxonomy & HP Uplift ✅
-
-### Objective
+## Goal A: Auto-Taxonomy & HP Uplift ### Objective
 Generate auto-taxonomy from pattern rules, combine with manual taxonomy, rebuild KG, and achieve HP ≥ 0.25 and SRS ≥ 0.75.
 
 ### Steps Completed
@@ -43,27 +41,25 @@ Generate auto-taxonomy from pattern rules, combine with manual taxonomy, rebuild
 
 | Metric | Week 5-6 (PR3) | Week 7-8 (PR4) | Decision Gate | Delta | Status |
 |--------|----------------|----------------|---------------|-------|--------|
-| **HP** | 0.0115 | **0.2726** | 0.25 | +2370.4% | ✅ PASS |
-| **SRS** | 0.6700 | **0.7571** | 0.75 | +13.0% | ✅ PASS |
-| **AtP** | 0.9980 | 0.9987 | 0.95 | +0.1% | ✅ PASS |
-| **AP** | 1.0000 | 1.0000 | 0.99 | +0.0% | ✅ PASS |
+| **HP** | 0.0115 | **0.2726** | 0.25 | +2370.4% | PASS |
+| **SRS** | 0.6700 | **0.7571** | 0.75 | +13.0% | PASS |
+| **AtP** | 0.9980 | 0.9987 | 0.95 | +0.1% | PASS |
+| **AP** | 1.0000 | 1.0000 | 0.99 | +0.0% | PASS |
 
 **Key Achievement**: HP increased from 1.15% to 27.26% — a **2370% improvement** — through systematic auto-taxonomy generation with hierarchical pattern rules.
 
 ### Artifacts
-- ✅ `datasets/sec_edgar/taxonomy/usgaap_auto.csv` (1,090 relationships)
-- ✅ `datasets/sec_edgar/taxonomy/usgaap_combined.csv` (1,891 relationships)
-- ✅ `data/kg/sec_edgar_2025-10-12_combined/` (KG snapshot)
-- ✅ `reports/tables/srs_kge_combined.csv` (metrics)
-- ✅ `reports/tables/srs_kge_combined_debug.json` (debug info)
-- ✅ `reports/figures/srs_comparison_w5-6_vs_w7-8.png` (visualization)
-- ✅ `reports/figures/srs_comparison_w5-6_vs_w7-8.pdf` (publication-ready)
+- `datasets/sec_edgar/taxonomy/usgaap_auto.csv` (1,090 relationships)
+- `datasets/sec_edgar/taxonomy/usgaap_combined.csv` (1,891 relationships)
+- `data/kg/sec_edgar_2025-10-12_combined/` (KG snapshot)
+- `reports/tables/srs_kge_combined.csv` (metrics)
+- `reports/tables/srs_kge_combined_debug.json` (debug info)
+- `reports/figures/srs_comparison_w5-6_vs_w7-8.png` (visualization)
+- `reports/figures/srs_comparison_w5-6_vs_w7-8.pdf` (publication-ready)
 
 ---
 
-## ⚡ Goal B: Latency Harness ✅
-
-### Objective
+## ⚡ Goal B: Latency Harness ### Objective
 Benchmark retrieval latency for exact cosine, filtered cosine, Annoy, and FAISS-HNSW methods; validate against SLO (<150ms).
 
 ### Configuration
@@ -92,7 +88,7 @@ Benchmark retrieval latency for exact cosine, filtered cosine, Annoy, and FAISS-
 ### SLO Validation
 
 - **Target SLO**: <150ms (from `configs/experiment_joint.yaml`)
-- **Status**: ✅ **ALL METHODS PASS** with significant headroom
+- **Status**: **ALL METHODS PASS** with significant headroom
 - **Best performer**: Annoy achieves p99=0.037ms — **4,054× faster than SLO**
 
 ### Key Findings
@@ -103,14 +99,12 @@ Benchmark retrieval latency for exact cosine, filtered cosine, Annoy, and FAISS-
 4. **Exact cosine**: Reasonable for small corpora (<6ms p99 at N=3,218)
 
 ### Artifacts
-- ✅ `reports/tables/latency_baseline_combined.csv` (detailed results)
-- ✅ `reports/tables/latency_meta_combined.json` (environment metadata)
+- `reports/tables/latency_baseline_combined.csv` (detailed results)
+- `reports/tables/latency_meta_combined.json` (environment metadata)
 
 ---
 
-## 🤖 Goal C: Joint Model ✅
-
-### Objective
+## 🤖 Goal C: Joint Model ### Objective
 Train joint text+concept model with and without consistency penalty; compare micro/macro F1 scores.
 
 ### Configuration
@@ -166,16 +160,14 @@ python -m src.cli.train_joint \
 **Recommendation**: For multi-label classification with class imbalance, **disable consistency penalty** to maximize macro F1 while preserving micro F1.
 
 ### Artifacts
-- ✅ `outputs/joint_with_penalty/metrics.json` (full metrics, penalty ON)
-- ✅ `outputs/joint_no_penalty/metrics.json` (full metrics, penalty OFF)
-- ✅ `logs/train_joint_penalty_on.log` (training log, penalty ON)
-- ✅ `logs/train_joint_penalty_off.log` (training log, penalty OFF)
+- `outputs/joint_with_penalty/metrics.json` (full metrics, penalty ON)
+- `outputs/joint_no_penalty/metrics.json` (full metrics, penalty OFF)
+- `logs/train_joint_penalty_on.log` (training log, penalty ON)
+- `logs/train_joint_penalty_off.log` (training log, penalty OFF)
 
 ---
 
-## 📈 Week 9 Analysis: Baseline Validation & Trade-offs ✅
-
-**Date**: October 25, 2025  
+## 📈 Week 9 Analysis: Baseline Validation & Trade-offs **Date**: October 25, 2025  
 **Milestone**: M5 - Minimal Joint Objective + Trade-offs
 
 ### Objective
@@ -213,12 +205,12 @@ This led to a comprehensive re-evaluation where we:
 
 - **Threshold**: 3.0 percentage points
 - **Actual**: +1.36 percentage points
-- **Status**: ❌ **FAIL** (1.64pp short of threshold)
+- **Status**: **FAIL** (1.64pp short of threshold)
 
 **However**, concept features provide:
-- ✅ Strong macro-F1 improvement (+2.27pp) — better for rare classes
-- ✅ Solid micro-F1 improvement (+1.36pp) — overall accuracy boost
-- ✅ Near-perfect performance (99.50% macro, 99.68% micro)
+- Strong macro-F1 improvement (+2.27pp) — better for rare classes
+- Solid micro-F1 improvement (+1.36pp) — overall accuracy boost
+- Near-perfect performance (99.50% macro, 99.68% micro)
 
 ### Experiment 2: Training Framework Comparison
 
@@ -270,14 +262,14 @@ For production deployment, we recommend:
 **Conclusion**: The consistency penalty does not improve classification performance in this multi-label setting. Hierarchical constraints can be enforced post-hoc (inference-time) if needed, without degrading model quality.
 
 ### Artifacts (Week 9)
-- ✅ `reports/tables/baseline_text_seed42_metrics.json` — Text-only baseline (sklearn)
-- ✅ `reports/tables/baseline_text_plus_concept_seed42_metrics.json` — Text+concept baseline (sklearn)
-- ✅ `data/processed/sec_edgar/features/concept_features_filing.npz` — Concept features (4,502 concepts)
-- ✅ `outputs/joint_with_concepts_no_penalty/metrics.json` — Joint text+concept (PyTorch, λ=0.0, 5 epochs)
-- ✅ `outputs/joint_with_concepts_no_penalty_e20/metrics.json` — Joint text+concept (PyTorch, λ=0.0, 20 epochs)
-- ✅ `reports/tables/baseline_vs_joint_comprehensive_w9.csv` — Comprehensive comparison CSV
-- ✅ `logs/train_joint_with_concepts_penalty_off.log` — Training log (5 epochs)
-- ✅ `logs/train_joint_with_concepts_penalty_off_e20.log` — Training log (20 epochs)
+- `reports/tables/baseline_text_seed42_metrics.json` — Text-only baseline (sklearn)
+- `reports/tables/baseline_text_plus_concept_seed42_metrics.json` — Text+concept baseline (sklearn)
+- `data/processed/sec_edgar/features/concept_features_filing.npz` — Concept features (4,502 concepts)
+- `outputs/joint_with_concepts_no_penalty/metrics.json` — Joint text+concept (PyTorch, λ=0.0, 5 epochs)
+- `outputs/joint_with_concepts_no_penalty_e20/metrics.json` — Joint text+concept (PyTorch, λ=0.0, 20 epochs)
+- `reports/tables/baseline_vs_joint_comprehensive_w9.csv` — Comprehensive comparison CSV
+- `logs/train_joint_with_concepts_penalty_off.log` — Training log (5 epochs)
+- `logs/train_joint_with_concepts_penalty_off_e20.log` — Training log (20 epochs)
 
 ### Experiment 4: SRS Stability Analysis
 
@@ -320,7 +312,7 @@ We verified stability by comparing SRS metrics from two independent computation 
 **Δ (difference)**: HP=0.0000, AtP=0.0000, AP=0.0000, SRS=0.0000
 
 **Decision Gate**: SRS std < 0.05  
-**Status**: ✅ **PASS** (σ = 0.0000 < 0.05)
+**Status**: **PASS** (σ = 0.0000 < 0.05)
 
 #### Recommendations for Future Work
 
@@ -352,17 +344,17 @@ When embedding-based RTF is implemented:
 
 | Gate | Threshold | Achieved | Status |
 |------|-----------|----------|--------|
-| HP ≥ 0.25 | 0.25 | 0.2726 | ✅ PASS (+9.0%) |
-| SRS ≥ 0.75 | 0.75 | 0.7571 | ✅ PASS (+1.0%) |
-| AtP ≥ 0.95 | 0.95 | 0.9987 | ✅ PASS (+5.1%) |
-| AP ≥ 0.99 | 0.99 | 1.0000 | ✅ PASS (+1.0%) |
-| Latency < 150ms | 150 | 0.037 (p99) | ✅ PASS (4054× better) |
+| HP ≥ 0.25 | 0.25 | 0.2726 | PASS (+9.0%) |
+| SRS ≥ 0.75 | 0.75 | 0.7571 | PASS (+1.0%) |
+| AtP ≥ 0.95 | 0.95 | 0.9987 | PASS (+5.1%) |
+| AP ≥ 0.99 | 0.99 | 1.0000 | PASS (+1.0%) |
+| Latency < 150ms | 150 | 0.037 (p99) | PASS (4054× better) |
 
 **All decision gates passed with significant margins.**
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 1. **Experiment tracking**: Integrate MLflow or Weights & Biases for run tracking
 2. **Hyperparameter tuning**: Grid search over consistency_weight ∈ [0.0, 0.05, 0.10, 0.15, 0.20]

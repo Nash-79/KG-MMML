@@ -1,7 +1,7 @@
 # Week 7-8 Progress Report
 
 **Period:** Weeks 7-8  
-**Status:** ✅ On track - All decision gates met
+**Status:** On track - All decision gates met
 
 ---
 
@@ -36,10 +36,10 @@ Week 7-8 focused on three main objectives: improving taxonomy coverage through a
 
 | Metric | Week 5-6 | Week 7-8 | Change | Target | Status |
 |--------|----------|----------|--------|--------|--------|
-| HP (Hierarchy Precision) | 0.2815 | 0.2726 | -0.0089 | ≥0.25 | ✅ Pass |
-| SRS (Overall Quality) | 0.7600 | 0.7571 | -0.0029 | ≥0.75 | ✅ Pass |
-| AtP (Attribute Coverage) | 0.9987 | 0.9987 | Stable | ≥0.95 | ✅ Pass |
-| AP (Directionality) | 1.0000 | 1.0000 | Stable | ≥0.99 | ✅ Pass |
+| HP (Hierarchy Precision) | 0.2815 | 0.2726 | -0.0089 | ≥0.25 | Pass |
+| SRS (Overall Quality) | 0.7600 | 0.7571 | -0.0029 | ≥0.75 | Pass |
+| AtP (Attribute Coverage) | 0.9987 | 0.9987 | Stable | ≥0.95 | Pass |
+| AP (Directionality) | 1.0000 | 1.0000 | Stable | ≥0.99 | Pass |
 
 **Files Generated:**
 - `datasets/sec_edgar/taxonomy/usgaap_auto.csv`
@@ -113,11 +113,11 @@ All Week 8 go/no-go criteria passed:
 
 | Gate | Target | Actual | Status |
 |------|--------|--------|--------|
-| HP ≥ 0.25 | ≥0.25 | 0.2726 | ✅ Pass |
-| AtP ≥ 0.95 | ≥0.95 | 0.9987 | ✅ Pass |
-| AP ≥ 0.99 | ≥0.99 | 1.0000 | ✅ Pass |
-| SRS ≥ 0.75 | ≥0.75 | 0.7571 | ✅ Pass |
-| Latency benchmarks complete | Yes | Yes | ✅ Pass |
+| HP ≥ 0.25 | ≥0.25 | 0.2726 | Pass |
+| AtP ≥ 0.95 | ≥0.95 | 0.9987 | Pass |
+| AP ≥ 0.99 | ≥0.99 | 1.0000 | Pass |
+| SRS ≥ 0.75 | ≥0.75 | 0.7571 | Pass |
+| Latency benchmarks complete | Yes | Yes | Pass |
 
 **Note:** Baseline comparison for +3pp micro-F1 improvement is scheduled for Week 9 to ensure fair comparison with matched train/test splits.
 

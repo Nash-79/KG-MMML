@@ -80,16 +80,16 @@ Multi-resolution approach allows both document-level and fact-level queries.
 
 Created `compute_srs.py` to measure knowledge graph quality using 4 metrics:
 
-**AtP (Attribute Predictability)** - ✅ Implemented  
+**AtP (Attribute Predictability)** - Implemented  
 Measures fraction of concepts with unit information. Ready to compute from Concept→Unit edges.
 
-**HP (Hierarchy Presence)** - 📋 Planned  
+**HP (Hierarchy Presence)** - Planned  
 Measures fraction of concepts with parent relationships. Requires taxonomy (scheduled for Week 5-6).
 
-**AP (Asymmetry Preservation)** - 📋 Planned  
+**AP (Asymmetry Preservation)** - Planned  
 Measures correct directionality of edges. Framework ready, will activate with taxonomy.
 
-**RTF (Relation Type Fidelity)** - 📋 Optional  
+**RTF (Relation Type Fidelity)** - Optional  
 Embedding-based relationship quality. Planned for later phase.
 
 **SRS Formula:**  
@@ -118,10 +118,10 @@ Weighted combination: AtP (20%), HP (25%), AP (20%), RTF (35%)
 ## Alignment to Plan
 
 **Week 3-4 Goals:**
-- ✅ Establish data acquisition pipeline
-- ✅ Build initial KG snapshot
-- ✅ Implement SRS computation framework
-- ✅ Set up reproducible repository structure
+- Establish data acquisition pipeline
+- Build initial KG snapshot
+- Implement SRS computation framework
+- Set up reproducible repository structure
 
 **Week 8 Decision Gates:**
 

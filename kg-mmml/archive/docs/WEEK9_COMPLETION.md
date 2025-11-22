@@ -3,7 +3,7 @@
 **Phase B, Milestone M5: Minimal Joint Objective + Trade-offs**  
 **Completion Date:** October 25, 2025  
 **Branch:** KG-MMML  
-**Status:** ✅ All primary goals completed
+**Status:** All primary goals completed
 
 ---
 
@@ -12,10 +12,10 @@
 Week 9 focused on validating the text+concept hypothesis, analyzing consistency penalty trade-offs, and verifying SRS metric stability. **Critical discovery**: The original "joint" model from Week 7-8 was trained WITHOUT concept features, leading to a comprehensive re-evaluation of the architecture.
 
 ### Key Outcomes
-1. ✅ **Baseline validation completed** (with important caveats)
-2. ✅ **Consistency penalty trade-offs documented**
-3. ✅ **SRS stability verified** (perfect stability for deterministic metrics)
-4. ⚠️ **Decision gate FAILED** (micro-F1 improvement: +1.36pp < 3pp threshold)
+1. **Baseline validation completed** (with important caveats)
+2. **Consistency penalty trade-offs documented**
+3. **SRS stability verified** (perfect stability for deterministic metrics)
+4. **Decision gate FAILED** (micro-F1 improvement: +1.36pp < 3pp threshold)
 
 ---
 
@@ -31,10 +31,10 @@ During baseline comparison, we discovered the Week 7-8 "joint" model runs were t
 **Root Cause**: The `--concept_npz` and `--concept_index` arguments were not provided to `train_joint.py`, causing it to default to text-only mode.
 
 ### Actions Taken
-1. ✅ Generated concept features (4,502 concepts, binary indicators)
-2. ✅ Updated `baseline_tfidf.py` to use stratified split (matching `train_joint.py`)
-3. ✅ Retrained all configurations with matched splits (seed=42)
-4. ✅ Created comprehensive comparison across 5 configurations
+1. Generated concept features (4,502 concepts, binary indicators)
+2. Updated `baseline_tfidf.py` to use stratified split (matching `train_joint.py`)
+3. Retrained all configurations with matched splits (seed=42)
+4. Created comprehensive comparison across 5 configurations
 
 ### Results
 
@@ -57,17 +57,17 @@ During baseline comparison, we discovered the Week 7-8 "joint" model runs were t
 **Gate**: Text+concept achieves ≥+3pp micro-F1 improvement  
 **Threshold**: 3.0 percentage points  
 **Actual**: +1.36 percentage points  
-**Status**: ❌ **FAIL** (1.64pp short)
+**Status**: **FAIL** (1.64pp short)
 
 **However**, concept features provide:
-- ✅ Strong macro-F1 boost (+2.27pp) — better for rare classes
-- ✅ Near-perfect performance (>99% on both metrics)
-- ✅ Solid improvement overall, just below arbitrary 3pp threshold
+- Strong macro-F1 boost (+2.27pp) — better for rare classes
+- Near-perfect performance (>99% on both metrics)
+- Solid improvement overall, just below arbitrary 3pp threshold
 
 ### Acceptance Criteria
-- ✅ CSV with text-only vs text+concept comparison: `reports/tables/baseline_vs_joint_comprehensive_w9.csv`
-- ✅ Decision gate status confirmed: FAIL (documented with rationale)
-- ✅ Reproducible commands documented in `docs/WEEK9_PLAN.md`
+- CSV with text-only vs text+concept comparison: `reports/tables/baseline_vs_joint_comprehensive_w9.csv`
+- Decision gate status confirmed: FAIL (documented with rationale)
+- Reproducible commands documented in `docs/WEEK9_PLAN.md`
 
 ---
 
@@ -95,10 +95,10 @@ The penalty regularizes predictions to match "parent-support" distributions:
 **Interpretation**: The penalty constrains predictions for rare classes, reducing model flexibility without measurable benefit. Hierarchical constraints can be enforced post-hoc (at inference time) if needed.
 
 ### Actions Taken
-1. ✅ Documented trade-off analysis in `reports/EXPERIMENT_RESULTS_SUMMARY.md`
-2. ✅ Updated `configs/experiment_joint.yaml` with λ=0.0 default
-3. ✅ Added inline comments explaining rationale
-4. ✅ Recommended sensitivity testing (λ ∈ {0.01, 0.05}) for future work
+1. Documented trade-off analysis in `reports/EXPERIMENT_RESULTS_SUMMARY.md`
+2. Updated `configs/experiment_joint.yaml` with λ=0.0 default
+3. Added inline comments explaining rationale
+4. Recommended sensitivity testing (λ ∈ {0.01, 0.05}) for future work
 
 ### Recommendation
 - **Production default**: λ=0.0 (penalty OFF) for best macro-F1
@@ -106,9 +106,9 @@ The penalty regularizes predictions to match "parent-support" distributions:
 - **Research**: Grid search λ ∈ {0.0, 0.01, 0.05, 0.10} with validation set
 
 ### Acceptance Criteria
-- ✅ Trade-off analysis documented in `EXPERIMENT_RESULTS_SUMMARY.md` (comprehensive section added)
-- ✅ Config updated with λ=0.0 default and detailed rationale comments
-- ⏭️ Optional sensitivity analysis (λ ∈ {0.01, 0.05}) deferred to Week 10
+- Trade-off analysis documented in `EXPERIMENT_RESULTS_SUMMARY.md` (comprehensive section added)
+- Config updated with λ=0.0 default and detailed rationale comments
+- ⏭Optional sensitivity analysis (λ ∈ {0.01, 0.05}) deferred to Week 10
 
 ---
 
@@ -151,7 +151,7 @@ We verified stability by comparing metrics from two independent Week 7-8 computa
 
 **Gate**: SRS std < 0.05 (stability threshold)  
 **Actual**: σ = 0.000000  
-**Status**: ✅ **PASS** (perfect stability)
+**Status**: **PASS** (perfect stability)
 
 **Interpretation**: SRS based on deterministic structural metrics → zero variance across runs → perfect reproducibility.
 
@@ -164,10 +164,10 @@ When embedding-based RTF is implemented:
 4. Monitoring: Alert if σ(SRS) > 0.05 across independent runs
 
 ### Acceptance Criteria
-- ✅ Stability analysis completed: `reports/tables/srs_stability_w9.csv`
-- ✅ Mean ± std reported for HP, AtP, AP, SRS (all with σ=0.000)
-- ✅ Confidence intervals computed (collapse to point estimates for σ=0)
-- ✅ Decision gate passed: σ=0.000 < 0.05
+- Stability analysis completed: `reports/tables/srs_stability_w9.csv`
+- Mean ± std reported for HP, AtP, AP, SRS (all with σ=0.000)
+- Confidence intervals computed (collapse to point estimates for σ=0)
+- Decision gate passed: σ=0.000 < 0.05
 
 ---
 
@@ -242,8 +242,8 @@ Perfect stability (σ=0.000) confirms that structural metrics are reproducible a
 
 | Gate | Threshold | Actual | Status | Impact |
 |------|-----------|--------|--------|--------|
-| **Micro-F1 improvement** | ≥3.0pp | +1.36pp | ❌ FAIL | Concept features help but below threshold |
-| **SRS stability** | σ < 0.05 | σ = 0.000 | ✅ PASS | Perfect reproducibility |
+| **Micro-F1 improvement** | ≥3.0pp | +1.36pp | FAIL | Concept features help but below threshold |
+| **SRS stability** | σ < 0.05 | σ = 0.000 | PASS | Perfect reproducibility |
 
 ### Recommendations
 
@@ -256,8 +256,8 @@ Perfect stability (σ=0.000) confirms that structural metrics are reproducible a
 
 2. **Alternative success criteria**:
    - Use macro-F1 as primary metric (better for imbalanced classes)
-   - Set threshold at +2pp macro-F1 (achieved: +2.27pp ✅)
-   - Require absolute performance >95% on both metrics (achieved ✅)
+   - Set threshold at +2pp macro-F1 (achieved: +2.27pp )
+   - Require absolute performance >95% on both metrics (achieved )
 
 3. **Production deployment**:
    - Use sklearn text+concept baseline (99.50% macro, 99.68% micro)
@@ -353,4 +353,4 @@ python scripts/compute_srs_stability.py \
 **Completion Date:** October 25, 2025  
 **Author:** Nash-79 / KG-MMML Project  
 **Branch:** KG-MMML  
-**Status:** ✅ Week 9 complete, ready for Week 10 planning
+**Status:** Week 9 complete, ready for Week 10 planning

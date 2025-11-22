@@ -14,10 +14,10 @@ This report consolidates all experimental results from Phase B (Weeks 5-10), val
 
 | Gate | Target | Achieved | Status | Gap |
 |------|--------|----------|--------|-----|
-| **SRS ≥ 0.75** | 0.75 | **0.7571** | ✅ PASS | +0.7pp |
-| **Latency < 150ms** | 150ms | **0.037ms** | ✅ PASS | 4054× margin |
-| **+3pp micro-F1** | +3.0pp | +1.36pp | ❌ FAIL | −1.64pp (ceiling effect) |
-| **Macro-F1 gain** | N/A | **+2.27pp** | ✅ PASS | Rare classes benefit |
+| **SRS ≥ 0.75** | 0.75 | **0.7571** | PASS | +0.7pp |
+| **Latency < 150ms** | 150ms | **0.037ms** | PASS | 4054× margin |
+| **+3pp micro-F1** | +3.0pp | +1.36pp | FAIL | −1.64pp (ceiling effect) |
+| **Macro-F1 gain** | N/A | **+2.27pp** | PASS | Rare classes benefit |
 
 **Overall**: System is **production-ready** with caveat: +3pp micro-F1 gate failed due to ceiling effect (baseline 98.33%). However, macro-F1 improvement (+2.27pp) demonstrates KG value for rare classes.
 
@@ -29,9 +29,9 @@ This report consolidates all experimental results from Phase B (Weeks 5-10), val
 
 | Component | Value | Target | Status | Interpretation |
 |-----------|-------|--------|--------|----------------|
-| **HP** (Hierarchy Presence) | 27.26% | ≥25% | ✅ PASS | 27.26% of concepts have parent |
-| **AtP** (Attribute Predictability) | 99.87% | ≥95% | ✅ PASS | Nearly all concepts have units |
-| **AP** (Asymmetry Preservation) | 100% | ≥99% | ✅ PASS | No erroneous reverse edges |
+| **HP** (Hierarchy Presence) | 27.26% | ≥25% | PASS | 27.26% of concepts have parent |
+| **AtP** (Attribute Predictability) | 99.87% | ≥95% | PASS | Nearly all concepts have units |
+| **AP** (Asymmetry Preservation) | 100% | ≥99% | PASS | No erroneous reverse edges |
 | **RTF** (Relation Type Fidelity) | None | N/A | - | Not implemented (future work) |
 
 ### 1.2 Composite Score
@@ -44,14 +44,14 @@ SRS = 0.25 × HP + 0.20 × AtP + 0.20 × AP + 0.35 × RTF
     = 0.7571 (renormalized to [0,1] by dividing by 0.65)
 ```
 
-**Status**: ✅ **0.7571 ≥ 0.75** (PASS with +0.7pp margin)
+**Status**: **0.7571 ≥ 0.75** (PASS with +0.7pp margin)
 
 ### 1.3 Taxonomy Evolution (HP Uplift)
 
 | Week | HP | Source | Uplift |
 |------|-----|--------|--------|
 | W5-6 | 1.15% | Manual taxonomy (27 edges) | Baseline |
-| W7-8 | **27.26%** | Auto-taxonomy (1,891 edges) | **+2370%** 🚀 |
+| W7-8 | **27.26%** | Auto-taxonomy (1,891 edges) | **+2370%** |
 
 **Key Innovation**: Multi-source taxonomy generation
 - Manual seed: 27 edges (1.4%)
@@ -79,7 +79,7 @@ SRS = 0.25 × HP + 0.20 × AtP + 0.20 × AP + 0.35 × RTF
 
 **Target**: ≥ +3.0 percentage points
 **Achieved**: +1.36 percentage points
-**Status**: ❌ **FAIL** (−1.64pp short)
+**Status**: **FAIL** (−1.64pp short)
 
 **Root Cause**: **Ceiling Effect**
 - Baseline: 98.33% (strong TF-IDF features)
@@ -114,12 +114,12 @@ SRS = 0.25 × HP + 0.20 × AtP + 0.20 × AP + 0.35 × RTF
 
 | Method | p50 | p95 | p99 | vs SLO (150ms) |
 |--------|-----|-----|-----|----------------|
-| **Annoy** (20 trees, SVD-256) | 0.022ms | 0.034ms | **0.037ms** | ✅ **4054× faster** ⚡ |
-| FAISS-HNSW (M=32, ef=200) | 0.138ms | 0.206ms | 0.255ms | ✅ 588× faster |
-| Filtered-cosine (graph+vector) | 1.64ms | 2.16ms | 2.43ms | ✅ 62× faster |
-| Exact-cosine (brute-force) | 3.06ms | 4.38ms | 5.48ms | ✅ 27× faster |
+| **Annoy** (20 trees, SVD-256) | 0.022ms | 0.034ms | **0.037ms** | **4054× faster** ⚡ |
+| FAISS-HNSW (M=32, ef=200) | 0.138ms | 0.206ms | 0.255ms | 588× faster |
+| Filtered-cosine (graph+vector) | 1.64ms | 2.16ms | 2.43ms | 62× faster |
+| Exact-cosine (brute-force) | 3.06ms | 4.38ms | 5.48ms | 27× faster |
 
-**Winner**: **Annoy** with p99 = 0.037ms
+Best performer: Annoy with p99 = 0.037ms
 
 **Production Choice**: Annoy 20-tree index on SVD-256 reduced features
 - Sub-millisecond queries (37 microseconds at p99)
@@ -130,7 +130,7 @@ SRS = 0.25 × HP + 0.20 × AtP + 0.20 × AP + 0.35 × RTF
 
 **Target**: p99 < 150ms
 **Achieved**: **0.037ms**
-**Status**: ✅ **PASS** (4054× margin)
+**Status**: **PASS** (4054× margin)
 
 **Interpretation**: Even the slowest method (exact cosine, 5.48ms p99) passes the gate. Hybrid architecture delivers **orders-of-magnitude** better than required.
 
@@ -237,10 +237,10 @@ X_joint    = hstack([X_text, X_concepts])  # (3218, 16655)
 
 | Component | Seed | Status |
 |-----------|------|--------|
-| Python random | 42 | ✅ Fixed |
-| NumPy random | 42 | ✅ Fixed |
-| sklearn random_state | 42 | ✅ Fixed |
-| PyTorch manual_seed | 42 | ✅ Fixed |
+| Python random | 42 | Fixed |
+| NumPy random | 42 | Fixed |
+| sklearn random_state | 42 | Fixed |
+| PyTorch manual_seed | 42 | Fixed |
 
 ### 7.2 Data Versioning
 
@@ -264,10 +264,10 @@ X_joint    = hstack([X_text, X_concepts])  # (3218, 16655)
 ### 7.4 Determinism Verification
 
 All experiments **100% reproducible** with fixed seed=42:
-- ✅ Train/test splits identical across runs
-- ✅ TF-IDF vectorization deterministic
-- ✅ LogisticRegression converges to same weights
-- ✅ SRS metrics stable (σ = 0.0000 across independent runs)
+- Train/test splits identical across runs
+- TF-IDF vectorization deterministic
+- LogisticRegression converges to same weights
+- SRS metrics stable (σ = 0.0000 across independent runs)
 
 ---
 
@@ -305,23 +305,23 @@ All experiments **100% reproducible** with fixed seed=42:
 
 | Milestone | Week | Status | Key Deliverable |
 |-----------|------|--------|-----------------|
-| M1 | W1-2 | ✅ COMPLETE | Literature Review + Project Plan |
-| M2 | W3-4 | ✅ COMPLETE | Data pipeline + SRS definition |
-| M3 | W5-6 | ✅ COMPLETE | Baseline + KG-as-features + SRS implementation |
-| M4 | W7-8 | ✅ COMPLETE | Auto-taxonomy (HP: 27.26%) + Latency harness |
-| M5 | W9-10 | ✅ COMPLETE | Joint objective analysis (λ=0.0 optimal) |
+| M1 | W1-2 | COMPLETE | Literature Review + Project Plan |
+| M2 | W3-4 | COMPLETE | Data pipeline + SRS definition |
+| M3 | W5-6 | COMPLETE | Baseline + KG-as-features + SRS implementation |
+| M4 | W7-8 | COMPLETE | Auto-taxonomy (HP: 27.26%) + Latency harness |
+| M5 | W9-10 | COMPLETE | Joint objective analysis (λ=0.0 optimal) |
 | M6 | W11-12 | 🔄 IN PROGRESS | **This consolidation report** |
 
 ### 9.2 Upcoming Milestones (Phase C)
 
 | Milestone | Week | Status | Planned Work |
 |-----------|------|--------|--------------|
-| M7 | W13-14 | 📝 PENDING | Robustness tests (taxonomy off, unit noise) |
-| M8 | W15-16 | 📝 PENDING | Scalability exploration (optional, time permitting) |
-| M9 | W17-18 | 📝 PENDING | Error analysis (0.32% failures) + Results draft |
-| M10 | W19-20 | 📝 PENDING | Statistical tests (5 seeds, CIs) |
-| M11 | W21-22 | 📝 PENDING | Final write-up (Conclusion, Abstract, Appendices) |
-| M12 | W23-24 | 📝 PENDING | Video demo + submission |
+| M7 | W13-14 | PENDING | Robustness tests (taxonomy off, unit noise) |
+| M8 | W15-16 | PENDING | Scalability exploration (optional, time permitting) |
+| M9 | W17-18 | PENDING | Error analysis (0.32% failures) + Results draft |
+| M10 | W19-20 | PENDING | Statistical tests (5 seeds, CIs) |
+| M11 | W21-22 | PENDING | Final write-up (Conclusion, Abstract, Appendices) |
+| M12 | W23-24 | PENDING | Video demo + submission |
 
 ### 9.3 Risk Assessment
 
@@ -339,8 +339,8 @@ All experiments **100% reproducible** with fixed seed=42:
 
 ### 10.1 Immediate (This Week)
 
-- [x] ✅ **Consolidate metrics** (this document)
-- [ ] 📝 **Write Week 11-12 progress summary** (1 hour)
+- [x] **Consolidate metrics** (this document)
+- [ ] **Write Week 11-12 progress summary** (1 hour)
 - [ ] 🧹 **Tidy outputs directory** (archive old experiments) (30 min)
 - [ ] 📖 **Review expanded Methodology** (check for missing details) (1 hour)
 
@@ -349,11 +349,11 @@ All experiments **100% reproducible** with fixed seed=42:
 - [ ] 🧪 **Run taxonomy-off test** (remove is_a edges, measure drop)
 - [ ] 🧪 **Run unit-noise test** (corrupt 5-10% of measured_in edges)
 - [ ] 📊 **Document robustness results** (target: ≤10% degradation)
-- [ ] 📝 **Write Week 13-14 summary**
+- [ ] **Write Week 13-14 summary**
 
 ### 10.3 Medium-Term (Week 15-18, M8-M9)
 
-- [ ] 🔍 **Error analysis** (investigate 0.32% misclassifications)
+- [ ] **Error analysis** (investigate 0.32% misclassifications)
 - [ ] 📄 **Start Results & Discussion chapter** (5.1-5.4 from existing data)
 - [ ] 📈 **Create figures** (SRS comparison, latency charts, confusion matrix)
 
@@ -395,10 +395,10 @@ All results in this consolidated report are derived from:
 
 Phase B (Weeks 5-10) successfully demonstrated:
 
-1. ✅ **Semantic preservation** (SRS = 0.7571 ≥ 0.75)
-2. ✅ **Operational performance** (p99 = 0.037ms << 150ms)
-3. ⚠️ **Task improvement** (+1.36pp micro-F1, ceiling effect; +2.27pp macro-F1 compensates)
-4. ✅ **Reproducibility** (100% deterministic with seed=42)
+1. **Semantic preservation** (SRS = 0.7571 ≥ 0.75)
+2. **Operational performance** (p99 = 0.037ms << 150ms)
+3. **Task improvement** (+1.36pp micro-F1, ceiling effect; +2.27pp macro-F1 compensates)
+4. **Reproducibility** (100% deterministic with seed=42)
 
 **Production system**: sklearn LogisticRegression (text+concept features, no penalty) + Annoy retrieval index (20 trees, SVD-256).
 

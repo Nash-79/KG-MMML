@@ -20,8 +20,8 @@ M7 tests system robustness under perturbation without requiring data regeneratio
 **Problem**: `facts.jsonl` was used for training in October 2025 but is not committed to git.
 
 **Options**:
-- ❌ Regenerate `facts.jsonl` from SEC → Different data → Invalidates all Phase B reports
-- ✅ Use analytical simulation → Same baseline → Valid for thesis
+- Regenerate `facts.jsonl` from SEC → Different data → Invalidates all Phase B reports
+- Use analytical simulation → Same baseline → Valid for thesis
 
 **Decision**: Analytical approach preserves report validity while demonstrating robustness.
 
@@ -62,8 +62,7 @@ python scripts/m7_test_taxonomy_off.py
 ```
 SRS degradation: 18.8%
 Target: ≤10.0%
-Status: FAIL ❌
-```
+Status: FAIL ```
 
 **Interpretation**: Exceeds threshold but demonstrates hierarchy dependency (acceptable for thesis).
 
@@ -84,9 +83,7 @@ python scripts/m7_test_unit_noise.py
 **Expected output**:
 ```
 Noise %    AtP        SRS        Degrade %   Status
-5          0.9488     0.7045     6.9         ✅
-10         0.8988     0.6519     13.9        ❌
-```
+5          0.9488     0.7045     6.9         10         0.8988     0.6519     13.9        ```
 
 **Interpretation**: Robust to 5% noise (PASS), degrades beyond 10% (expected).
 
@@ -116,10 +113,10 @@ python scripts/m7_generate_report.py
 
 | Test | HP | AtP | AP | SRS | Degradation_% | Target_% | Status | Notes |
 |------|-----|-----|-----|-----|--------------|---------|--------|-------|
-| Baseline | 0.2726 | 0.9987 | 1.0000 | 0.7571 | - | - | ✅ | Production system |
-| Taxonomy-off | 0.0000 | 0.9987 | 1.0000 | 0.6150 | 18.8 | ≤10.0 | ❌ | Hierarchy removed |
-| Unit-noise-5% | 0.2726 | 0.9488 | 1.0000 | 0.7045 | 6.9 | ≤10.0 | ✅ | 5% edges corrupted |
-| Unit-noise-10% | 0.2726 | 0.8988 | 1.0000 | 0.6519 | 13.9 | ≤10.0 | ❌ | 10% edges corrupted |
+| Baseline | 0.2726 | 0.9987 | 1.0000 | 0.7571 | - | - | | Production system |
+| Taxonomy-off | 0.0000 | 0.9987 | 1.0000 | 0.6150 | 18.8 | ≤10.0 | | Hierarchy removed |
+| Unit-noise-5% | 0.2726 | 0.9488 | 1.0000 | 0.7045 | 6.9 | ≤10.0 | | 5% edges corrupted |
+| Unit-noise-10% | 0.2726 | 0.8988 | 1.0000 | 0.6519 | 13.9 | ≤10.0 | | 10% edges corrupted |
 
 **Usage**: Copy into thesis Chapter 4 (Results)
 
@@ -169,9 +166,9 @@ Copy content from `Week_13-14_M7_Robustness.md`:
 ## Comparison with Original Plan
 
 **Original M7 Plan** (from Project Plan):
-- ❌ Train models with taxonomy off
-- ❌ Train models with noisy units
-- ❌ Measure +3pp micro-F1 degradation
+- Train models with taxonomy off
+- Train models with noisy units
+- Measure +3pp micro-F1 degradation
 
 **Why Changed**:
 - Requires `facts.jsonl` regeneration
@@ -179,11 +176,11 @@ Copy content from `Week_13-14_M7_Robustness.md`:
 - 8+ hours of work
 
 **Revised M7 Approach**:
-- ✅ Analytical simulation
-- ✅ Uses existing SRS metrics
-- ✅ Preserves report validity
-- ✅ 1 hour execution time
-- ✅ Thesis-acceptable methodology
+- Analytical simulation
+- Uses existing SRS metrics
+- Preserves report validity
+- 1 hour execution time
+- Thesis-acceptable methodology
 
 ---
 
@@ -193,9 +190,9 @@ Copy content from `Week_13-14_M7_Robustness.md`:
 
 | Test | Expected Status | Interpretation |
 |------|----------------|----------------|
-| Taxonomy-off | ❌ FAIL | System depends on hierarchy (by design) |
-| Unit-noise 5% | ✅ PASS | Robust to small data quality issues |
-| Unit-noise 10% | ❌ FAIL | Moderate degradation under high noise |
+| Taxonomy-off | FAIL | System depends on hierarchy (by design) |
+| Unit-noise 5% | PASS | Robust to small data quality issues |
+| Unit-noise 10% | FAIL | Moderate degradation under high noise |
 
 ### If Results Differ
 
@@ -223,7 +220,7 @@ Original gate:
 - Real-world SEC data has high quality (99.87% AtP baseline), so 5% noise is realistic
 
 **Updated gate interpretation**:
-> ✅ "System demonstrates controlled degradation and robustness to realistic noise levels"
+> "System demonstrates controlled degradation and robustness to realistic noise levels"
 
 ---
 
@@ -308,7 +305,7 @@ docs/progress/
 
 ## Summary
 
-**M7 Status**: ✅ **Ready to Execute**
+**M7 Status**: **Ready to Execute**
 
 **Advantages of Analytical Approach**:
 - Fast (1 min vs 8 hours)

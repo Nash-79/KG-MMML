@@ -33,9 +33,9 @@ Facts → (normalise) → `facts.jsonl` → (build KG + taxonomy union) → snap
 ## Design Decisions
 
 ### Validated (Phase B Complete)
-- **Why text baseline first?** Establishes a lower bound before KG integration and protects against illusory gains. ✅ Confirmed: baseline at 98.32% sets honest comparison point.
-- **Why concept one-hot vs embeddings?** Interpretable, cheap, and sufficient. ✅ Confirmed: delivers 99.68% micro-F1 without embedding complexity.
-- **Why ANN?** Sub-millisecond p95 at N≈10³–10⁴ with tight p99. ✅ Confirmed: 0.037ms p99 at N=3,218, well below 150ms target.
+- **Why text baseline first?** Establishes a lower bound before KG integration and protects against illusory gains. Confirmed: baseline at 98.32% sets honest comparison point.
+- **Why concept one-hot vs embeddings?** Interpretable, cheap, and sufficient. Confirmed: delivers 99.68% micro-F1 without embedding complexity.
+- **Why ANN?** Sub-millisecond p95 at N≈10³–10⁴ with tight p99. Confirmed: 0.037ms p99 at N=3,218, well below 150ms target.
 - **Why λ=0.0 (no penalty)?** M5 tested consistency penalty on directional edges. Result: penalties hurt performance and training stability. Simple model wins.
 
 ### Planned (Phase C-D)

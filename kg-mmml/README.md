@@ -6,9 +6,9 @@ This project builds a system that retrieves SEC financial documents and classifi
 
 | Gate | Target | Actual | Status |
 |------|--------|--------|--------|
-| SRS (overall) | ≥0.75 | 0.7571 | ✅ PASS |
-| Latency p99 | <150ms | 0.037ms | ✅ PASS |
-| +3pp micro‑F1 | ≥+3.0pp | +1.36pp | ❌ FAIL |
+| SRS (overall) | ≥0.75 | 0.7571 | PASS |
+| Latency p99 | <150ms | 0.037ms | PASS |
+| +3pp micro‑F1 | ≥+3.0pp | +1.36pp | FAIL |
 
 Notes: Concept features deliver near‑perfect accuracy (99.68% micro‑F1) and +2.27pp macro‑F1, but the +3pp micro‑F1 threshold was too strict at this performance level.
 

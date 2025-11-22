@@ -240,8 +240,8 @@ parents:
 **Coverage**: Pattern rules generate **1,616 is_a edges** (86% of final taxonomy).
 
 **Validation strategy**: Conservative patterns preferred over aggressive. For example:
-- ✅ "AccountsReceivable.*" (high precision, matches intended children)
-- ❌ ".*Asset.*" (too broad, would incorrectly parent verbs like "DisposalOfAsset")
+- "AccountsReceivable.*" (high precision, matches intended children)
+- ".*Asset.*" (too broad, would incorrectly parent verbs like "DisposalOfAsset")
 
 #### 3.3.3 Frequency-Based Rules
 

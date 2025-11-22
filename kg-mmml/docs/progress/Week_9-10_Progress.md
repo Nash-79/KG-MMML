@@ -12,9 +12,7 @@ Week 9 focused on validating baseline performance, analyzing consistency penalty
 
 ---
 
-## Goal 1: Baseline Validation ✅
-
-**Objective:** Compare text-only vs text+concept models with matched train/test splits to validate feature engineering improvements.
+## Goal 1: Baseline Validation **Objective:** Compare text-only vs text+concept models with matched train/test splits to validate feature engineering improvements.
 
 ### Critical Discovery
 The original joint model from Week 7-8 was trained without concept features. Only text (TF-IDF) was used because the `--concept_npz` and `--concept_index` arguments were not provided to the training script.
@@ -36,7 +34,7 @@ The original joint model from Week 7-8 was trained without concept features. Onl
 - Text+concept (5 epochs): 79.68% macro-F1, 91.32% micro-F1
 - Text+concept (20 epochs): 93.47% macro-F1, 96.34% micro-F1
 
-**Decision Gate:** ❌ FAILED  
+**Decision Gate:** FAILED  
 - Target: ≥3.0pp micro-F1 improvement
 - Actual: +1.36pp
 - Analysis: Concept features provide strong macro-F1 boost (+2.27pp) and near-perfect absolute performance (>99%). The 3pp threshold may be overly conservative.
@@ -49,9 +47,7 @@ The original joint model from Week 7-8 was trained without concept features. Onl
 
 ---
 
-## Goal 2: Model Configuration ✅
-
-**Objective:** Document consistency penalty trade-offs and update default configuration based on empirical evidence.
+## Goal 2: Model Configuration **Objective:** Document consistency penalty trade-offs and update default configuration based on empirical evidence.
 
 ### Analysis
 
@@ -81,9 +77,7 @@ The consistency penalty (λ) regularizes predictions to match parent-support dis
 
 ---
 
-## Goal 3: Stability Testing ✅
-
-**Objective:** Verify that SRS (Semantic Relationship Score) metrics are stable and reproducible across multiple runs.
+## Goal 3: Stability Testing **Objective:** Verify that SRS (Semantic Relationship Score) metrics are stable and reproducible across multiple runs.
 
 ### SRS Metric Components
 - **HP (Hierarchy Presence):** Fraction of concepts with ≥1 parent via is-a edges
@@ -105,7 +99,7 @@ Compared metrics from two independent Week 7-8 computation runs:
 | AP | 1.0000 | 0.0000 | 1.0000-1.0000 |
 | SRS | 0.7571 | 0.0000 | 0.7571-0.7571 |
 
-**Decision Gate:** ✅ PASSED  
+**Decision Gate:** PASSED  
 - Target: σ < 0.05
 - Actual: σ = 0.000 (perfect stability)
 
@@ -181,8 +175,8 @@ Perfect stability (σ=0.000) confirms structural metrics are reproducible and re
 
 | Gate | Threshold | Result | Status | Notes |
 |------|-----------|--------|--------|-------|
-| Micro-F1 improvement | ≥3.0pp | +1.36pp | ❌ FAIL | Strong macro-F1 boost (+2.27pp), near-perfect absolute performance |
-| SRS stability | σ < 0.05 | σ = 0.000 | ✅ PASS | Perfect reproducibility for deterministic metrics |
+| Micro-F1 improvement | ≥3.0pp | +1.36pp | FAIL | Strong macro-F1 boost (+2.27pp), near-perfect absolute performance |
+| SRS stability | σ < 0.05 | σ = 0.000 | PASS | Perfect reproducibility for deterministic metrics |
 
 ---
 
@@ -191,8 +185,8 @@ Perfect stability (σ=0.000) confirms structural metrics are reproducible and re
 ### Adjust Decision Gate Criteria
 Given the failure of the micro-F1 gate but strong overall results:
 1. Use macro-F1 as primary metric (better for imbalanced classes)
-2. Set threshold at +2pp macro-F1 improvement (achieved: +2.27pp ✅)
-3. Require absolute performance >95% on both metrics (achieved: 99.50% macro, 99.68% micro ✅)
+2. Set threshold at +2pp macro-F1 improvement (achieved: +2.27pp )
+3. Require absolute performance >95% on both metrics (achieved: 99.50% macro, 99.68% micro )
 
 ### Production Deployment
 - Use sklearn text+concept baseline (99.50% macro, 99.68% micro)
@@ -265,7 +259,7 @@ python scripts/compute_srs_stability.py \
 
 ---
 
-**Status:** ✅ Week 9 complete  
+**Status:** Week 9 complete  
 **Branch:** KG-MMML  
 **Commit:** ee1ee9b  
 **Files Changed:** 17 files, 2,197 insertions, 82 deletions  

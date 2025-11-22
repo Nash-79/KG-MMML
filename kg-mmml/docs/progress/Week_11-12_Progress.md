@@ -2,7 +2,7 @@
 
 **Milestone**: M6 - Consolidation and Calibration
 **Dates**: Week 11-12 (November 2024)
-**Status**: ✅ COMPLETE
+**Status**:  COMPLETE
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## Achievements This Period
 
-### 1. Comprehensive Metrics Consolidation ✅
+### 1. Comprehensive Metrics Consolidation 
 
 **Deliverables Created**:
 - `reports/tables/consolidated_metrics_w11.csv` - Machine-readable comprehensive metrics (150+ rows)
@@ -41,7 +41,7 @@
 
 ---
 
-### 2. Methodology Documentation Expansion ✅
+### 2. Methodology Documentation Expansion 
 
 **File Expanded**: `docs/01_METHODOLOGY.md`
 **Growth**: 46 lines → 750 lines (~6,500 words)
@@ -91,7 +91,7 @@
 
 ## Phase B Summary (Week 5-10)
 
-### M3: Baseline + KG-as-Features (Week 5-6) ✅
+### M3: Baseline + KG-as-Features (Week 5-6) 
 
 **Baseline Established**:
 - Text-only TF-IDF classifier
@@ -107,7 +107,7 @@
 
 ---
 
-### M4: Auto-Taxonomy + Latency Harness (Week 7-8) ✅
+### M4: Auto-Taxonomy + Latency Harness (Week 7-8) 
 
 **Auto-Taxonomy Generation**:
 - **Before (Week 5)**: HP = 1.15% (52/4508 concepts with parent)
@@ -137,7 +137,7 @@
 
 ---
 
-### M5: Joint Objective Analysis (Week 9-10) ✅
+### M5: Joint Objective Analysis (Week 9-10) 
 
 **Consistency Penalty Experiments** (PyTorch):
 - **λ = 0.0** (no penalty): Micro-F1 = 96.34%, Macro-F1 = 93.47% (20 epochs)
@@ -158,10 +158,10 @@
 
 | Gate | Target | Achieved | Status | Gap | Notes |
 |------|--------|----------|--------|-----|-------|
-| **SRS ≥ 0.75** | 0.75 | **0.7571** | ✅ PASS | +0.7pp | Semantic preservation achieved |
-| **Latency < 150ms** | 150ms | **0.037ms** | ✅ PASS | 4054× margin | Sub-millisecond retrieval |
-| **+3pp micro-F1** | +3.0pp | +1.36pp | ❌ FAIL | −1.64pp | Ceiling effect (baseline 98.33%) |
-| **Macro-F1 gain** | N/A | **+2.27pp** | ✅ PASS | Rare classes | Concept features help long-tail |
+| **SRS ≥ 0.75** | 0.75 | **0.7571** |  PASS | +0.7pp | Semantic preservation achieved |
+| **Latency < 150ms** | 150ms | **0.037ms** |  PASS | 4054× margin | Sub-millisecond retrieval |
+| **+3pp micro-F1** | +3.0pp | +1.36pp |  FAIL | −1.64pp | Ceiling effect (baseline 98.33%) |
+| **Macro-F1 gain** | N/A | **+2.27pp** |  PASS | Rare classes | Concept features help long-tail |
 
 **Overall**: 3/4 gates passed (75%). One failure (micro-F1) is well-documented with ceiling effect explanation.
 
@@ -207,8 +207,7 @@
 - Only 0.32% of test cases misclassified (26/805 filings)
 - Diminishing returns: going from 98% → 99% is harder than 80% → 83%
 
-### 3. Rare Class Improvement 🎯
-- **Macro-F1 +2.27pp gain** shows concept features help long-tail
+### 3. Rare Class Improvement - **Macro-F1 +2.27pp gain** shows concept features help long-tail
 - KG structure provides signal for underrepresented classes
 - Trade-off: micro-F1 ceiling vs macro-F1 balance
 
@@ -218,13 +217,12 @@
 - No GPU dependency, simple deployment
 - Production-ready with massive headroom
 
-### 5. Simplicity Wins 🏆
-- sklearn baseline outperforms PyTorch joint objective
+### 5. Simplicity Wins - sklearn baseline outperforms PyTorch joint objective
 - No penalty (λ=0.0) beats constrained training (λ>0)
 - Complexity does not always improve performance
 - Prefer interpretable, stable, simple solutions
 
-### 6. Consistency Penalty Failure ❌
+### 6. Consistency Penalty Failure 
 - λ > 0 **hurts macro-F1** (−13.52pp at λ=0.1)
 - Penalty constrains flexibility, reduces generalization
 - Hierarchy signal already captured in concept features
@@ -280,7 +278,7 @@
 **Chapters**:
 - Chapter 1: Introduction (research gap, objectives, contributions) - 2,000 words
 - Chapter 2: Literature Review (already complete) - 8,000 words
-- Chapter 3: Methodology (expanded to 6,500 words this week) ✅
+- Chapter 3: Methodology (expanded to 6,500 words this week) 
 - Chapter 4: Results & Discussion (draft in M9) - 6,000 words
 - Chapter 5: Conclusion (future work, limitations, summary) - 1,500 words
 
@@ -288,7 +286,7 @@
 - Final thesis PDF (18,000-20,000 words)
 - 5-minute video presentation
 - Code repository (GitHub with README, docs, reproducible scripts)
-- Poster (already complete) ✅
+- Poster (already complete) 
 
 ---
 
@@ -315,17 +313,17 @@
 ## Timeline Update
 
 **Completed Milestones**:
-- ✅ M1-M2: Literature Review + Project Plan (Week 1-4)
-- ✅ M3: Baseline + KG-as-Features (Week 5-6)
-- ✅ M4: Auto-Taxonomy + Latency Harness (Week 7-8)
-- ✅ M5: Joint Objective Analysis (Week 9-10)
-- ✅ M6: Consolidation + Calibration (Week 11-12) - **THIS MILESTONE**
+-  M1-M2: Literature Review + Project Plan (Week 1-4)
+-  M3: Baseline + KG-as-Features (Week 5-6)
+-  M4: Auto-Taxonomy + Latency Harness (Week 7-8)
+-  M5: Joint Objective Analysis (Week 9-10)
+-  M6: Consolidation + Calibration (Week 11-12) - **THIS MILESTONE**
 
 **Upcoming Milestones**:
-- ⏳ M7: Robustness Testing (Week 13-14) - NEXT
-- ⏳ M8: Scalability Exploration (Week 15-16)
-- ⏳ M9: Error Analysis + Results Draft (Week 17-18)
-- ⏳ M10-M12: Write-Up + Video + Submission (Week 19-24)
+-  M7: Robustness Testing (Week 13-14) - NEXT
+-  M8: Scalability Exploration (Week 15-16)
+-  M9: Error Analysis + Results Draft (Week 17-18)
+-  M10-M12: Write-Up + Video + Submission (Week 19-24)
 
 **Submission Deadline**: Week 24 (January 2025)
 
@@ -344,7 +342,7 @@
 
 ## Conclusion
 
-**M6 Status**: ✅ COMPLETE
+**M6 Status**:  COMPLETE
 
 **Phase B Summary**: Successfully implemented hybrid KG-ML architecture with:
 - Semantic preservation (SRS = 0.7571)

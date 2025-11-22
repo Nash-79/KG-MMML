@@ -2,7 +2,7 @@
 
 **Phase B, Milestone M5: Minimal Joint Objective + Trade-offs**  
 **Timeline:** Week 9 (Oct 25 – Oct 31, 2025)  
-**Status:** 🟡 In Progress
+**Status:** In Progress
 
 ---
 
@@ -11,9 +11,9 @@
 This week focuses on completing Phase B's Milestone M5, which validates the minimal joint objective approach and documents critical trade-offs between text-only baselines, joint models, and consistency penalty configurations. We will also establish SRS metric stability through multi-seed validation.
 
 ### Success Criteria (Decision Gates)
-1. ✅ **Baseline F1 Gate**: Text+concept joint model achieves ≥+3pp micro-F1 improvement over text-only baseline
-2. ✅ **SRS Stability Gate**: SRS metric shows std deviation < 0.05 across 5 random seeds
-3. ✅ **Documentation Gate**: All trade-offs documented with reproducible configs and acceptance CSVs
+1. **Baseline F1 Gate**: Text+concept joint model achieves ≥+3pp micro-F1 improvement over text-only baseline
+2. **SRS Stability Gate**: SRS metric shows std deviation < 0.05 across 5 random seeds
+3. **Documentation Gate**: All trade-offs documented with reproducible configs and acceptance CSVs
 
 ---
 
@@ -38,13 +38,13 @@ This week focuses on completing Phase B's Milestone M5, which validates the mini
    - Output: `reports/tables/baseline_vs_joint_comparison.csv`
 
 3. **Decision Gate Checkpoint**
-   - If gate passes (✅): Proceed to Goal 2
-   - If gate fails (❌): Debug joint model feature engineering or revisit concept extraction
+   - If gate passes (): Proceed to Goal 2
+   - If gate fails (): Debug joint model feature engineering or revisit concept extraction
 
 #### Acceptance Criteria
-- ✅ CSV file with text-only vs text+concept comparison exists
-- ✅ Decision gate status confirmed (pass/fail) in CSV or separate status file
-- ✅ Reproducible command documented in `WEEK9_PLAN.md`
+- CSV file with text-only vs text+concept comparison exists
+- Decision gate status confirmed (pass/fail) in CSV or separate status file
+- Reproducible command documented in `WEEK9_PLAN.md`
 
 #### Timeline
 - **Day 1 (Oct 25):** Rerun baseline with matched splits
@@ -88,9 +88,9 @@ This week focuses on completing Phase B's Milestone M5, which validates the mini
    - Output: Extended ablation results in `reports/tables/joint_lambda_ablation_extended.csv`
 
 #### Acceptance Criteria
-- ✅ Trade-off analysis added to `EXPERIMENT_RESULTS_SUMMARY.md`
-- ✅ `configs/experiment_joint.yaml` updated with λ=0.0 default and rationale comments
-- ✅ (Optional) Sensitivity analysis completed with λ ∈ {0.01, 0.05} results
+- Trade-off analysis added to `EXPERIMENT_RESULTS_SUMMARY.md`
+- `configs/experiment_joint.yaml` updated with λ=0.0 default and rationale comments
+- (Optional) Sensitivity analysis completed with λ ∈ {0.01, 0.05} results
 
 #### Timeline
 - **Day 3 (Oct 27):** Document penalty trade-off analysis
@@ -130,10 +130,10 @@ This week focuses on completing Phase B's Milestone M5, which validates the mini
    - Output: Final `reports/tables/srs_stability_w9.csv`
 
 #### Acceptance Criteria
-- ✅ `scripts/compute_srs_stability.py` created and executable
-- ✅ `reports/tables/srs_stability_w9.csv` contains mean ± std for HP, AtP, AP, SRS
-- ✅ Confidence intervals (95% CI) reported for each metric
-- ✅ Decision gate status (std < 0.05) confirmed
+- `scripts/compute_srs_stability.py` created and executable
+- `reports/tables/srs_stability_w9.csv` contains mean ± std for HP, AtP, AP, SRS
+- Confidence intervals (95% CI) reported for each metric
+- Decision gate status (std < 0.05) confirmed
 
 #### Timeline
 - **Day 6 (Oct 30):** Implement multi-seed SRS script
@@ -214,7 +214,7 @@ python scripts/compute_srs_stability.py --taxonomy datasets/sec_edgar/taxonomy/u
 ### Verification Commands
 ```bash
 # Check baseline metrics exist
-test -f reports/tables/baseline_text_seed42_metrics.json && echo "✅ Baseline metrics generated"
+test -f reports/tables/baseline_text_seed42_metrics.json && echo "Baseline metrics generated"
 
 # Check decision gate status
 grep "PASS\|FAIL" reports/tables/baseline_vs_joint_comparison.csv

@@ -6,13 +6,13 @@ This section ties the objectives, decision gates, and evidence into one view.
 
 | Gate | Target | Actual | Status | Evidence |
 |------|--------|--------|--------|----------|
-| HP (hierarchy) | ≥0.25 | 0.2726 | ✅ PASS | srs_kge_combined.csv |
-| AtP (units) | ≥0.95 | 0.9987 | ✅ PASS | srs_kge_combined.csv |
-| AP (direction) | ≥0.99 | 1.0000 | ✅ PASS | srs_kge_combined.csv |
-| SRS (overall) | ≥0.75 | 0.7571 | ✅ PASS | srs_kge_combined.csv |
-| Latency p99 | <150ms | 0.037ms (Annoy) | ✅ PASS | latency_baseline_combined.csv |
-| +3pp micro‑F1 | ≥+3.0pp | +1.36pp | ❌ FAIL | baseline_vs_joint_comprehensive_w9.csv |
-| Stability (std) | <0.05 | 0.000 | ✅ PASS | srs_stability_w9.csv |
+| HP (hierarchy) | ≥0.25 | 0.2726 | PASS | srs_kge_combined.csv |
+| AtP (units) | ≥0.95 | 0.9987 | PASS | srs_kge_combined.csv |
+| AP (direction) | ≥0.99 | 1.0000 | PASS | srs_kge_combined.csv |
+| SRS (overall) | ≥0.75 | 0.7571 | PASS | srs_kge_combined.csv |
+| Latency p99 | <150ms | 0.037ms (Annoy) | PASS | latency_baseline_combined.csv |
+| +3pp micro‑F1 | ≥+3.0pp | +1.36pp | FAIL | baseline_vs_joint_comprehensive_w9.csv |
+| Stability (std) | <0.05 | 0.000 | PASS | srs_stability_w9.csv |
 
 ## What the results mean
 - We preserved semantics (SRS > 0.75) while delivering sub‑millisecond retrieval.

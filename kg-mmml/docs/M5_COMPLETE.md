@@ -43,7 +43,7 @@ Where d() is cosine distance in embedding space. Penalizes cases where children 
 
 **λ>0 (sophisticated)**: Attempts to enforce hierarchy explicitly through loss function.
 
-**Winner**: Simple model. The concept features already capture hierarchy implicitly. Forcing it explicitly adds complexity without benefit.
+The simple model performed better. The concept features already capture hierarchy implicitly. Forcing it explicitly adds complexity without benefit.
 
 ### 2. Training Cost
 
@@ -58,7 +58,7 @@ Where d() is cosine distance in embedding space. Penalizes cases where children 
 - ~15-20 minutes
 - Hyperparameter tuning needed (λ value, margin, sampling)
 
-**Winner**: λ=0.0. Not worth 3-4× training time for worse results.
+The λ=0.0 configuration is preferred. The 3-4× training time increase is not justified by the results.
 
 ### 3. Semantic Preservation
 
@@ -183,6 +183,6 @@ M5 tested whether explicit semantic constraints improve classification. They don
 
 The +3pp micro-F1 gate was missed due to ceiling effects. However, the research succeeds in its core goals: semantic preservation (SRS ≥ 0.75), operational performance (p99 < 150ms), and honest evaluation (documenting failures).
 
-**M5 status**: ✅ **COMPLETE**
+**M5 status**:  **COMPLETE**
 
 **Next milestone**: M6 (consolidation, calibration, tidy outputs)

@@ -1,37 +1,33 @@
-# CLAUDE.md
+# Developer Guide
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This guide provides technical documentation for the KG-MMML hybrid knowledge graph and machine learning system.
 
-## What This Is
+## Project Overview
 
-MSc research project (CSC40098, Keele University) investigating how to integrate knowledge graphs with ML for SEC financial document classification while preserving semantic structure and meeting realistic performance targets.
+MSc research project (CSC40098, Keele University) investigating knowledge graph integration with machine learning for SEC financial document classification while preserving semantic structure and meeting performance requirements.
 
-**Core question**: Can we get the benefits of knowledge graphs (hierarchy, relations, explainability) without sacrificing speed or losing semantic meaning when we compress them into vectors?
+The central research question asks whether we can retain the benefits of knowledge graphs (hierarchy, relations, explainability) without sacrificing retrieval speed or losing semantic meaning during vector compression. The literature review identified that pure vector models lose relational structure while pure graph queries are slow. This hybrid approach uses graphs for semantics and vector indices for speed.
 
-**Key insight from literature review**: Pure vector models lose relational structure; pure graphs are slow. Hybrid approach uses graph for semantics, vector index for speed.
+## Current Status (Week 11-12)
 
-## Current Status (Week 9-10)
+M6 consolidation milestone complete. M7 robustness testing scripts implemented and ready for execution.
 
-Working on Milestone M5 (joint objective with consistency penalty).
-
-**Decision gates:**
+Decision gate results:
 - SRS = 0.7571 (target ≥0.75) - PASS
 - Latency p99 = 0.037ms (target <150ms) - PASS
 - +3pp micro-F1 improvement = +1.36pp (target ≥3.0pp) - FAIL
 
-**What we learned**: Consistency penalty (λ > 0) doesn't help. Simpler model with λ=0.0 performs better. The +3pp gate might be too strict given we're already at 99.68% micro-F1.
+M5 experiments showed that consistency penalty (λ > 0) does not improve performance. The simpler λ=0.0 model performs better. The +3pp micro-F1 gate appears too strict at 99.68% baseline accuracy due to ceiling effects.
 
-**Next steps**: Document trade-offs, consider whether gate threshold needs adjustment, wrap up M5.
+## Setup and Installation
 
-## Quick Start
-
-### Setup
+### Initial Setup
 ```bash
 make setup              # Creates .env, directories
 make install-dev        # Install with dev dependencies
 ```
 
-### Run Experiments
+### Running Experiments
 ```bash
 # Text-only baseline
 python -m src.cli.baseline_tfidf \
@@ -94,73 +90,76 @@ SEC EDGAR CompanyFacts (JSON)
   → evaluate_latency → p50/p95/p99 latency reports
 ```
 
-## Key Components
+## System Components
 
-**Data Layer** (`data/`)
+### Data Layer (data/)
 - facts.jsonl: Normalized SEC filings (cik, ns, concept, unit, period, value)
 - Free data from SEC EDGAR CompanyFacts API
 
-**Knowledge Graph Layer** (`datasets/sec_edgar/taxonomy/`)
+### Knowledge Graph Layer (datasets/sec_edgar/taxonomy/)
 - Taxonomy builder merges: manual seed + regex pattern rules + frequency rules + backbone
 - Output: child,parent CSV with optional transitive closure
 - Example: AccountsReceivable → CurrentAssets → Assets
 
-**Feature Layer**
+### Feature Layer
 - Text features: TF-IDF on concept labels (baseline)
 - Concept features: Binary indicators for KG-as-features
 - Stored as sparse .npz matrices
 
-**Retrieval Layer** (`src/cli/evaluate_latency.py`)
+### Retrieval Layer (src/cli/evaluate_latency.py)
 - Annoy (20 trees, SVD-256): Current default
 - FAISS HNSW: Planned for comparison
 - Filtered cosine: Hybrid KG pre-filter + vector ranking
 
-**CLI Tools** (`src/cli/`)
+### CLI Tools (src/cli/)
 - Standalone pipeline stages
 - Run with `python -m src.cli.<script_name> --help`
 
 ## Metrics
 
-**SRS (Semantic Retention Score)**: Composite metric for knowledge preservation
+### Semantic Retention Score (SRS)
+Composite metric for knowledge preservation:
 - HP (Hierarchy Presence): % concepts with parent via is-a (weight 0.25)
 - AtP (Attribute Predictability): % concepts with unit edges (weight 0.20)
 - AP (Asymmetry Preservation): No erroneous reverse edges (weight 0.20)
 - RTF (Relation Type Fidelity): Reserved for future (weight 0.35)
 
-**Formula**: SRS = 0.25×HP + 0.20×AtP + 0.20×AP + 0.35×RTF
+Formula: SRS = 0.25×HP + 0.20×AtP + 0.20×AP + 0.35×RTF
 
-**Classification Metrics**:
+### Classification Metrics
 - Macro-F1: Tracks rare classes
 - Micro-F1: Overall accuracy weighted by support
 
-**Latency**: p50/p95/p99 percentiles (not just mean)
+### Latency Metrics
+- p50/p95/p99 percentiles (not just mean)
 
-## Important Patterns
+## Implementation Patterns
 
-**Taxonomy Building**: Multi-source strategy
+### Taxonomy Building
+Multi-source strategy:
 - Manual CSV: Seed taxonomy with core relationships
 - Pattern rules: YAML regex patterns (e.g., ".*Receivable.*" → CurrentAssets)
 - Frequency rules: Common concept families with CIK support thresholds
 - Backbone: Hardcoded structural relationships
 - Transitive closure: Materializes all ancestor paths
 
-**Namespace Handling**: Concepts use full namespace (us-gaap:Revenue)
-- Normalizes to ns:concept format
-- Defaults to us-gaap: when not specified
-- See build_taxonomy.py::normalize_df() for implementation
+### Namespace Handling
+Concepts use full namespace (us-gaap:Revenue). The system normalizes to ns:concept format and defaults to us-gaap: when not specified. See build_taxonomy.py::normalize_df() for implementation.
 
-**Two-Stage Evaluation** (critical for validity):
+### Two-Stage Evaluation
+Critical for validity:
 1. Text-only baseline establishes lower bound
 2. Joint model must show +3pp micro-F1 improvement
-- Prevents illusory gains from architecture changes
 
-**Reproducibility Requirements**:
+This prevents illusory gains from architecture changes.
+
+### Reproducibility Requirements
 - Fixed random seeds (--random_state 42)
 - Stratified splits (--test_size 0.25)
 - Pinned data snapshots in configs/
 - Deterministic SRS components (HP/AtP/AP)
 
-**Latency Measurement**:
+### Latency Measurement
 - Warmed caches (first query excluded)
 - Pinned threads (CPU affinity when possible)
 - 500+ query runs for stable percentiles
@@ -168,30 +167,30 @@ SEC EDGAR CompanyFacts (JSON)
 
 ## Configuration Files
 
-Experiments defined in `configs/`:
+Experiments defined in configs/:
 - experiment_baseline.yaml: Text-only TF-IDF
 - experiment_joint.yaml: Text + concept features
 - experiment_kge.yaml: KG embedding experiments
 
-## Common Tasks
+## Common Development Tasks
 
-**Add concept pattern rule:**
-1. Edit `datasets/sec_edgar/taxonomy/pattern_rules.yaml`
+### Adding concept pattern rules
+1. Edit datasets/sec_edgar/taxonomy/pattern_rules.yaml
 2. Add regex under appropriate parent
 3. Rebuild: `python -m src.cli.build_taxonomy ...`
 
-**Run single test:**
+### Running single tests
 ```bash
 pytest tests/test_taxonomy.py -v
 ```
 
-**Debug failed experiment:**
+### Debugging failed experiments
 1. Check logs/ for traces
 2. Inspect outputs/<experiment>/ for intermediate results
 3. Verify data paths in config YAML
 4. Confirm .env has SEC User-Agent
 
-**Compare runs:**
+### Comparing experiment runs
 ```bash
 python scripts/compare_comprehensive.py \
   --baseline reports/tables/baseline_metrics.json \
@@ -199,7 +198,7 @@ python scripts/compare_comprehensive.py \
   --output reports/tables/comparison.csv
 ```
 
-## Data Directories
+## Directory Structure
 
 - data/processed/sec_edgar/: Normalized facts and features (git-ignored)
 - data/kg/: KG snapshots (git-ignored)
@@ -216,17 +215,22 @@ python scripts/compare_comprehensive.py \
 - docs/Architecture.md: Component details and design decisions
 - docs/progress/: Weekly progress logs
 
-## Key Design Decisions
+## Design Rationale
 
-**Why SEC EDGAR?** Free data, real-world complexity, namespace-aware concepts, no licensing barriers.
+### SEC EDGAR Data Source
+Free data with real-world complexity, namespace-aware concepts, and no licensing barriers.
 
-**Why text baseline first?** Establishes lower bound; prevents claiming KG benefits when gains come from architecture changes.
+### Text Baseline Requirement
+Establishes lower bound and prevents claiming KG benefits when gains come from architecture changes.
 
-**Why auto-taxonomy?** Manual curation doesn't scale. Regex + frequency rules provide conservative, explainable hierarchy generation.
+### Auto-Taxonomy Generation
+Manual curation doesn't scale. Regex and frequency rules provide conservative, explainable hierarchy generation.
 
-**Why hybrid architecture?** Graph preserves semantics; vector index delivers speed; specialization beats monolithic stores at scale.
+### Hybrid Architecture Choice
+Graphs preserve semantics while vector indices deliver speed. Specialization beats monolithic stores at scale.
 
-**Why SRS metric?** Accuracy alone hides semantic loss. Need quantifiable measures to prove KG contribution beyond label co-occurrence.
+### SRS Metric Development
+Accuracy alone hides semantic loss. Quantifiable measures needed to prove KG contribution beyond label co-occurrence.
 
 ## Code Style
 
@@ -236,13 +240,13 @@ python scripts/compare_comprehensive.py \
 - Imports: isort profile=black
 - Tests marked as unit/integration/slow
 
-## Project Context
+## Integration Patterns
 
-This implements findings from a literature review that identified three integration patterns:
+This implementation validates findings from the literature review identifying three integration patterns:
+
 1. KG-as-Features: Pre-computed embeddings (fast but loses structure)
 2. Joint KG-MM Objectives: Shared space with constraints (better fidelity, heavier training)
 3. Retrieval-time Routing: Hybrid architecture (production-ready, operational)
 
-The project validates that hybrid approach (graph for structure + vector for speed) can preserve semantics while meeting realistic performance targets.
+The hybrid approach (graph for structure + vector for speed) preserves semantics while meeting realistic performance targets.
 
-Academic documentation available in: C:\Users\nmepa\OneDrive\Learning\Keele\10.0 CSC40098 MSc Project\

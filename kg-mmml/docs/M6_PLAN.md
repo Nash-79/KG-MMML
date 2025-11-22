@@ -118,9 +118,9 @@ All Phase B metrics consolidated. System passes 2/3 decision gates.
 
 ## Phase B Achievements (Week 5-10)
 
-- ✅ M3: Baseline + KG-as-features implemented
-- ✅ M4: Auto-taxonomy (HP: 0% → 27.26%), latency harness (p99: 0.037ms)
-- ✅ M5: Joint objective analysis (λ=0.0 wins; +3pp gate ceiling effect documented)
+- M3: Baseline + KG-as-features implemented
+- M4: Auto-taxonomy (HP: 0% → 27.26%), latency harness (p99: 0.037ms)
+- M5: Joint objective analysis (λ=0.0 wins; +3pp gate ceiling effect documented)
 
 ## Production System
 
@@ -156,11 +156,7 @@ Working on Milestone M6 (consolidation and calibration).
 **M5 Complete**: Joint objective analysis showed λ=0.0 outperforms constrained variants.
 
 **Decision gates:**
-- SRS = 0.7571 - PASS ✅
-- Latency p99 = 0.037ms - PASS ✅
-- +3pp micro-F1 = +1.36pp - FAIL (ceiling effect documented) ❌
-
-**Next steps**: Consolidate metrics, prepare for robustness tests (M7).
+- SRS = 0.7571 - PASS - Latency p99 = 0.037ms - PASS - +3pp micro-F1 = +1.36pp - FAIL (ceiling effect documented) **Next steps**: Consolidate metrics, prepare for robustness tests (M7).
 ```
 
 ## Timeline

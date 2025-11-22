@@ -111,10 +111,10 @@ Comparing to Week 3-4 (when using smaller toy taxonomy):
 **Week 5-6 Plan (Milestone M3):** "KG-as-features; baseline SRS/accuracy/latency; seeds/configs"
 
 **Completed:**
-- ✅ KG-as-features implementation (concept feature extraction)
-- ✅ Baseline classification system operational
-- ✅ SRS computation working with all structural metrics
-- ✅ Configs and random seeds standardized
+- KG-as-features implementation (concept feature extraction)
+- Baseline classification system operational
+- SRS computation working with all structural metrics
+- Configs and random seeds standardized
 
 **Not Started (as planned):**
 - Latency harness - scheduled for Week 7-8
