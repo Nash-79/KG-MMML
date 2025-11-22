@@ -1,96 +1,104 @@
 # Week 9-10 Progress Report
 
-**Project:** KG-MMML (Knowledge Graph Multi-Modal Machine Learning)  
-**Period:** October 25, 2025  
-**Phase:** B - Milestone M5 (Minimal Joint Objective + Trade-offs)
+**Period:** Weeks 9-10
+**Status:** Complete - Critical discovery led to full retraining
 
 ---
 
 ## Summary
 
-Week 9 focused on validating baseline performance, analyzing consistency penalty trade-offs, and verifying metric stability. All three primary goals were completed with a critical architecture discovery that led to comprehensive model retraining.
+Week 9-10 focused on M5 (Minimal Joint Objective + Trade-offs). Validated baseline performance, analyzed consistency penalty impacts, and verified metric stability. Critical discovery: the original joint model lacked concept features. All configurations retrained with proper features, trade-offs documented, and SRS determinism confirmed.
+
+**Key achievements:**
+- Discovered and fixed missing concept features in Week 7-8 joint model
+- Retrained all configurations: sklearn baseline achieved 99.50% macro-F1, 99.68% micro-F1
+- Consistency penalty analysis shows λ=0.0 (no penalty) performs better
+- SRS stability verified: σ=0.000 (perfect reproducibility)
+- Decision gate: micro-F1 improvement +1.36pp (below +3pp target but demonstrates ceiling effect)
 
 ---
 
-## Goal 1: Baseline Validation **Objective:** Compare text-only vs text+concept models with matched train/test splits to validate feature engineering improvements.
+## Goal A: Baseline Validation
 
-### Critical Discovery
-The original joint model from Week 7-8 was trained without concept features. Only text (TF-IDF) was used because the `--concept_npz` and `--concept_index` arguments were not provided to the training script.
+**Objective:** Compare text-only vs text+concept models with matched train/test splits to validate feature engineering improvements.
 
-### Actions Taken
+**Critical Discovery:**
+The Week 7-8 joint model was trained without concept features. Only text (TF-IDF) was used because the `--concept_npz` and `--concept_index` arguments were not provided to the training script.
+
+**Actions Taken:**
 1. Generated concept features using 4,502 concepts as binary indicators (563,622 non-zero entries)
 2. Fixed baseline script to use stratified splitting (matching joint model approach)
 3. Retrained all model configurations with seed=42 for fair comparison
-4. Compared 5 different configurations across two frameworks (sklearn and PyTorch)
+4. Compared 5 different configurations across sklearn and PyTorch frameworks
 
-### Results
+**Results:**
 
-**sklearn Baseline (LogisticRegression):**
-- Text-only: 97.23% macro-F1, 98.33% micro-F1
-- Text+concept: 99.50% macro-F1, 99.68% micro-F1
-- Improvement: +2.27pp macro-F1, +1.36pp micro-F1
+| Model | Framework | Macro-F1 | Micro-F1 |
+|-------|-----------|----------|----------|
+| Text only | sklearn | 97.23% | 98.33% |
+| Text + Concept | sklearn | 99.50% | 99.68% |
+| Text + Concept (5 epochs) | PyTorch | 79.68% | 91.32% |
+| Text + Concept (20 epochs) | PyTorch | 93.47% | 96.34% |
 
-**PyTorch Joint Model:**
-- Text+concept (5 epochs): 79.68% macro-F1, 91.32% micro-F1
-- Text+concept (20 epochs): 93.47% macro-F1, 96.34% micro-F1
+**Improvement:** +2.27pp macro-F1, +1.36pp micro-F1
 
-**Decision Gate:** FAILED  
+**Decision Gate Status:** FAILED
 - Target: ≥3.0pp micro-F1 improvement
 - Actual: +1.36pp
-- Analysis: Concept features provide strong macro-F1 boost (+2.27pp) and near-perfect absolute performance (>99%). The 3pp threshold may be overly conservative.
+- Analysis: Ceiling effect at 98.33% baseline makes +3pp target very difficult. Strong macro-F1 boost (+2.27pp) and near-perfect absolute performance (>99%) demonstrate value.
 
-### Deliverables
-- `baseline_text_seed42_metrics.json` - Text-only baseline results
-- `baseline_text_plus_concept_seed42_metrics.json` - Text+concept baseline results
-- `baseline_vs_joint_comprehensive_w9.csv` - 5-model comparison table
-- Updated `baseline_tfidf.py` with stratified split logic
+**Files Generated:**
+- `baseline_text_seed42_metrics.json`
+- `baseline_text_plus_concept_seed42_metrics.json`
+- `baseline_vs_joint_comprehensive_w9.csv`
 
 ---
 
-## Goal 2: Model Configuration **Objective:** Document consistency penalty trade-offs and update default configuration based on empirical evidence.
+## Goal B: Consistency Penalty Analysis
 
-### Analysis
+**Objective:** Document consistency penalty trade-offs and update default configuration based on empirical evidence.
 
-The consistency penalty (λ) regularizes predictions to match parent-support distributions from the taxonomy hierarchy. Testing showed:
+**Background:**
+The consistency penalty (λ) regularizes predictions to match parent-support distributions from the taxonomy hierarchy.
+
+**Test Results:**
 
 | λ Value | Macro F1 | Micro F1 | Change |
 |---------|----------|----------|--------|
 | 0.0 (OFF) | 81.28% | 91.94% | baseline |
 | 0.1 (ON) | 79.95% | 91.97% | -1.33pp macro, +0.03pp micro |
 
-**Finding:** The penalty degrades macro-F1 by 1.33pp without meaningful micro-F1 benefit. It constrains predictions for rare classes, reducing model flexibility.
+**Finding:**
+The penalty degrades macro-F1 by 1.33pp without meaningful micro-F1 benefit. It constrains predictions for rare classes, reducing model flexibility.
 
-### Actions Taken
-1. Updated `experiment_joint.yaml` to set λ=0.0 as default
+**Actions Taken:**
+1. Updated `experiment_joint.yaml` to set λ=0.0 as production default
 2. Added detailed inline comments explaining the rationale
-3. Documented trade-off analysis in `EXPERIMENT_RESULTS_SUMMARY.md`
+3. Documented trade-off analysis in completion report
 
-### Recommendation
-- Production default: λ=0.0 (penalty OFF) for best macro-F1
-- For constraint-sensitive applications: Test λ=0.01 or 0.05 if hierarchy violations must be minimized
-- Future work: Grid search λ ∈ {0.0, 0.01, 0.05, 0.10} with validation set
+**Recommendation:**
+Use λ=0.0 (penalty OFF) for best macro-F1. For constraint-sensitive applications, test λ=0.01 or 0.05 if hierarchy violations must be minimized.
 
-### Deliverables
-- Updated `configs/experiment_joint.yaml` with λ=0.0 default and rationale
-- Extended analysis section in `reports/EXPERIMENT_RESULTS_SUMMARY.md`
-- `compare_comprehensive.py` script for multi-model comparison
+**Files Generated:**
+- `configs/experiment_joint.yaml` (updated with λ=0.0 default)
+- `reports/EXPERIMENT_RESULTS_SUMMARY.md` (extended analysis)
 
 ---
 
-## Goal 3: Stability Testing **Objective:** Verify that SRS (Semantic Relationship Score) metrics are stable and reproducible across multiple runs.
+## Goal C: SRS Stability Verification
 
-### SRS Metric Components
+**Objective:** Verify that SRS (Semantic Retention Score) metrics are stable and reproducible across multiple runs.
+
+**SRS Components:**
 - **HP (Hierarchy Presence):** Fraction of concepts with ≥1 parent via is-a edges
-- **AtP (Attribute Predictability):** Fraction of concepts with measured-in unit edges  
+- **AtP (Attribute Predictability):** Fraction of concepts with measured-in unit edges
 - **AP (Asymmetry Preservation):** Fraction of directional edges without reverse counterparts
 - **SRS:** Weighted average (HP: 25%, AtP: 20%, AP: 20%, RTF: 35%)
 
-### Key Finding
-HP, AtP, and AP are **deterministic graph statistics** - they depend only on edge counts and topology with no randomization. All taxonomy components (manual rules, pattern matching, transitive closure) are also deterministic.
+**Key Finding:**
+HP, AtP, and AP are deterministic graph statistics - they depend only on edge counts and topology with no randomization.
 
-### Results
-
-Compared metrics from two independent Week 7-8 computation runs:
+**Results (two independent computation runs):**
 
 | Metric | Mean | Std Dev | Range |
 |--------|------|---------|-------|
@@ -99,168 +107,98 @@ Compared metrics from two independent Week 7-8 computation runs:
 | AP | 1.0000 | 0.0000 | 1.0000-1.0000 |
 | SRS | 0.7571 | 0.0000 | 0.7571-0.7571 |
 
-**Decision Gate:** PASSED  
+**Decision Gate Status:** PASSED
 - Target: σ < 0.05
 - Actual: σ = 0.000 (perfect stability)
 
-### Future Considerations
-When embedding-based RTF is implemented, test with random seeds [42, 43, 44, 45, 46]. Expected variance σ(RTF) ≈ 0.01-0.05 due to initialization. Use fixed seeds in production for reproducibility.
-
-### Deliverables
-- `compute_srs_stability.py` script for multi-run verification
-- `srs_stability_w9.csv` with mean, std, and confidence intervals
-- Stability analysis section in completion report
+**Files Generated:**
+- `srs_stability_w9.csv`
 
 ---
 
-## Artifacts Generated
+## Decision Gates Summary
 
-### Code & Scripts
-- `src/cli/baseline_tfidf.py` - Updated baseline training with stratified split
-- `src/cli/make_concept_features.py` - Concept feature generation (4,502 concepts)
-- `scripts/compare_baseline_vs_joint.py` - Pairwise model comparison
-- `scripts/compare_comprehensive.py` - Multi-model comparison (5 configs)
-- `scripts/compute_srs_stability.py` - Stability verification tool
+| Gate | Target | Actual | Status | Notes |
+|------|--------|--------|--------|-------|
+| Micro-F1 improvement | ≥3.0pp | +1.36pp | FAIL | Ceiling effect; strong macro-F1 boost (+2.27pp) |
+| SRS stability | σ < 0.05 | σ = 0.000 | PASS | Perfect reproducibility |
 
-### Data & Features
-- `data/processed/sec_edgar/features/concept_features_filing.npz` - Binary concept indicators
-- `data/processed/sec_edgar/features/concept_features_index.csv` - Document-to-row mapping
-- `data/processed/sec_edgar/features/concept_features_vocab.csv` - Concept vocabulary
+**Overall:** 1 of 2 gates passed. The micro-F1 gate failure is mitigated by strong macro-F1 performance and near-perfect absolute scores.
 
-### Results & Metrics
-- `reports/tables/baseline_text_seed42_metrics.json` - Text-only baseline (97.23% macro)
-- `reports/tables/baseline_text_plus_concept_seed42_metrics.json` - Text+concept baseline (99.50% macro)
-- `reports/tables/baseline_vs_joint_comprehensive_w9.csv` - 5-model comparison
-- `reports/tables/srs_stability_w9.csv` - Stability verification (σ=0.000)
-- `outputs/joint_with_concepts_no_penalty/metrics.json` - Joint model (5 epochs)
-- `outputs/joint_with_concepts_no_penalty_e20/metrics.json` - Joint model (20 epochs)
+---
 
-### Documentation
-- `WEEK9_COMPLETION.md` - Comprehensive 356-line completion report
-- `docs/WEEK9_PLAN.md` - Detailed execution plan (231 lines)
-- `reports/EXPERIMENT_RESULTS_SUMMARY.md` - Updated with Week 9 analysis
-- `configs/experiment_joint.yaml` - Updated with λ=0.0 default and rationale
-- `EXPERIMENT_COMPLETION.md` - Updated progress checklist
+## Challenges and Solutions
+
+**Challenge 1: Missing concept features in joint model**
+- Root Cause: Training script arguments not properly configured in Week 7-8
+- Solution: Generated proper concept features and retrained all configurations
+- Result: Valid comparison now possible between text-only and text+concept models
+
+**Challenge 2: Micro-F1 gate missed due to ceiling effect**
+- Root Cause: Baseline already at 98.33%, leaving only 1.67% room for improvement
+- Solution: Documented alternative metrics showing value (macro-F1, absolute performance)
+- Recommendation: Adjust gate to use macro-F1 as primary metric for imbalanced tasks
+
+**Challenge 3: PyTorch underperforming sklearn**
+- Root Cause: Insufficient training epochs and lack of hyperparameter tuning
+- Solution: Extended training to 20 epochs, improved from 79.68% to 93.47% macro-F1
+- Recommendation: Use sklearn for production (simpler, faster, better performance)
 
 ---
 
 ## Key Insights
 
-### 1. Architecture Validation is Critical
-Missing concept features in the original joint model highlighted the importance of:
-- Explicit argument validation in training scripts
-- Logging input feature dimensions at training start
-- Sanity checks for expected vs actual model inputs
+**Architecture Validation is Critical:**
+Missing concept features highlighted importance of explicit argument validation, input dimension logging, and sanity checks for expected vs actual model inputs.
 
-### 2. Training Framework Matters
-PyTorch underperformed sklearn by ~15pp macro-F1 with 5 epochs but improved to 93.47% with 20 epochs. sklearn baseline achieved 97.23% without tuning. For production multi-label classification, sklearn is preferred unless advanced features (neural embeddings, attention) are needed.
+**Training Framework Selection:**
+sklearn outperformed PyTorch by ~15pp macro-F1 at 5 epochs. For production multi-label classification, sklearn is preferred unless advanced neural features are needed.
 
-### 3. Concept Features Provide Value
-Despite missing the 3pp threshold:
-- Strong macro-F1 improvement (+2.27pp) benefits rare classes
-- Solid micro-F1 improvement (+1.36pp) shows overall boost
-- Near-perfect absolute performance (>99% on both metrics)
+**Concept Features Provide Value:**
+Despite missing the 3pp threshold, strong macro-F1 improvement (+2.27pp) benefits rare classes and near-perfect absolute performance (>99%) demonstrates overall value.
 
-The 3pp decision gate threshold may need adjustment for tasks with already-high baseline performance.
+**Consistency Penalty is Unnecessary:**
+Degrades macro-F1 without improving accuracy. Hierarchical constraints should be enforced post-hoc (at inference time) if needed, not during training.
 
-### 4. Consistency Penalty is Unnecessary
-The penalty degrades macro-F1 by 1.33pp without improving classification accuracy. Hierarchical constraints should be enforced post-hoc (at inference time) if needed, not during training.
-
-### 5. SRS is Deterministic and Stable
-Perfect stability (σ=0.000) confirms structural metrics are reproducible and reliable for production monitoring. No variance expected until embedding-based RTF is implemented.
+**SRS is Deterministic:**
+Perfect stability (σ=0.000) confirms structural metrics are reproducible and reliable for production monitoring.
 
 ---
 
-## Decision Gate Summary
+## Next Steps (Week 11-12)
 
-| Gate | Threshold | Result | Status | Notes |
-|------|-----------|--------|--------|-------|
-| Micro-F1 improvement | ≥3.0pp | +1.36pp | FAIL | Strong macro-F1 boost (+2.27pp), near-perfect absolute performance |
-| SRS stability | σ < 0.05 | σ = 0.000 | PASS | Perfect reproducibility for deterministic metrics |
+**Consolidation & Calibration (M6):**
+
+**Metrics Consolidation**
+- Create single comprehensive report combining all Phase B results
+- Consolidate SRS, classification, and latency metrics into unified table
+- Document all decision gate results
+
+**Repository Cleanup**
+- Archive intermediate experiments from outputs/ directory
+- Keep only production configurations
+- Update documentation with final architecture
+
+**Calibration Check**
+- Verify sklearn model probability calibration
+- Optional: Generate calibration plots if needed
+
+**Documentation**
+- Update methodology documentation with full pipeline
+- Document all Phase B achievements
+- Prepare for Phase C transition
 
 ---
 
-## Recommendations
+## Production Recommendations
 
-### Adjust Decision Gate Criteria
-Given the failure of the micro-F1 gate but strong overall results:
-1. Use macro-F1 as primary metric (better for imbalanced classes)
-2. Set threshold at +2pp macro-F1 improvement (achieved: +2.27pp )
-3. Require absolute performance >95% on both metrics (achieved: 99.50% macro, 99.68% micro )
-
-### Production Deployment
-- Use sklearn text+concept baseline (99.50% macro, 99.68% micro)
+**Deployment Configuration:**
+- Use sklearn text+concept baseline (99.50% macro-F1, 99.68% micro-F1)
 - Set consistency_weight=0.0 (penalty OFF)
 - Monitor SRS stability in production (expect σ=0.000)
 - Implement hierarchical constraint post-processing if needed
 
-### Next Steps
-1. Hyperparameter optimization for PyTorch to match sklearn performance
-2. Test concept embeddings vs binary indicators
-3. Implement RTF (embedding-based Relational Type Fidelity) metric
-4. Production packaging and deployment pipeline
-
----
-
-## Reproducibility
-
-### Concept Feature Generation
-```bash
-python -m src.cli.make_concept_features \
-    --facts data/processed/sec_edgar/facts.jsonl \
-    --outdir data/processed/sec_edgar/features \
-    --vocab_size 5000 --binary
-```
-
-### Text-only Baseline
-```bash
-python -m src.cli.baseline_tfidf \
-    --facts data/processed/sec_edgar/facts.jsonl \
-    --taxonomy datasets/sec_edgar/taxonomy/usgaap_combined.csv \
-    --out reports/tables/baseline_text_seed42_metrics.json \
-    --random_state 42 --test_size 0.25 --max_features 50000 --min_df 2
-```
-
-### Text+Concept Baseline
-```bash
-python -m src.cli.baseline_tfidf \
-    --facts data/processed/sec_edgar/facts.jsonl \
-    --taxonomy datasets/sec_edgar/taxonomy/usgaap_combined.csv \
-    --concept_features_npz data/processed/sec_edgar/features/concept_features_filing.npz \
-    --concept_features_index data/processed/sec_edgar/features/concept_features_index.csv \
-    --out reports/tables/baseline_text_plus_concept_seed42_metrics.json \
-    --random_state 42 --test_size 0.25 --max_features 50000 --min_df 2
-```
-
-### Joint Model (20 epochs)
-```bash
-python -m src.cli.train_joint \
-    --facts data/processed/sec_edgar/facts.jsonl \
-    --taxonomy datasets/sec_edgar/taxonomy/usgaap_combined.csv \
-    --concept_npz data/processed/sec_edgar/features/concept_features_filing.npz \
-    --concept_index data/processed/sec_edgar/features/concept_features_index.csv \
-    --consistency_weight 0.0 --epochs 20 --batch 128 --seed 42 \
-    --out outputs/joint_with_concepts_no_penalty_e20/metrics.json
-```
-
-### Comprehensive Comparison
-```bash
-python scripts/compare_comprehensive.py \
-    --output reports/tables/baseline_vs_joint_comprehensive_w9.csv
-```
-
-### SRS Stability Check
-```bash
-python scripts/compute_srs_stability.py \
-    --config configs/experiment_kge_enhanced.yaml \
-    --runs 5 \
-    --output reports/tables/srs_stability_w9.csv
-```
-
----
-
-**Status:** Week 9 complete  
-**Branch:** KG-MMML  
-**Commit:** ee1ee9b  
-**Files Changed:** 17 files, 2,197 insertions, 82 deletions  
-**Next:** Week 10 planning (hyperparameter optimization, RTF implementation, production readiness)
+**Adjusted Decision Criteria:**
+- Use macro-F1 as primary metric (better for imbalanced classes)
+- Set threshold at +2pp macro-F1 improvement (achieved: +2.27pp)
+- Require absolute performance >95% on both metrics (achieved: 99.50% macro, 99.68% micro)
