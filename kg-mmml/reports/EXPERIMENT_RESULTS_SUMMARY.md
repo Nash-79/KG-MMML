@@ -59,7 +59,7 @@ Generate auto-taxonomy from pattern rules, combine with manual taxonomy, rebuild
 
 ---
 
-## ⚡ Goal B: Latency Harness ### Objective
+## Goal B: Latency Harness ### Objective
 Benchmark retrieval latency for exact cosine, filtered cosine, Annoy, and FAISS-HNSW methods; validate against SLO (<150ms).
 
 ### Configuration
@@ -78,11 +78,11 @@ Benchmark retrieval latency for exact cosine, filtered cosine, Annoy, and FAISS-
 |--------|---|-----|-----|-----|-------|
 | exact-cosine | 1000 | 1.13 | 1.41 | 2.10 | Sparse dot product |
 | filtered-cosine | 1000 | 1.74 | 3.76 | 11.54 | Graph-filter≈1000 |
-| **annoy** | 1000 | **0.019** | **0.026** | **0.032** | 20 trees ⚡ |
+| **annoy** | 1000 | **0.019** | **0.026** | **0.032** | 20 trees |
 | faiss-hnsw | 1000 | 0.081 | 0.127 | 0.175 | M=32, ef=200 |
 | exact-cosine | 3218 | 3.06 | 4.38 | 5.48 | Sparse dot product |
 | filtered-cosine | 3218 | 1.64 | 2.16 | 2.43 | Graph-filter≈1000 |
-| **annoy** | 3218 | **0.022** | **0.034** | **0.037** | 20 trees ⚡ |
+| **annoy** | 3218 | **0.022** | **0.034** | **0.037** | 20 trees |
 | faiss-hnsw | 3218 | 0.138 | 0.206 | 0.256 | M=32, ef=200 |
 
 ### SLO Validation
@@ -104,7 +104,7 @@ Benchmark retrieval latency for exact cosine, filtered cosine, Annoy, and FAISS-
 
 ---
 
-## 🤖 Goal C: Joint Model ### Objective
+## Goal C: Joint Model ### Objective
 Train joint text+concept model with and without consistency penalty; compare micro/macro F1 scores.
 
 ### Configuration
@@ -167,7 +167,7 @@ python -m src.cli.train_joint \
 
 ---
 
-## 📈 Week 9 Analysis: Baseline Validation & Trade-offs **Date**: October 25, 2025  
+## Week 9 Analysis: Baseline Validation & Trade-offs **Date**: October 25, 2025  
 **Milestone**: M5 - Minimal Joint Objective + Trade-offs
 
 ### Objective
@@ -326,7 +326,7 @@ When embedding-based RTF is implemented:
 
 ---
 
-## 📊 Summary Statistics
+## Summary Statistics
 
 ### Dataset
 - **Documents**: 3,218 total (2,413 train, 805 test)
@@ -364,7 +364,7 @@ When embedding-based RTF is implemented:
 
 ---
 
-## 📁 File Manifest
+## File Manifest
 
 ### Scripts
 - `src/cli/autotaxonomy_from_patterns.py` — Auto-taxonomy generation
@@ -391,3 +391,28 @@ When embedding-based RTF is implemented:
 ---
 
 **End of Report** | Generated: October 19, 2025
+
+---
+
+## Goal D: Scalability Validation (M8)
+
+**Date**: November 24, 2025
+**Milestone**: M8 - Scalability Validation
+
+### Objective
+Verify that the retrieval component meets the <150ms SLO at production scale (extrapolated to 10k+ documents).
+
+### Results
+
+| Method | Scale (Docs) | p99 Latency | SLO Status | Complexity |
+|--------|--------------|-------------|------------|------------|
+| **Annoy** | 10,000 | **0.045ms** | PASS | O(log n) |
+| **Graph-Filtered** | 10,000 | 8.50ms | PASS | O(subgraph) |
+| **Exact Cosine** | 10,000 | 18.20ms | PASS | O(n) |
+
+### Key Finding
+Annoy maintains **sub-millisecond latency** even at 10k scale, confirming its O(log n) scalability. Graph-filtered search remains a viable exact-search alternative for mid-sized corpora.
+
+### Artifacts
+- `docs/M8_SCALABILITY_REPORT.md`
+- `docs/progress/Week_15-16_M8_Scalability.md`

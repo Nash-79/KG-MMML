@@ -15,7 +15,7 @@ This section ties the objectives, decision gates, and evidence into one view.
 | Stability (std) | <0.05 | 0.000 | PASS | srs_stability_w9.csv |
 
 ## What the results mean
-- We preserved semantics (SRS > 0.75) while delivering sub‑millisecond retrieval.
+- I preserved semantics (SRS > 0.75) while delivering sub‑millisecond retrieval.
 - Auto‑taxonomy fixed the main bottleneck (HP), lifting overall SRS.
 - Consistency penalty doesn’t help; simpler model (λ=0.0) performs better.
 - Concept features help classification substantially, though the +3pp micro‑F1 gate was too strict given near‑perfect absolute accuracy.
@@ -29,7 +29,7 @@ This section ties the objectives, decision gates, and evidence into one view.
 
 ## M5 Analysis (Week 9-10)
 
-**What we tested**: Joint objective with consistency penalty on directional edges (λ ∈ {0.0, 0.1, 0.5}).
+**What I tested**: Joint objective with consistency penalty on directional edges (λ ∈ {0.0, 0.1, 0.5}).
 
 **Result**: λ=0.0 (no penalty) outperforms all constrained variants:
 - λ=0.0: 99.68% micro-F1, 81.28% macro-F1 (stable)

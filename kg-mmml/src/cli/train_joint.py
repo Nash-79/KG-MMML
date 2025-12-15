@@ -1,41 +1,11 @@
 # src/cli/train_joint.py
 """
-Train joint text+concept classification model with optional consistency penalty.
+Train joint text+concept classification with optional consistency penalty.
 
-This script trains a PyTorch linear model for multi-label taxonomy prediction,
-combining TF-IDF text features with binary concept indicators. It supports
-an optional consistency penalty that regularizes predictions to match
-parent-support distributions from the taxonomy hierarchy.
+PyTorch linear model combining TF-IDF text features and binary concept indicators.
+Consistency penalty λ regularizes predictions against taxonomy hierarchy.
 
-The consistency penalty (λ) constrains predictions based on observed children:
-    L_total = L_BCE + λ * MSE(σ(logits), parent_support_vector)
-
-Week 7-8 ablation study showed that λ=0.0 (penalty OFF) performs better:
-    - λ=0.0: macro-F1=81.28%, micro-F1=91.94%
-    - λ=0.1: macro-F1=79.95%, micro-F1=91.97% (-1.33pp macro-F1)
-
-Default configuration (configs/experiment_joint.yaml) uses λ=0.0.
-
-Usage:
-    # Train without consistency penalty (recommended)
-    python -m src.cli.train_joint \\
-        --facts data/processed/sec_edgar/facts.jsonl \\
-        --taxonomy datasets/sec_edgar/taxonomy/usgaap_combined.csv \\
-        --concept_npz data/processed/sec_edgar/features/concept_features_filing.npz \\
-        --concept_index data/processed/sec_edgar/features/concept_features_index.csv \\
-        --consistency_weight 0.0 --epochs 20 --batch 128 --seed 42 \\
-        --out outputs/joint_no_penalty/metrics.json
-
-    # With consistency penalty (for comparison)
-    python -m src.cli.train_joint \\
-        --config configs/experiment_joint.yaml \\
-        --consistency_weight 0.1 \\
-        --out outputs/joint_with_penalty/metrics.json
-
-Note:
-    PyTorch implementation (20 epochs) achieves 93.47% macro-F1, which is
-    lower than sklearn baseline (97.23%). Consider sklearn for production
-    unless neural features (embeddings, attention) are needed.
+Ablation study showed λ=0.0 outperforms constrained variants (see Week 7-8 progress).
 """
 import argparse
 import json
@@ -153,9 +123,8 @@ def main():
     Xtr = normalize(Xtr).astype(np.float32).toarray()
     Xte = normalize(Xte).astype(np.float32).toarray()
     
-    # Parent-support from concept evidence (consistency target)
     S_all = make_parent_support(concept_lists, parents_vocab, child_to_parents)
-    Str, _ = S_all[tr], S_all[te]  # Ste unused but kept for potential eval
+    Str, _ = S_all[tr], S_all[te]
     
     d_in, d_out = Xtr.shape[1], Y.shape[1]
     model = LogReg(d_in, d_out)
@@ -199,7 +168,7 @@ def main():
         }
     
     for ep in range(args.epochs):
-        _ = run_epoch(Xtr, Ytr, Str, train=True)  # Training loss not logged
+        _ = run_epoch(Xtr, Ytr, Str, train=True)
     
     metrics = {
         "epochs": args.epochs,

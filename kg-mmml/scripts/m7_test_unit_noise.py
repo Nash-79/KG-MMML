@@ -59,7 +59,7 @@ def test_noise_level(hp, atp_baseline, ap, noise_percent, srs_baseline):
     status = "PASS" if percent_drop <= threshold else "FAIL"
 
     print(f"  Degradation:   {percent_drop:.1f}%")
-    print(f"  Target:        ≤{threshold:.1f}%")
+    print(f"  Target:        <={threshold:.1f}%")
     print(f"  Status:        {status}")
 
     return {

@@ -7,7 +7,7 @@
 
 ## Summary
 
-This period focused on establishing the data pipeline and repository structure for the knowledge graph system. We built tools to convert SEC EDGAR company filings into a structured knowledge graph and implemented the framework for measuring graph quality.
+This period focused on establishing the data pipeline and repository structure for the knowledge graph system. I built tools to convert SEC EDGAR company filings into a structured knowledge graph and implemented the framework for measuring graph quality.
 
 **Key achievements:**
 - Built automated pipeline to fetch and process SEC EDGAR filings

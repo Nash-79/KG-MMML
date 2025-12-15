@@ -6,24 +6,17 @@
 
 ---
 
-## Overview
+## Overview: Why Analytical Simulation?
 
-M7 tests system robustness under perturbation without requiring data regeneration or model retraining. Uses **analytical simulation** based on existing Phase B metrics.
+I faced a practical problem in Week 13. The original training data (`facts.jsonl` from October 2025) was git-ignored and not preserved. To run empirical robustness tests (e.g., retraining with a corrupted taxonomy), I would have had to regenerate the dataset from scratch.
+
+This would have created a new dataset (November 2025 version), invalidating all my previous Phase B results. I would be comparing apples to oranges.
+
+**The Solution**: Instead of regenerating data, I chose an **analytical simulation**. I take the validated metrics from Phase B (SRS=0.7571) and mathematically simulate what would happen if the graph structure were degraded. This allows me to prove the system's robustness properties without invalidating my existing experimental record.
 
 ### Tests Implemented
-
-1. **Taxonomy-Off Test**: Measures SRS degradation when hierarchy is removed (HP → 0)
-2. **Unit-Noise Test**: Measures SRS degradation under unit-edge corruption
-
-### Why Analytical (Not Empirical)?
-
-**Problem**: `facts.jsonl` was used for training in October 2025 but is not committed to git.
-
-**Options**:
-- Regenerate `facts.jsonl` from SEC → Different data → Invalidates all Phase B reports
-- Use analytical simulation → Same baseline → Valid for thesis
-
-**Decision**: Analytical approach preserves report validity while demonstrating robustness.
+1. **Taxonomy-Off Test**: What happens to SRS if we delete all `is-a` edges? (Simulates total hierarchy failure)
+2. **Unit-Noise Test**: What happens if 5-10% of unit assignments are wrong? (Simulates data quality issues)
 
 ---
 

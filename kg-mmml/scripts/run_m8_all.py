@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """
-M7 Master Runner: Execute All Robustness Tests
+M8 Master Runner: Execute All Scalability Tests
 
-Runs all M7 robustness tests in sequence and generates consolidated report.
+Runs all M8 scalability tests in sequence and generates consolidated report.
 
 Usage:
-    python scripts/run_m7_all.py
-
-    # Or with custom noise levels:
-    python scripts/run_m7_all.py --noise 5 10 15 20
+    python scripts/run_m8_all.py
 """
 
 import argparse
@@ -38,14 +35,7 @@ def run_script(script_name, args=None):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="M7 Master Runner: Execute all robustness tests"
-    )
-    parser.add_argument(
-        "--noise",
-        type=int,
-        nargs="+",
-        default=[5, 10],
-        help="Noise levels to test (percent), default: 5 10"
+        description="M8 Master Runner: Execute all scalability tests"
     )
     args = parser.parse_args()
 
@@ -57,24 +47,27 @@ def main():
         sys.exit(1)
 
     print("=" * 70)
-    print("M7 ROBUSTNESS TESTING SUITE")
-    print("Milestone 7: Validating System Robustness")
-    print("Week 13-14 Deliverable")
+    print("M8 SCALABILITY TESTING SUITE")
+    print("Milestone 8: Validating System Scalability")
+    print("Week 15-16 Deliverable")
     print("=" * 70)
     print()
 
-    # Test 1: Taxonomy-off
-    print("[Test 1/2] Taxonomy Removal Analysis")
-    success_1 = run_script(scripts_dir / "m7_test_taxonomy_off.py")
+    # Test 1: Analytical scaling
+    print("[Test 1/3] Analytical Scaling Assessment")
+    success_1 = run_script(scripts_dir / "m8_analytical_scale.py")
 
-    # Test 2: Unit-noise
-    print("\n[Test 2/2] Unit-Edge Corruption Analysis")
-    noise_args = ["--noise"] + [str(n) for n in args.noise]
-    success_2 = run_script(scripts_dir / "m7_test_unit_noise.py", noise_args)
+    # Test 2: Two-hop queries
+    print("\n[Test 2/3] Two-Hop Graph Expansion")
+    success_2 = run_script(scripts_dir / "m8_test_two_hop.py")
+
+    # Test 3: FAISS parity
+    print("\n[Test 3/3] FAISS vs Annoy Parity")
+    success_3 = run_script(scripts_dir / "m8_test_faiss_parity.py")
 
     # Generate consolidated report
     print("\n[Report] Generating Consolidated Results")
-    success_3 = run_script(scripts_dir / "m7_generate_report.py")
+    success_4 = run_script(scripts_dir / "m8_generate_report.py")
 
     # Summary
     print("\n" + "=" * 70)
@@ -83,26 +76,28 @@ def main():
 
     status_1 = "COMPLETE" if success_1 else "COMPLETED WITH WARNINGS"
     status_2 = "COMPLETE" if success_2 else "COMPLETED WITH WARNINGS"
-    status_3 = "COMPLETE" if success_3 else "FAILED"
+    status_3 = "COMPLETE" if success_3 else "COMPLETED WITH WARNINGS"
+    status_4 = "COMPLETE" if success_4 else "FAILED"
 
-    print(f"  Taxonomy-off test:     {status_1}")
-    print(f"  Unit-noise test:       {status_2}")
-    print(f"  Report generation:     {status_3}")
+    print(f"  Scale test:         {status_1}")
+    print(f"  Two-hop test:       {status_2}")
+    print(f"  FAISS parity test:  {status_3}")
+    print(f"  Report generation:  {status_4}")
     print("=" * 70)
     print()
 
     # Next steps
     print("Results Location:")
-    print("   - reports/tables/m7_robustness_results_w13.csv")
-    print("   - docs/progress/Week_13-14_M7_Robustness.md")
+    print("   - reports/tables/m8_scalability_results_w15.csv")
+    print("   - docs/progress/Week_15-16_M8_Scalability.md")
     print()
     print("Next Steps:")
     print("   1. Review generated reports")
-    print("   2. Update consolidated metrics if needed")
-    print("   3. Proceed to M8 (Scalability) or M9 (Thesis Writing)")
+    print("   2. Update consolidated metrics")
+    print("   3. Proceed to M9 (Error Analysis + Thesis Writing)")
     print()
 
-    if not all([success_1, success_2, success_3]):
+    if not all([success_1, success_2, success_3, success_4]):
         print("[WARN] Some tests completed with warnings. Review output above.")
         return 1
 

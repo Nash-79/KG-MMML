@@ -2,16 +2,17 @@
 
 **Week 9-10 deliverable**: Minimal joint objective (consistency penalty on directional edges); one ablation; document trade-offs.
 
-## Summary
+## Summary: The "Negative Result"
 
-Tested whether adding a consistency penalty (λ) on directional edges would improve classification performance beyond the text+concept baseline. Result: **No**. The simpler model (λ=0.0, no penalty) outperforms constrained variants across all metrics.
+I went into Week 9 with a strong hypothesis: if I explicitly penalised the model for violating the knowledge graph's hierarchy, it would learn better representations. I implemented a consistency penalty (λ) to enforce this.
+
+**It didn't work.**
+
+In fact, adding the penalty made the model worse. It increased training time, introduced instability, and failed to improve classification accuracy. I found that the simpler model (λ=0.0) was superior in every metric. This document details that negative result and explains why I believe the simpler approach won.
 
 ## Experimental Setup
 
-**Hypothesis**: Enforcing hierarchy constraints through a consistency penalty should improve micro-F1 by:
-1. Preventing violations of parent-child relations during embedding
-2. Forcing the model to respect is-a hierarchy structure
-3. Improving generalization on rare classes
+**The Idea**: I wanted to force the model to respect the `is-a` hierarchy. If a document is classified as "AccountsReceivable", it should also be "CurrentAssets". I added a loss term to penalise any embedding where the child was closer to a random node than to its parent.
 
 **Method**:
 - Baseline: Text (TF-IDF) only
@@ -97,9 +98,9 @@ Rare classes benefit from concept features, but penalty doesn't add value.
 
 **Actual result**: +1.36pp improvement (98.32% → 99.68%).
 
-### Why Did We Miss the Gate?
+### Why Did I Miss the Gate?
 
-**Ceiling effect**: Baseline is already at 98.32%. Getting to 101.32% is impossible. We're fighting for the last 1.68% of possible improvement.
+**Ceiling effect**: Baseline is already at 98.32%. Getting to 101.32% is impossible. I am fighting for the last 1.68% of possible improvement.
 
 **Gate design issue**: The +3pp threshold was set assuming a weaker baseline (e.g., 85-90% accuracy). At 98%, asking for +3pp means achieving near-perfection.
 

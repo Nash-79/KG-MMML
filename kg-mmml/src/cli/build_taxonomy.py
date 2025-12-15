@@ -1,21 +1,12 @@
 """
-Unified taxonomy builder: combine manual, pattern, and frequency rules.
+Unified taxonomy builder combining manual, pattern, and frequency rules.
 
-This script merges multiple sources of parent-child relations:
-1) Manual CSV (seed taxonomy)
-2) Regex pattern rules over observed concepts
-3) Frequency rules for common concept families
+Merges parent-child relations from:
+1. Manual CSV (seed taxonomy)
+2. Regex pattern rules
+3. Frequency rules for common families
+
 Optionally materializes transitive closure.
-
-Usage:
-    python -m src.cli.build_taxonomy \
-        --facts data/processed/sec_edgar/facts.jsonl \
-        --manual datasets/sec_edgar/taxonomy/usgaap_min.csv \
-        --rules datasets/sec_edgar/taxonomy/pattern_rules.yaml \
-        --out datasets/sec_edgar/taxonomy/usgaap_combined.csv \
-        --min_cik_support 3 --with_closure
-
-Outputs CSV with columns: child,parent
 """
 # datasets/sec_edgar/scripts/build_taxonomy.py
 import argparse, pathlib, re, yaml, json

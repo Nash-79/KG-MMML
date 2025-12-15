@@ -1,34 +1,12 @@
 # src/cli/evaluate_latency.py
 """
-Benchmark retrieval latency across different methods and index sizes.
+Benchmark retrieval latency across methods and index sizes.
 
-This script measures query latency for multiple retrieval approaches:
-1. Exact cosine similarity (sparse TF-IDF)
-2. Graph-filtered cosine (uses KG to pre-filter candidates)
-3. Annoy ANN (approximate nearest neighbors)
-4. FAISS HNSW (hierarchical navigable small world)
-
-Latency is measured at p50, p95, and p99 percentiles across 500 queries
-at two scales: N=1,000 and N=3,218 documents.
-
-Week 7-8 benchmark results (p99 latency):
-    - Annoy: 0.037ms (best, 4,000× faster than 150ms SLO)
-    - FAISS HNSW: 0.256ms (also fast)
-    - Graph-filtered: 2.43ms (shows promise for hybrid approach)
-    - Exact cosine: 5.48ms (baseline)
-
-All methods comfortably beat the 150ms service-level objective.
-
-Usage:
-    python -m src.cli.evaluate_latency \\
-        --facts data/processed/sec_edgar/facts.jsonl \\
-        --methods exact filtered annoy faiss \\
-        --n_docs 1000 3218 \\
-        --n_queries 500 \\
-        --out reports/tables/latency_baseline.csv
-
-Decision Gate:
-    Latency benchmarks complete ✅ (all methods < 150ms p99)
+Measures p50/p95/p99 latency for:
+- Exact cosine similarity
+- Graph-filtered cosine
+- Annoy ANN
+- FAISS HNSW
 """
 import argparse
 import json

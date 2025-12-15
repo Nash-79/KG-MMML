@@ -2,30 +2,11 @@
 """
 Generate concept feature matrices for KG-as-features baseline.
 
-This script creates binary or count-based concept feature matrices from
-SEC EDGAR facts. Concepts are extracted from filings and converted into
-sparse feature vectors that can be concatenated with text features (TF-IDF)
-for baseline classification.
-
-The script generates:
-1. concept_features_filing.npz - Sparse matrix (n_docs × n_concepts)
-2. concept_features_index.csv - Document ID to row mapping
-3. concept_features_vocab.csv - Concept vocabulary
-
-Week 9 generation stats:
-    - 4,502 concepts (top by document frequency)
-    - 563,622 non-zero entries (binary indicators)
-    - 3,218 documents
-
-Usage:
-    python -m src.cli.make_concept_features \\
-        --facts data/processed/sec_edgar/facts.jsonl \\
-        --outdir data/processed/sec_edgar/features \\
-        --vocab_size 5000 --binary
-
-Results:
-    Text+concept features improve classification by +2.27pp macro-F1
-    and +1.36pp micro-F1 compared to text-only baseline.
+Creates binary or count-based sparse matrices from SEC EDGAR facts.
+Outputs:
+- concept_features_filing.npz (sparse matrix)
+- concept_features_index.csv (doc-to-row mapping)
+- concept_features_vocab.csv (concept vocabulary)
 """
 import argparse
 import pathlib

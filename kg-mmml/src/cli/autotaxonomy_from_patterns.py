@@ -1,17 +1,8 @@
 """
 Generate auto-taxonomy edges from regex pattern rules.
 
-Reads SEC EDGAR facts to enumerate observed concepts, then applies
-pattern-based rules (from YAML) to infer parent-child relationships.
+Applies pattern-based rules to infer parent-child relationships from observed concepts.
 Conservative: first matching rule per concept wins.
-
-Usage:
-    python -m src.cli.autotaxonomy_from_patterns \
-        --facts data/processed/sec_edgar/facts.jsonl \
-        --rules datasets/sec_edgar/taxonomy/pattern_rules.yaml \
-        --out datasets/sec_edgar/taxonomy/usgaap_auto.csv
-
-Outputs CSV with columns: child,parent,source
 """
 import argparse, json, pathlib, re
 import pandas as pd

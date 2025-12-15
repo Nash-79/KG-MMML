@@ -1,9 +1,12 @@
 # System Architecture
 
 ## Overview
-Hybrid graph–vector pipeline for SEC EDGAR KG–MMML integration. Graph provides structure and governance; vector index provides fast candidate retrieval. Queries are filtered by KG constraints, then ranked by vector similarity.
 
-**Production system (validated through M5)**: Scikit-learn text+concept baseline (TF-IDF + one-hot concept features, λ=0.0). Simple, fast, stable, and effective (99.68% micro-F1, 0.7571 SRS, 0.037ms p99 latency).
+This project implements a **hybrid graph–vector pipeline**. I use a Knowledge Graph (KG) to provide structure and governance—ensuring I know *what* entities are—and a vector index to provide speed.
+
+The core idea is simple: use the graph to filter candidates based on hard constraints (e.g., "Must be a type of Asset"), and then use the vector index to rank them by similarity.
+
+**Production System**: I settled on a Scikit-learn baseline (TF-IDF + one-hot concept features) with no consistency penalty (λ=0.0). It proved to be simple, fast, and remarkably effective (99.68% micro-F1), beating out my more complex PyTorch experiments.
 
 ## Components
 1. **Data Layer** — SEC CompanyFacts → normalised `facts.jsonl` (namespace-aware concepts).
@@ -33,10 +36,18 @@ Facts → (normalise) → `facts.jsonl` → (build KG + taxonomy union) → snap
 ## Design Decisions
 
 ### Validated (Phase B Complete)
-- **Why text baseline first?** Establishes a lower bound before KG integration and protects against illusory gains. Confirmed: baseline at 98.32% sets honest comparison point.
-- **Why concept one-hot vs embeddings?** Interpretable, cheap, and sufficient. Confirmed: delivers 99.68% micro-F1 without embedding complexity.
-- **Why ANN?** Sub-millisecond p95 at N≈10³–10⁴ with tight p99. Confirmed: 0.037ms p99 at N=3,218, well below 150ms target.
-- **Why λ=0.0 (no penalty)?** M5 tested consistency penalty on directional edges. Result: penalties hurt performance and training stability. Simple model wins.
+
+*   **Why text baseline first?**
+    I built the text baseline first to protect myself against illusory gains. Without a strong baseline, any "improvement" from the KG might just be the result of a better architecture, not the knowledge itself. By establishing a 98.32% baseline, I forced the KG to prove its worth on the margins.
+
+*   **Why concept one-hot vs embeddings?**
+    I chose one-hot encoding because it is interpretable and cheap. I can look at the weights and see exactly which concepts matter. Embeddings are powerful but opaque. My results (99.68% micro-F1) confirmed that simple binary indicators were sufficient.
+
+*   **Why ANN?**
+    I needed sub-millisecond retrieval. Exact cosine search is fine for small datasets, but it scales linearly. ANN (Annoy) scales logarithmically. My benchmarks showed it hitting 0.037ms p99 at N=3,218, which is orders of magnitude faster than my 150ms target.
+
+*   **Why λ=0.0 (no penalty)?**
+    I tested a consistency penalty to force the model to respect the hierarchy. It backfired. The penalty made training unstable and didn't improve accuracy. I reverted to the simpler model (λ=0.0) because in engineering, simpler is usually better.
 
 ### Planned (Phase C-D)
 - **Hybrid pre-filters:** KG pre-filters should shrink candidate sets before cosine ranking. To be validated in M8 scalability tests.

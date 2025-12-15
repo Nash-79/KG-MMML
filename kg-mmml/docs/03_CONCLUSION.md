@@ -1,8 +1,8 @@
 # Conclusion
 
-We built a pragmatic, reproducible KG+ML system that preserves meaning and runs fast. The results show you can get both: solid semantic fidelity (SRS=0.7571) and sub‑millisecond retrieval (0.037ms p99) on a realistic corpus. The classification baseline is near‑perfect with concept features (99.68% micro‑F1); the +3pp improvement gate should be reconsidered when baselines are already high.
+I built a pragmatic, reproducible KG+ML system that preserves meaning and runs fast. The results show you can get both: solid semantic fidelity (SRS=0.7571) and sub‑millisecond retrieval (0.037ms p99) on a realistic corpus. The classification baseline is near‑perfect with concept features (99.68% micro‑F1); the +3pp improvement gate should be reconsidered when baselines are already high.
 
-## What we learned (Phase B: W5-10)
+## What I learned (Phase B: W5-10)
 - Structure matters. Auto‑taxonomy lifted SRS by fixing hierarchy coverage (HP: 0% → 27.26%).
 - Simpler is better. M5 tested consistency penalty (λ>0) on directional edges; result: penalties hurt performance and training stability. Production choice: λ=0.0. See [M5_COMPLETE.md](M5_COMPLETE.md).
 - Deterministic metrics are powerful. HP/AtP/AP yield stable, reproducible SRS (σ=0.000).

@@ -1,42 +1,14 @@
 # src/cli/compute_srs.py
 """
-Compute SRS (Semantic Relationship Score) for knowledge graph quality assessment.
+Compute SRS (Semantic Retention Score) for KG quality assessment.
 
-This script measures knowledge graph structural quality using four deterministic
-metrics that assess different aspects of semantic relationship preservation:
+Measures four deterministic metrics:
+- HP: Hierarchy Presence (fraction with is-a parent)
+- AtP: Attribute Predictability (fraction with unit edges)
+- AP: Asymmetry Preservation (fraction directional)
+- RTF: Relation Type Fidelity (embedding quality)
 
-1. HP (Hierarchy Presence): Fraction of concepts with ≥1 parent via is-a edges
-2. AtP (Attribute Predictability): Fraction of concepts with measured-in unit edges
-3. AP (Asymmetry Preservation): Fraction of directional edges without reverse pairs
-4. RTF (Relation Type Fidelity): Embedding-based (not yet implemented, set to None)
-
-SRS is a weighted combination: 0.25*HP + 0.20*AtP + 0.20*AP + 0.35*RTF
-
-Week 7-8 results showed strong quality metrics:
-    - HP: 27.26% (after auto-taxonomy generation)
-    - AtP: 99.87% (nearly all concepts have units)
-    - AP: 100% (perfect directionality)
-    - SRS: 75.71% (exceeding 75% threshold)
-
-Week 9 stability testing showed σ=0.000 across all metrics (perfect reproducibility)
-because HP, AtP, and AP are deterministic graph statistics with no randomization.
-
-Usage:
-    # Compute SRS for a KG snapshot
-    python -m src.cli.compute_srs \\
-        --config configs/experiment_kge.yaml \\
-        --out reports/tables/srs_kge.csv
-
-    # For combined taxonomy (Week 7-8)
-    python -m src.cli.compute_srs \\
-        --kg_snapshot data/kg/sec_edgar_2025-10-19 \\
-        --out reports/tables/srs_kge_combined.csv
-
-Decision Gates:
-    - HP ≥ 0.25 ✅ (achieved 27.26%)
-    - AtP ≥ 0.95 ✅ (achieved 99.87%)
-    - AP ≥ 0.99 ✅ (achieved 100%)
-    - SRS ≥ 0.75 ✅ (achieved 75.71%)
+SRS = 0.25*HP + 0.20*AtP + 0.20*AP + 0.35*RTF
 """
 import argparse, os, csv, json, yaml
 from collections import defaultdict
@@ -140,6 +112,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", required=True, help="Path to YAML config (uses data.kg_snapshot)")
     ap.add_argument("--out", required=True, help="CSV output path")
+    ap.add_argument("--rtf_score", required=False, help="Path to RTF score JSON file")
     args = ap.parse_args()
 
     cfg = yaml.safe_load(open(args.config, "r", encoding="utf-8"))
@@ -158,7 +131,26 @@ def main():
     atp = metric_atp(concepts, edges_by_type)
     hp = metric_hp_coverage(concepts, edges_by_type)
     apdir = metric_ap_directionality(edges_by_type)
-    rtf = None   # needs embeddings/probe; keep None for now
+    rtf = None
+    # If RTF score file is provided, read it
+    if args.rtf_score:
+        try:
+            with open(args.rtf_score, "r", encoding="utf-8") as f:
+                rtf_json = json.load(f)
+                # Try common keys for RTF score
+                if "rtf_f1_macro" in rtf_json:
+                    rtf = float(rtf_json["rtf_f1_macro"])
+                elif "rtf_accuracy" in rtf_json:
+                    rtf = float(rtf_json["rtf_accuracy"])
+                elif "F1 (macro)" in rtf_json:
+                    rtf = float(rtf_json["F1 (macro)"])
+                elif "RTF" in rtf_json:
+                    rtf = float(rtf_json["RTF"])
+                elif "scores" in rtf_json and "RTF" in rtf_json["scores"]:
+                    rtf = float(rtf_json["scores"]["RTF"])
+        except Exception as e:
+            print(f"Warning: Could not read RTF score from {args.rtf_score}: {e}")
+            rtf = None
 
     srs = weighted_srs({"RTF": rtf, "AP": apdir, "HP": hp, "AtP": atp}, srs_weights)
 
