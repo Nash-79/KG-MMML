@@ -1,7 +1,5 @@
 # Chapter 5: Results
 
-**Word target**: ~3,000 words (12 pages)
-
 ---
 
 ## 5.1 Decision Gate Outcomes

@@ -6,3 +6,8 @@ __pycache__/
 .venv
 *.env
 *.env.*
+.conda/
+**/.conda/
+kg-mmml/.conda/
+claude*
+.claude/

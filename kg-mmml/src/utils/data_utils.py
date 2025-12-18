@@ -7,14 +7,14 @@ from typing import Dict, List, Tuple, Optional, Set
 
 def normalise_concept(ns: Optional[str], concept: Optional[str]) -> Optional[str]:
     """
-    Normalize concept IDs to namespace:name format.
-    
+    Normalise concept IDs to namespace:name format.
+
     Args:
         ns: Namespace (e.g., 'us-gaap')
         concept: Concept name (e.g., 'Assets')
-    
+
     Returns:
-        Normalized concept ID like 'us-gaap:Assets', or None if invalid
+        Normalised concept ID like 'us-gaap:Assets', or None if invalid
     """
     ns = (ns or "").strip()
     c = (concept or "").strip()
@@ -27,11 +27,11 @@ def normalise_concept(ns: Optional[str], concept: Optional[str]) -> Optional[str
 
 def doc_id_from_fact(rec: dict) -> Optional[str]:
     """
-    Extract standardized document ID from fact record.
-    
+    Extract standardised document ID from fact record.
+
     Args:
         rec: Fact record dictionary with 'cik' and 'accn' fields
-    
+
     Returns:
         Document ID like 'filing_0000320193_000032019324000010', or None
     """
