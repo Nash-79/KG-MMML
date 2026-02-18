@@ -76,7 +76,9 @@ def parse_args():
 
 def iter_companyfacts(indir):
     p = pathlib.Path(indir)
-    for fp in sorted(p.glob("companyfacts_*.json")):
+    # Support both legacy names (companyfacts_*.json) and plain CIK names (*.json).
+    files = sorted(set(p.glob("companyfacts_*.json")) | set(p.glob("*.json")))
+    for fp in files:
         try:
             doc = json.loads(fp.read_text())
         except Exception:

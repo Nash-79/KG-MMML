@@ -7,7 +7,7 @@ experiment:
   seed: 42
 
 data:
-  facts_path: "datasets/sec_edgar/facts.jsonl"
+  facts_path: "data/processed/sec_edgar/facts.jsonl"
   train_split: 0.8
   val_split: 0.1
   test_split: 0.1

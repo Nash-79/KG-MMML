@@ -38,7 +38,7 @@ from scipy import stats
 
 # Configuration
 SEEDS = [42, 43, 44, 45, 46]
-FACTS_PATH = "data/facts.jsonl"
+FACTS_PATH = "data/processed/sec_edgar/facts.jsonl"
 TAXONOMY_PATH = "datasets/sec_edgar/taxonomy/usgaap_combined.csv"
 CONCEPT_FEATURES_NPZ = "data/processed/sec_edgar/features/concept_features_filing.npz"
 CONCEPT_FEATURES_INDEX = "data/processed/sec_edgar/features/concept_features_index.csv"
@@ -79,7 +79,7 @@ def run_baseline_experiment(seed: int) -> Dict:
 
     # Load and return metrics
     metrics = json.loads(output_path.read_text())
-    print(f"✓ Baseline seed={seed}: micro_f1={metrics['micro_f1']:.4f}, macro_f1={metrics['macro_f1']:.4f}")
+    print(f"OK Baseline seed={seed}: micro_f1={metrics['micro_f1']:.4f}, macro_f1={metrics['macro_f1']:.4f}")
 
     return metrics
 
@@ -119,7 +119,7 @@ def run_text_concept_experiment(seed: int) -> Dict:
 
     # Load and return metrics
     metrics = json.loads(output_path.read_text())
-    print(f"✓ Text+concept seed={seed}: micro_f1={metrics['micro_f1']:.4f}, macro_f1={metrics['macro_f1']:.4f}")
+    print(f"OK Text+concept seed={seed}: micro_f1={metrics['micro_f1']:.4f}, macro_f1={metrics['macro_f1']:.4f}")
 
     return metrics
 
@@ -148,7 +148,7 @@ def run_all_experiments():
         text_concept_results.append(text_concept_metrics)
 
     print("\n" + "="*60)
-    print("✓ All experiments completed successfully")
+    print("OK All experiments completed successfully")
     print("="*60)
 
     return baseline_results, text_concept_results
@@ -192,8 +192,8 @@ def paired_t_test(baseline_values: List[float], treatment_values: List[float]) -
     return {
         "t_statistic": float(t_stat),
         "p_value": float(p_value),
-        "significant_p05": p_value < 0.05,
-        "significant_p01": p_value < 0.01,
+        "significant_p05": bool(p_value < 0.05),
+        "significant_p01": bool(p_value < 0.01),
     }
 
 
@@ -230,7 +230,7 @@ def compute_statistics():
         text_concept_micro_f1.append(text_concept["micro_f1"])
         text_concept_macro_f1.append(text_concept["macro_f1"])
 
-    print(f"✓ Loaded results for {len(SEEDS)} seeds")
+    print(f"OK Loaded results for {len(SEEDS)} seeds")
 
     # Compute statistics for baseline
     bl_micro_mean, bl_micro_std, bl_micro_ci_low, bl_micro_ci_high = compute_confidence_interval(baseline_micro_f1)
@@ -285,7 +285,7 @@ def compute_statistics():
     # Save summary
     summary_path = OUTPUT_DIR / "m10_statistical_summary.csv"
     summary.to_csv(summary_path, index=False)
-    print(f"\n✓ Saved statistical summary: {summary_path}")
+    print(f"\nOK Saved statistical summary: {summary_path}")
     print("\n" + summary.to_string(index=False))
 
     # Save statistical tests
@@ -311,7 +311,7 @@ def compute_statistics():
 
     tests_path = OUTPUT_DIR / "m10_statistical_tests.json"
     tests_path.write_text(json.dumps(tests, indent=2))
-    print(f"\n✓ Saved statistical tests: {tests_path}")
+    print(f"\nOK Saved statistical tests: {tests_path}")
 
     # Print statistical test results
     print("\n" + "="*60)
@@ -332,7 +332,7 @@ def compute_statistics():
     print(f"  Significant (p<0.01): {macro_f1_test['significant_p01']}")
 
     print("\n" + "="*60)
-    print("✓ Statistical validation complete")
+    print("OK Statistical validation complete")
     print("="*60)
 
     return summary, tests

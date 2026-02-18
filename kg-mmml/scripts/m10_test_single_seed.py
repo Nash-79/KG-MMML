@@ -1,104 +1,102 @@
 #!/usr/bin/env python3
 """
-M10 Quick Test: Single Seed Validation
+M10 quick smoke test with a single seed.
 
-Quick test script to verify the M10 pipeline works before running all 5 seeds.
-Runs experiments for seed=42 only.
-
-Usage:
-    python scripts/m10_test_single_seed.py
-
-This is useful for:
-- Verifying paths are correct
-- Testing experiment runtime
-- Debugging before full 5-seed run
+Runs text-only and text+concept baseline_tfidf experiments for seed=42.
+Useful for path/runtime validation before full 5-seed M10 execution.
 """
+
+import json
+import pathlib
 import subprocess
 import sys
-import pathlib
-import json
-import os
 from datetime import datetime
 
 
+FACTS = "data/processed/sec_edgar/facts.jsonl"
+TAXONOMY = "datasets/sec_edgar/taxonomy/usgaap_combined.csv"
+CONCEPT_NPZ = "data/processed/sec_edgar/features/concept_features_filing.npz"
+CONCEPT_INDEX = "data/processed/sec_edgar/features/concept_features_index.csv"
+
+
+def run(cmd):
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(result.stdout)
+        print(result.stderr)
+        raise RuntimeError(f"Command failed: {' '.join(cmd)}")
+    return result
+
+
 def main():
-    # Set PYTHONPATH to include kg-mmml/src for imports
-    env = os.environ.copy()
-    kg_mmml_root = pathlib.Path(__file__).parent.parent.absolute()
-    env['PYTHONPATH'] = str(kg_mmml_root / 'src') + os.pathsep + env.get('PYTHONPATH', '')
-    print("="*70)
-    print("M10 QUICK TEST: Single Seed (seed=42)")
-    print("="*70)
+    out_dir = pathlib.Path("reports/tables")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    seed = 42
+    start = datetime.now()
 
-    start_time = datetime.now()
+    print("=" * 68)
+    print("M10 QUICK TEST: seed=42")
+    print("=" * 68)
 
-    # Test baseline experiment
-    print("\n[1/2] Testing baseline (text-only) experiment...")
-    baseline_cmd = [
-        sys.executable, "kg-mmml/src/cli/baseline_tfidf.py",
-        "--facts", "kg-mmml/data/processed/sec_edgar/facts.jsonl",
-        "--taxonomy", "kg-mmml/datasets/sec_edgar/taxonomy/usgaap_combined.csv",
-        "--out", "kg-mmml/reports/tables/m10_test_seed42_baseline.json",
-        "--random_state", "42",
-        "--test_size", "0.25",
+    base_out = out_dir / "m10_test_seed42_baseline.json"
+    cmd_base = [
+        sys.executable,
+        "-m",
+        "src.cli.baseline_tfidf",
+        "--facts",
+        FACTS,
+        "--taxonomy",
+        TAXONOMY,
+        "--out",
+        str(base_out),
+        "--random_state",
+        str(seed),
+        "--test_size",
+        "0.25",
     ]
+    print("\n[1/2] Baseline text-only")
+    run(cmd_base)
+    base = json.loads(base_out.read_text(encoding="utf-8"))
+    print(f"OK baseline: micro_f1={base['micro_f1']:.4f}, macro_f1={base['macro_f1']:.4f}")
 
-    print(f"Command: {' '.join(baseline_cmd)}")
-    result = subprocess.run(baseline_cmd, capture_output=True, text=True, env=env)
-
-    if result.returncode != 0:
-        print("FAILED: Baseline experiment")
-        print(result.stderr)
-        sys.exit(1)
-
-    print(result.stdout)
-    baseline_metrics = json.loads(pathlib.Path("kg-mmml/reports/tables/m10_test_seed42_baseline.json").read_text())
-    print(f"PASS: Baseline: micro_f1={baseline_metrics['micro_f1']:.4f}, macro_f1={baseline_metrics['macro_f1']:.4f}")
-
-    # Test text+concept experiment
-    print("\n[2/2] Testing text+concept experiment...")
-    text_concept_cmd = [
-        sys.executable, "kg-mmml/src/cli/baseline_tfidf.py",
-        "--facts", "kg-mmml/data/processed/sec_edgar/facts.jsonl",
-        "--taxonomy", "kg-mmml/datasets/sec_edgar/taxonomy/usgaap_combined.csv",
-        "--concept_features_npz", "kg-mmml/data/processed/sec_edgar/features/concept_features_filing.npz",
-        "--concept_features_index", "kg-mmml/data/processed/sec_edgar/features/concept_features_index.csv",
-        "--out", "kg-mmml/reports/tables/m10_test_seed42_text_concept.json",
-        "--random_state", "42",
-        "--test_size", "0.25",
+    tc_out = out_dir / "m10_test_seed42_text_concept.json"
+    cmd_tc = [
+        sys.executable,
+        "-m",
+        "src.cli.baseline_tfidf",
+        "--facts",
+        FACTS,
+        "--taxonomy",
+        TAXONOMY,
+        "--concept_features_npz",
+        CONCEPT_NPZ,
+        "--concept_features_index",
+        CONCEPT_INDEX,
+        "--out",
+        str(tc_out),
+        "--random_state",
+        str(seed),
+        "--test_size",
+        "0.25",
     ]
+    print("\n[2/2] Baseline text+concept")
+    run(cmd_tc)
+    tc = json.loads(tc_out.read_text(encoding="utf-8"))
+    print(f"OK text+concept: micro_f1={tc['micro_f1']:.4f}, macro_f1={tc['macro_f1']:.4f}")
 
-    print(f"Command: {' '.join(text_concept_cmd)}")
-    result = subprocess.run(text_concept_cmd, capture_output=True, text=True, env=env)
+    micro_pp = (tc["micro_f1"] - base["micro_f1"]) * 100.0
+    macro_pp = (tc["macro_f1"] - base["macro_f1"]) * 100.0
+    secs = (datetime.now() - start).total_seconds()
 
-    if result.returncode != 0:
-        print("FAILED: Text+concept experiment")
-        print(result.stderr)
-        sys.exit(1)
-
-    print(result.stdout)
-    text_concept_metrics = json.loads(pathlib.Path("kg-mmml/reports/tables/m10_test_seed42_text_concept.json").read_text())
-    print(f"PASS: Text+concept: micro_f1={text_concept_metrics['micro_f1']:.4f}, macro_f1={text_concept_metrics['macro_f1']:.4f}")
-
-    # Compute improvement
-    micro_improvement = (text_concept_metrics['micro_f1'] - baseline_metrics['micro_f1']) * 100
-    macro_improvement = (text_concept_metrics['macro_f1'] - baseline_metrics['macro_f1']) * 100
-
-    end_time = datetime.now()
-    duration = (end_time - start_time).total_seconds()
-
-    print("\n" + "="*70)
+    print("\n" + "=" * 68)
     print("M10 QUICK TEST: PASSED")
-    print("="*70)
-    print(f"Duration: {duration:.1f}s")
-    print(f"\nResults (seed=42):")
-    print(f"  Micro-F1 improvement: {micro_improvement:+.2f}pp")
-    print(f"  Macro-F1 improvement: {macro_improvement:+.2f}pp")
-    print(f"\nEstimated time for 5 seeds: ~{duration * 2 * 5 / 60:.1f} minutes")
-    print("\nNext step: Run full validation with:")
-    print("  python scripts/run_m10_all.py")
-    print("="*70)
+    print("=" * 68)
+    print(f"micro-F1 improvement: {micro_pp:+.2f}pp")
+    print(f"macro-F1 improvement: {macro_pp:+.2f}pp")
+    print(f"runtime: {secs:.1f}s")
+    print("=" * 68)
 
 
 if __name__ == "__main__":
     main()
+
