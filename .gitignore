@@ -9,5 +9,6 @@ __pycache__/
 .conda/
 **/.conda/
 kg-mmml/.conda/
+kg-mmml/.hypothesis/
 claude*
 .claude/

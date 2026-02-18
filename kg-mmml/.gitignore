@@ -18,6 +18,7 @@ ENV/
 
 # Testing
 # Ignore data and environment files (relative to kg-mmml/)
+.hypothesis/
 data/
 .env
 __pycache__/

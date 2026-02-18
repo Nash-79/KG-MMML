@@ -36,7 +36,6 @@ Expected generated artifacts:
 - `kg-mmml/reports/tables/m10_seed42_text_concept_metrics.json`
 - `kg-mmml/reports/tables/m10_statistical_summary.csv`
 - `kg-mmml/reports/tables/m10_statistical_tests.json`
-- `kg-mmml/docs/M10_STATISTICAL_VALIDATION_REPORT.md`
 
 ## Documentation Source of Truth
 
