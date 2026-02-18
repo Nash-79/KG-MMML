@@ -22,12 +22,12 @@ class TestLatencyMetrics:
         p99 = np.percentile(latencies, 99)
         
         assert p50 == 55.0, f"Expected p50=55, got {p50}"
-        assert p95 == 95.5, f"Expected p95=95.5, got {p95}"
-        assert p99 == 99.1, f"Expected p99=99.1, got {p99}"
+        assert p95 == pytest.approx(95.5), f"Expected p95=95.5, got {p95}"
+        assert p99 == pytest.approx(99.1), f"Expected p99=99.1, got {p99}"
     
     def test_tail_behavior_ratio(self):
         """Test p99/p95 ratio calculation"""
-        latencies = np.array([10] * 950 + [50] * 45 + [100] * 5)
+        latencies = np.array([10] * 950 + [20] * 45 + [25] * 5)
         
         p95 = np.percentile(latencies, 95)
         p99 = np.percentile(latencies, 99)

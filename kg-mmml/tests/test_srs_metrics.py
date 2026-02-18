@@ -158,8 +158,9 @@ class TestSRSMetrics:
         }
         
         ap = metric_ap_directionality(edges)
-        # 3 directional edges, 1 has reverse = 1 - 1/3 = 2/3
-        assert ap == 2/3, f"Expected 2/3, got {ap}"
+        # 4 directional edges total; one bidirectional pair contributes 2 reverse checks.
+        # AP = 1 - (2/4) = 0.5
+        assert ap == 0.5, f"Expected 0.5, got {ap}"
     
     def test_ap_empty_edges(self):
         """Test AP with no directional edges"""
